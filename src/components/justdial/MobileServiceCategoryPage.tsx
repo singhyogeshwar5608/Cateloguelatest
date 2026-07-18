@@ -7,7 +7,9 @@ import {
   ArrowLeft, Search, SlidersHorizontal, Star, MapPin,
   Heart, Phone, MessageCircle, Navigation, Home, Grid3x3, Calendar,
   User, ChevronDown, BadgeCheck, ChevronRight, X,
+  Fan, Zap, Droplets, Paintbrush, Bug, Scissors, Sofa, Sparkles, Lightbulb,
 } from "lucide-react";
+import StoreCard from "@/components/justdial/StoreCard";
 import {
   getServiceCategory, getServiceProviders, getAllServiceProviders,
   getCategorizedProviders,
@@ -89,129 +91,62 @@ export default function MobileServiceCategoryPage({ selectedCategory }: { select
   const toggleFav = (id: string) =>
     setFavorites(prev => ({ ...prev, [id]: !prev[id] }));
 
-  // ── Provider card renderer ──
-  // Reused by both the single-category grid view AND the per-category
-  // sections view ("All" chip selected) to keep card markup in sync.
+  // ── Service emoji → Lucide icon mapping ──
+  const serviceIconMap: Record<string, typeof Fan> = {
+    "🔧": Fan,
+    "🎨": Paintbrush,
+    "🐛": Bug,
+    "🪚": Sofa,
+    "⚡": Zap,
+    "💇": Scissors,
+    "✨": Sparkles,
+    "🌀": Fan,
+    "🛠️": Zap,
+    "🏠": Home,
+    "💡": Lightbulb,
+    "🔧": Fan,
+  };
+
+  // ── Service emoji → gradient mapping ──
+  const serviceGradientMap: Record<string, string> = {
+    "🔧": "from-blue-500 to-blue-700",
+    "🌀": "from-sky-500 to-blue-600",
+    "🎨": "from-emerald-500 to-green-600",
+    "🐛": "from-red-500 to-rose-600",
+    "🪚": "from-amber-500 to-orange-600",
+    "⚡": "from-yellow-500 to-amber-600",
+    "💇": "from-pink-500 to-rose-500",
+    "✨": "from-teal-400 to-emerald-500",
+    "🛠️": "from-violet-500 to-purple-600",
+    "🏠": "from-blue-400 to-indigo-500",
+    "💡": "from-orange-500 to-red-500",
+  };
+
+  // ── Render StoreCard for a service provider ──
   const renderProviderCard = (p: typeof allProviders[number], idx: number, distanceSeed = 0) => {
-    const isFav = favorites[p.id] || false;
     const distance = ((distanceSeed + idx + 1) * 1.2).toFixed(1);
     const startingPrice = p.services[0]?.price || p.priceRange?.split(" - ")[0] || "₹499";
+    const LogoIcon = serviceIconMap[p.logoEmoji] || Fan;
+    const gradient = serviceGradientMap[p.logoEmoji] || "from-blue-500 to-blue-700";
 
     return (
-      <motion.article
+      <StoreCard
         key={p.id}
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: idx * 0.04, duration: 0.3 }}
-        className="bg-white rounded-2xl overflow-hidden shadow-sm shadow-black/[0.06] ring-1 ring-black/[0.04] flex flex-col"
-      >
-        {/* ─ Cover image area ─ */}
-        <div className="relative h-24 overflow-hidden">
-          <div className={`absolute inset-0 bg-gradient-to-br ${p.coverColor}`} />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-4xl opacity-95 drop-shadow-sm" aria-hidden>
-              {p.logoEmoji}
-            </span>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-
-          {/* Available Today badge */}
-          <span className="absolute top-1.5 left-1.5 bg-emerald-500 text-white text-[8.5px] font-bold px-1.5 py-0.5 rounded-md shadow-sm uppercase tracking-wide flex items-center gap-0.5">
-            <span className="w-1 h-1 bg-white rounded-full" />
-            Open
-          </span>
-
-          {/* Heart / favorite */}
-          <button
-            type="button"
-            onClick={() => toggleFav(p.id)}
-            aria-label="Save to favorites"
-            className="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center shadow-sm active:scale-90 transition-transform"
-          >
-            <Heart
-              className={`w-3 h-3 ${
-                isFav ? "fill-rose-500 text-rose-500" : "text-gray-700"
-              }`}
-            />
-          </button>
-        </div>
-
-        {/* ─ Body ─ */}
-        <div className="p-2.5 flex flex-col flex-1">
-          {/* Name + verified */}
-          <div className="flex items-start gap-1 mb-1">
-            <h3 className="text-[12px] font-bold text-gray-900 leading-tight line-clamp-2 flex-1">
-              {p.name}
-            </h3>
-            {p.verified && (
-              <BadgeCheck className="w-3.5 h-3.5 text-[#0056b3] shrink-0 mt-0.5" />
-            )}
-          </div>
-
-          {/* Rating row */}
-          <div className="flex items-center gap-1 text-[10px] mb-1.5">
-            <span className="flex items-center gap-0.5 bg-emerald-50 text-emerald-700 px-1 py-0.5 rounded font-bold">
-              <Star className="w-2.5 h-2.5 fill-emerald-700 text-emerald-700" />
-              {p.rating}
-            </span>
-            <span className="text-gray-400 truncate">
-              {p.totalReviews}
-            </span>
-            <span className="text-gray-300">•</span>
-            <span className="text-gray-500 whitespace-nowrap">{p.yearsInBusiness}</span>
-          </div>
-
-          {/* Sub-category */}
-          <p className="text-[10px] text-gray-500 mb-2 line-clamp-1 leading-tight">
-            {p.subCategory}
-          </p>
-
-          {/* Location row */}
-          <div className="flex items-center gap-0.5 mb-1.5 text-[10px]">
-            <MapPin className="w-2.5 h-2.5 text-gray-400 shrink-0" />
-            <span className="text-gray-600 truncate flex-1">{p.area}</span>
-            <span className="inline-flex items-center gap-0.5 bg-[#0056b3]/8 text-[#0056b3] font-bold px-1 py-0.5 rounded-full whitespace-nowrap">
-              <Navigation className="w-2 h-2" />
-              {distance}km
-            </span>
-          </div>
-
-          {/* Price */}
-          <div className="flex items-center justify-between pt-1.5 mb-2 border-t border-gray-100">
-            <span className="text-[9px] text-gray-400">Starts from</span>
-            <span className="text-[11px] font-bold text-emerald-700">
-              {startingPrice}
-            </span>
-          </div>
-
-          {/* Action buttons row */}
-          <div className="grid grid-cols-3 gap-1 mt-auto">
-            <a
-              href={`tel:${p.phone.replace(/\s+/g, "")}`}
-              aria-label="Call"
-              className="flex items-center justify-center bg-[#0056b3]/8 text-[#0056b3] rounded-lg py-1.5 active:scale-95 transition-transform"
-            >
-              <Phone className="w-3.5 h-3.5" />
-            </a>
-            <a
-              href={`https://wa.me/${p.phone.replace(/[^0-9]/g, "")}`}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="WhatsApp"
-              className="flex items-center justify-center bg-emerald-500/10 text-emerald-700 rounded-lg py-1.5 active:scale-95 transition-transform"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-            </a>
-            <Link
-              href={`/store/${p.id}`}
-              aria-label="View details"
-              className="flex items-center justify-center bg-amber-500/10 text-amber-700 rounded-lg py-1.5 active:scale-95 transition-transform"
-            >
-              <Navigation className="w-3.5 h-3.5" />
-            </Link>
-          </div>
-        </div>
-      </motion.article>
+        name={p.name}
+        category={p.subCategory}
+        rating={p.rating}
+        reviews={p.totalReviews}
+        distance={`${distance} km`}
+        address={p.area}
+        logoIcon={LogoIcon}
+        coverGradient={gradient}
+        storeId={p.id}
+        isVerified={p.verified}
+        variant="mobile"
+        index={idx}
+        fluid
+        price={startingPrice}
+      />
     );
   };
 

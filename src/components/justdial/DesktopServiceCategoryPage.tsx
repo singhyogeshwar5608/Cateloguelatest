@@ -117,6 +117,26 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
     { label: "Avg Rating", value: "4.6", icon: Star },
   ];
 
+  // ── Service emoji → Lucide icon / gradient mapping ──
+  const serviceIconMap: Record<string, typeof Fan> = {
+    "🔧": Fan, "🎨": Paintbrush, "🐛": Bug, "🪚": Sofa,
+    "⚡": Zap, "💇": Scissors, "✨": Sparkles, "🌀": Fan,
+    "🛠️": Zap, "🏠": Home, "💡": Lightbulb,
+  };
+  const serviceGradientMap: Record<string, string> = {
+    "🔧": "from-blue-500 to-blue-700",
+    "🌀": "from-sky-500 to-blue-600",
+    "🎨": "from-emerald-500 to-green-600",
+    "🐛": "from-red-500 to-rose-600",
+    "🪚": "from-amber-500 to-orange-600",
+    "⚡": "from-yellow-500 to-amber-600",
+    "💇": "from-pink-500 to-rose-500",
+    "✨": "from-teal-400 to-emerald-500",
+    "🛠️": "from-violet-500 to-purple-600",
+    "🏠": "from-blue-400 to-indigo-500",
+    "💡": "from-orange-500 to-red-500",
+  };
+
   const getIconColor = (gradient: string) => {
     if (gradient.includes("blue")) return "#1D4ED8";
     if (gradient.includes("amber") || gradient.includes("orange")) return "#B45309";
@@ -382,62 +402,32 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
                     </Link>
                   </div>
 
-                  {/* Responsive grid: 1 col mobile, 2 sm, 3 md/lg */}
+                  {/* Responsive grid: 1 col mobile, 2 sm, 3 md/lg — StoreCard UI */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-                    {visible.map((p, idx) => (
-                      <Link
-                        key={p.id}
-                        href={`/store/${p.id}`}
-                        className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col"
-                      >
-                        {/* Cover */}
-                        <div className="relative h-32 overflow-hidden">
-                          <div className={`absolute inset-0 bg-gradient-to-br ${p.coverColor}`} />
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-5xl opacity-95 drop-shadow-sm group-hover:scale-110 transition-transform" aria-hidden>
-                              {p.logoEmoji}
-                            </span>
-                          </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
-                          {p.verified && (
-                            <span className="absolute top-2 left-2 inline-flex items-center gap-1 bg-white/95 backdrop-blur-sm text-[10px] font-bold text-[#0056b3] px-2 py-1 rounded-md shadow-sm uppercase tracking-wide">
-                              <BadgeCheck className="w-3 h-3" /> Verified
-                            </span>
-                          )}
-                          <span className="absolute top-2 right-2 bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded-md shadow-sm uppercase tracking-wide flex items-center gap-1">
-                            <span className="w-1 h-1 bg-white rounded-full" /> Open
-                          </span>
-                        </div>
-                        {/* Body */}
-                        <div className="p-4 flex flex-col flex-1">
-                          <h4 className="text-sm font-bold text-gray-900 leading-tight line-clamp-1">
-                            {p.name}
-                          </h4>
-                          <p className="text-[11px] text-gray-500 mt-1 line-clamp-1">
-                            {p.subCategory}
-                          </p>
-                          <div className="flex items-center gap-1.5 mt-2 text-[11px]">
-                            <span className="inline-flex items-center gap-0.5 bg-emerald-50 text-emerald-700 px-1.5 py-0.5 rounded font-bold">
-                              <Star className="w-3 h-3 fill-emerald-700 text-emerald-700" />
-                              {p.rating}
-                            </span>
-                            <span className="text-gray-400">{p.totalReviews}</span>
-                            <span className="text-gray-300">·</span>
-                            <span className="text-gray-500 whitespace-nowrap">{p.yearsInBusiness}</span>
-                          </div>
-                          <div className="flex items-center gap-1 mt-2 text-[11px] text-gray-500">
-                            <MapPin className="w-3 h-3 shrink-0" />
-                            <span className="truncate">{p.area}, Mumbai</span>
-                          </div>
-                          <div className="flex items-center justify-between pt-3 mt-auto border-t border-gray-100">
-                            <span className="text-[10px] text-gray-400">Starts from</span>
-                            <span className="text-sm font-bold text-emerald-700">
-                              {p.services[0]?.price || p.priceRange?.split(" - ")[0] || "₹499"}
-                            </span>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
+                    {visible.map((p, idx) => {
+                      const iconForService = serviceIconMap[p.logoEmoji] || Fan;
+                      const gradientForService = serviceGradientMap[p.logoEmoji] || "from-blue-500 to-blue-700";
+                      const priceForService = p.services[0]?.price || p.priceRange?.split(" - ")[0] || "₹499";
+
+                      return (
+                        <StoreCard
+                          key={p.id}
+                          name={p.name}
+                          category={p.subCategory}
+                          rating={p.rating}
+                          reviews={p.totalReviews}
+                          address={`${p.area}, Mumbai`}
+                          logoIcon={iconForService}
+                          coverGradient={gradientForService}
+                          storeId={p.id}
+                          isVerified={p.verified}
+                          variant="desktop"
+                          index={idx}
+                          fluid
+                          price={priceForService}
+                        />
+                      );
+                    })}
                   </div>
                 </motion.div>
               );
