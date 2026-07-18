@@ -1,0 +1,1302 @@
+     1→"use client";
+     2→import { useState, useRef, useEffect, useCallback } from "react";
+     3→import Image from "next/image";
+     4→import Link from "next/link";
+     5→import { useRouter } from "next/navigation";
+     6→import { motion, AnimatePresence } from "framer-motion";
+     7→import {
+     8→  Search, Mic, Bell, UserCircle, Home, BarChart3, Briefcase, Newspaper,
+     9→  MoreHorizontal, Star, MapPin, ChevronRight, ChevronDown, ChevronUp,
+    10→  ArrowRight, ArrowLeft, BadgeCheck, Building2, Stethoscope, Plane, Car,
+    11→  Sparkles, GraduationCap, Dumbbell, Truck, Briefcase as BriefcaseIcon,
+    12→  Landmark, Hotel, Film, CreditCard, Shirt, Scissors, Wrench, Paintbrush,
+    13→  Bug, Droplets, Sofa, Refrigerator, Phone, Tv, Camera, Heart, Share2,
+    14→  Navigation, Bookmark, X, Zap, TrendingUp, QrCode, Clock, Utensils, Flame,
+    15→  Crosshair, Check, Hammer,
+    16→} from "lucide-react";
+    17→import { getTrendingProducts } from "@/lib/product-data";
+    18→import { searchAll, getTypeConfig, popularCities, getRecentLocations, saveRecentLocation, type SearchSuggestion, type SuggestionType } from "@/lib/search-data";
+    19→
+    20→const categories = [
+    21→  { icon: Building2, label: "B2B", color: "#3B82F6", bg: "#EFF6FF", slug: "b2b" },
+    22→  { icon: Stethoscope, label: "Doctors", color: "#EF4444", bg: "#FEF2F2", slug: "doctors" },
+    23→  { icon: Plane, label: "Travel", color: "#F59E0B", bg: "#FFFBEB", slug: "travel" },
+    24→  { icon: Car, label: "Car Hire", color: "#10B981", bg: "#ECFDF5", slug: "car-hire" },
+    25→  { icon: Sparkles, label: "Beauty", color: "#EC4899", bg: "#FDF2F8", slug: "beauty" },
+    26→  { icon: GraduationCap, label: "Education", color: "#8B5CF6", bg: "#F5F3FF", slug: "education" },
+    27→  { icon: Shirt, label: "Fashion", color: "#F97316", bg: "#FFF7ED", slug: "fashion" },
+    28→  { icon: Scissors, label: "Wedding", color: "#D946EF", bg: "#FAF5FF", slug: "wedding" },
+    29→  { icon: Truck, label: "Packers", color: "#14B8A6", bg: "#F0FDFA", slug: "packers" },
+    30→  { icon: Dumbbell, label: "Gyms", color: "#06B6D4", bg: "#ECFEFF", slug: "gyms" },
+    31→  { icon: Tv, label: "Rent/Hire", color: "#6366F1", bg: "#EEF2FF", slug: "rent-hire" },
+    32→  { icon: BriefcaseIcon, label: "Jobs", color: "#6366F1", bg: "#EEF2FF", slug: "jobs" },
+    33→  { icon: CreditCard, label: "Loans", color: "#15803D", bg: "#F0FDF4", slug: "loans" },
+    34→  { icon: Landmark, label: "Real Estate", color: "#D97706", bg: "#FFFBEB", slug: "real-estate" },
+    35→  { icon: Hotel, label: "PG/Hostel", color: "#DC2626", bg: "#FEF2F2", slug: "pg-hostel" },
+    36→];
+    37→
+    38→const homeServices = [
+    39→  { icon: Wrench, label: "AC Repair", sub: "Certified Experts", color: "#3B82F6", bg: "#EFF6FF", slug: "ac-repair", rating: "4.8", reviews: "320", pros: "250", glow: "#3B82F6" },
+    40→  { icon: Droplets, label: "Plumbing", sub: "Licensed Plumbers", color: "#10B981", bg: "#ECFDF5", slug: "plumber", rating: "4.6", reviews: "180", pros: "180", glow: "#10B981" },
+    41→  { icon: Zap, label: "Electrician", sub: "Verified Pros", color: "#F59E0B", bg: "#FFFBEB", slug: "electrician", rating: "4.7", reviews: "410", pros: "320", glow: "#F59E0B" },
+    42→  { icon: Sofa, label: "Carpenter", sub: "Skilled Craftsmen", color: "#8B5CF6", bg: "#F5F3FF", slug: "carpenter", rating: "4.5", reviews: "140", pros: "95", glow: "#8B5CF6" },
+    43→  { icon: Paintbrush, label: "Painter", sub: "Pro Painters", color: "#EC4899", bg: "#FDF2F8", slug: "painter", rating: "4.6", reviews: "210", pros: "150", glow: "#EC4899" },
+    44→  { icon: Sparkles, label: "Home Cleaning", sub: "Deep Clean Team", color: "#06B6D4", bg: "#ECFEFF", slug: "deep-cleaning", rating: "4.8", reviews: "520", pros: "400", glow: "#06B6D4" },
+    45→  { icon: Bug, label: "Pest Control", sub: "Certified Experts", color: "#A78BFA", bg: "#F5F3FF", slug: "pest-control", rating: "4.5", reviews: "85", pros: "60", glow: "#A78BFA" },
+    46→  { icon: Scissors, label: "Salon at Home", sub: "Beauty Experts", color: "#F43F5E", bg: "#FFF1F2", slug: "salon-home", rating: "4.8", reviews: "290", pros: "175", glow: "#F43F5E" },
+    47→];
+    48→
+    49→const rentServices = [
+    50→  { icon: Car, label: "Vehicles", color: "#2563EB", bg: "#EFF6FF" },
+    51→  { icon: Shirt, label: "Rent Clothes", color: "#EC4899", bg: "#FDF2F8" },
+    52→  { icon: Sofa, label: "Furniture", color: "#D97706", bg: "#FFFBEB" },
+    53→  { icon: Refrigerator, label: "Appliances", color: "#6366F1", bg: "#EEF2FF" },
+    54→];
+    55→
+    56→const movies = [
+    57→  { title: "Pushpa 2", genre: "Action/Drama", rating: "8.2", img: "/images/movies/pushpa2.png" },
+    58→  { title: "Singham Again", genre: "Action/Comedy", rating: "7.5", img: "/images/movies/singham-again.png" },
+    59→  { title: "Bhool Bhulaiyaa 3", genre: "Comedy/Horror", rating: "7.8", img: "/images/movies/bhool-bhulaiyaa3.png" },
+    60→];
+    61→
+    62→const trendingSearches = [
+    63→  { label: "Schools", emoji: "🏫" },
+    64→  { label: "Beauty Parlours", emoji: "💇" },
+    65→  { label: "Vijay Sales", emoji: "📱" },
+    66→  { label: "Interior Design", emoji: "🏠" },
+    67→  { label: "Banquet Halls", emoji: "🎉" },
+    68→  { label: "Dentists", emoji: "🦷" },
+    69→];
+    70→
+    71→const touristPlaces = [
+    72→  { name: "India Gate", city: "Delhi", img: "/images/tourist/delhi.png", slug: "india-gate" },
+    73→  { name: "Taj Mahal", city: "Agra", img: "/images/tourist/agra.png", slug: "taj-mahal" },
+    74→  { name: "Laxman Jhula", city: "Rishikesh", img: "/images/tourist/rishikesh.png", slug: "rishikesh" },
+    75→  { name: "Robbers Cave", city: "Dehradun", img: "/images/tourist/dehradun.png", slug: "dehradun" },
+    76→  { name: "Gateway of India", city: "Mumbai", img: "/images/tourist/delhi.png", slug: "gateway-of-india" },
+    77→  { name: "Red Fort", city: "Delhi", img: "/images/tourist/agra.png", slug: "red-fort" },
+    78→];
+    79→
+    80→const bottomNavTabs = ["SHOPPING", "FASHION", "BEAUTY", "FOOD"];
+    81→
+    82→const footerSections = [
+    83→  {
+    84→    title: "Popular Categories",
+    85→    items: ["Restaurants", "Hotels", "Doctors", "Salons", "Gyms", "Real Estate"],
+    86→  },
+    87→  {
+    88→    title: "Trending Searches",
+    89→    items: ["Schools Near Me", "PG Near Me", "AC Repair", "Packers & Movers"],
+    90→  },
+    91→  {
+    92→    title: "Deals and Offers",
+    93→    items: ["Restaurant Deals", "Spa Offers", "Gym Membership", "Travel Deals"],
+    94→  },
+    95→  {
+    96→    title: "About JustDial",
+    97→    items: ["About Us", "Careers", "Blog", "Contact Us", "Privacy Policy"],
+    98→  },
+    99→];
+   100→
+   101→const featuredStores = [
+   102→  { name: "Shivam Fast Food", category: "Fast Food • Restaurant", rating: "4.5", reviews: "128", distance: "0.3 km", address: "MG Road, Andheri West", logoEmoji: "🍔", img: "/images/stores/shivam-fast-food.png", storeId: "STR-10005" },
+   103→  { name: "Look & Style Salon", category: "Beauty • Salon", rating: "4.7", reviews: "96", distance: "0.5 km", address: "Link Square Mall", logoEmoji: "✂️", img: "/images/stores/look-style-salon.png", storeId: "STR-70001" },
+   104→  { name: "CareWell Pharmacy", category: "Medical • Pharmacy", rating: "4.6", reviews: "88", distance: "0.7 km", address: "City Center, Malad", logoEmoji: "💊", img: "/images/stores/carewell-pharmacy.png", storeId: "STR-100001" },
+   105→  { name: "Fresh Mart Grocery", category: "Grocery • Supermarket", rating: "4.4", reviews: "215", distance: "0.4 km", address: "SV Road, Malad West", logoEmoji: "🛒", img: "/images/stores/fresh-mart-grocery.png", storeId: "STR-40006" },
+   106→  { name: "QuickFix Electronics", category: "Electronics • Mobile", rating: "4.3", reviews: "167", distance: "0.9 km", address: "Heera Panna Mall", logoEmoji: "📱", img: "/images/stores/quickfix-electronics.png", storeId: "STR-90001" },
+   107→  { name: "Green Leaf Cafe", category: "Cafe • Restaurant", rating: "4.8", reviews: "302", distance: "1.2 km", address: "Hill Road, Bandra", logoEmoji: "☕", img: "/images/stores/green-leaf-cafe.png", storeId: "STR-30004" },
+   108→];
+   109→
+   110→const trendingStores = [
+   111→  { name: "Sunrise Public School", category: "Education • School", rating: "4.6", reviews: "340", distance: "0.8 km", address: "DPS Road, Nerul", logoEmoji: "🏫", img: "/images/guides/schools-delhi.png", storeId: "STR-130001" },
+   112→  { name: "Glow Beauty Parlour", category: "Beauty • Parlour", rating: "4.8", reviews: "256", distance: "0.4 km", address: "Linking Road, Bandra", logoEmoji: "💅", img: "/images/stores/look-style-salon.png", storeId: "STR-70003" },
+   113→  { name: "Vijay Sales Store", category: "Electronics • Appliances", rating: "4.3", reviews: "512", distance: "1.1 km", address: "MG Road, Andheri East", logoEmoji: "📦", img: "/images/stores/quickfix-electronics.png", storeId: "STR-90002" },
+   114→  { name: "Royal Banquet Hall", category: "Venue • Banquet", rating: "4.5", reviews: "189", distance: "1.5 km", address: "Juhu Tara Road", logoEmoji: "🎉", img: "/images/collections/wedding-planners.png", storeId: "STR-10005" },
+   115→  { name: "SmileCare Dental", category: "Medical • Dentist", rating: "4.7", reviews: "421", distance: "0.6 km", address: "Kohinoor City", logoEmoji: "🦷", img: "/images/businesses/sharma-dental.png", storeId: "STR-60008" },
+   116→  { name: "FitPro Gym & Spa", category: "Fitness • Gym", rating: "4.4", reviews: "198", distance: "0.9 km", address: "Oberoi Mall, Goregaon", logoEmoji: "💪", img: "/images/businesses/fitzone-gym.png", storeId: "STR-80001" },
+   117→];
+   118→
+   119→const navItems = [
+   120→  { icon: Home, label: "Home", id: "Home" },
+   121→  { icon: BarChart3, label: "Leads", id: "Leads" },
+   122→  { icon: Briefcase, label: "B2B", id: "B2B" },
+   123→  { icon: Newspaper, label: "News", id: "News" },
+   124→  { icon: MoreHorizontal, label: "More", id: "More" },
+   125→];
+   126→
+   127→export default function MobileLayout() {
+   128→  const router = useRouter();
+   129→  const [searchQuery, setSearchQuery] = useState("");
+   130→  const [activeNav, setActiveNav] = useState("Home");
+   131→  const [activeTab, setActiveTab] = useState("SHOPPING");
+   132→  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
+   133→  const scrollRef = useRef<HTMLDivElement>(null);
+   134→  const [savedPlaces, setSavedPlaces] = useState<Set<string>>(new Set());
+   135→  const [wishlisted, setWishlisted] = useState<Set<string>>(new Set());
+   136→  const trendingProducts = getTrendingProducts();
+   137→
+   138→  // ── Location & Search State ──
+   139→  const [selectedCity, setSelectedCity] = useState("Mumbai");
+   140→  const [locationSheetOpen, setLocationSheetOpen] = useState(false);
+   141→  const [locationSearch, setLocationSearch] = useState("");
+   142→  const [showSuggestions, setShowSuggestions] = useState(false);
+   143→  const [suggestions, setSuggestions] = useState<SearchSuggestion[]>([]);
+   144→  const [recentLocations, setRecentLocations] = useState<string[]>([]);
+   145→  const searchInputRef = useRef<HTMLInputElement>(null);
+   146→  const locationInputRef = useRef<HTMLInputElement>(null);
+   147→
+   148→  useEffect(() => { setRecentLocations(getRecentLocations()); }, []);
+   149→
+   150→  // Debounced search
+   151→  useEffect(() => {
+   152→    if (!searchQuery.trim()) { setSuggestions([]); setShowSuggestions(false); return; }
+   153→    const t = setTimeout(() => {
+   154→      setSuggestions(searchAll(searchQuery, selectedCity, 4));
+   155→      setShowSuggestions(true);
+   156→    }, 150);
+   157→    return () => clearTimeout(t);
+   158→  }, [searchQuery, selectedCity]);
+   159→
+   160→  const selectCity = useCallback((city: string) => {
+   161→    setSelectedCity(city);
+   162→    saveRecentLocation(city);
+   163→    setRecentLocations(getRecentLocations());
+   164→    setLocationSheetOpen(false);
+   165→    setLocationSearch("");
+   166→  }, []);
+   167→
+   168→  const handleSuggestionTap = useCallback((s: SearchSuggestion) => {
+   169→    setShowSuggestions(false);
+   170→    setSearchQuery("");
+   171→    router.push(s.href);
+   172→  }, [router]);
+   173→
+   174→  const toggleWishlist = useCallback((id: string) => {
+   175→    setWishlisted((prev) => {
+   176→      const next = new Set(prev);
+   177→      if (next.has(id)) next.delete(id);
+   178→      else next.add(id);
+   179→      return next;
+   180→    });
+   181→  }, []);
+   182→
+   183→  const toggleSection = useCallback((title: string) => {
+   184→    setExpandedSections((prev) => ({ ...prev, [title]: !prev[title] }));
+   185→  }, []);
+   186→
+   187→  const toggleSave = useCallback((slug: string) => {
+   188→    setSavedPlaces((prev) => {
+   189→      const next = new Set(prev);
+   190→      if (next.has(slug)) next.delete(slug);
+   191→      else next.add(slug);
+   192→      return next;
+   193→    });
+   194→  }, []);
+   195→
+   196→  const storeCard = (store: typeof featuredStores[0], index: number) => (
+   197→    <motion.div
+   198→      key={store.name}
+   199→      initial={{ opacity: 0, y: 12 }}
+   200→      whileInView={{ opacity: 1, y: 0 }}
+   201→      viewport={{ once: true }}
+   202→      transition={{ delay: index * 0.05, duration: 0.3 }}
+   203→      whileTap={{ scale: 0.97 }}
+   204→      className="flex-shrink-0 w-[185px] bg-white rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04]"
+   205→    >
+   206→      <Link href={`/store/${store.storeId}`} className="block">
+   207→        {/* Compact banner image (reduced height) */}
+   208→        <div className="relative h-[78px] overflow-hidden">
+   209→          <Image
+   210→            src={store.img}
+   211→            alt={store.name}
+   212→            fill
+   213→            className="object-cover"
+   214→            sizes="185px"
+   215→          />
+   216→          {/* Subtle gradient for legibility */}
+   217→          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/5" />
+   218→
+   219→          {/* Top row: Featured (left) + Open (right) */}
+   220→          <div className="absolute top-1.5 left-1.5 right-1.5 flex items-center justify-between">
+   221→            <span className="bg-amber-500/95 backdrop-blur-sm text-white text-[8.5px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm">
+   222→              <Flame className="w-2 h-2" />
+   223→              Featured
+   224→            </span>
+   225→            <span className="bg-emerald-500/95 backdrop-blur-sm text-white text-[8.5px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm">
+   226→              <span className="w-1 h-1 bg-white rounded-full" />
+   227→              Open
+   228→            </span>
+   229→          </div>
+   230→
+   231→          {/* Bottom-left: Rating pill */}
+   232→          <div className="absolute bottom-1.5 left-1.5">
+   233→            <div className="bg-white/95 backdrop-blur-sm text-gray-900 text-[10px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm">
+   234→              <Star className="w-2.5 h-2.5 text-amber-500 fill-amber-500" />
+   235→              {store.rating}
+   236→            </div>
+   237→          </div>
+   238→
+   239→          {/* Floating circular logo with trusted tick — z-indexed above content */}
+   240→          <div className="absolute -bottom-4 right-2.5 z-10">
+   241→            <div className="relative">
+   242→              <div className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[16px] ring-2 ring-white">
+   243→                {store.logoEmoji}
+   244→              </div>
+   245→              {/* Trusted tick badge attached to logo */}
+   246→              <div className="absolute -bottom-0.5 -left-0.5 w-[14px] h-[14px] bg-[#0056b3] rounded-full flex items-center justify-center ring-[1.5px] ring-white">
+   247→                <Check className="w-[9px] h-[9px] text-white" strokeWidth={4} />
+   248→              </div>
+   249→            </div>
+   250→          </div>
+   251→        </div>
+   252→
+   253→        {/* Content */}
+   254→        <div className="px-2.5 pt-2.5 pb-2.5">
+   255→          {/* Store name + rating reviews */}
+   256→          <div className="flex items-start gap-1 mb-0.5 pr-11">
+   257→            <h3 className="text-[12.5px] font-bold text-gray-900 leading-tight line-clamp-1 flex-1">{store.name}</h3>
+   258→          </div>
+   259→
+   260→          {/* Category */}
+   261→          <p className="text-[10px] text-gray-500 font-medium truncate mb-1.5">{store.category}</p>
+   262→
+   263→          {/* Address + Distance chip */}
+   264→          <div className="flex items-center justify-between gap-1 mb-1.5">
+   265→            <div className="flex items-center gap-0.5 min-w-0 flex-1">
+   266→              <MapPin className="w-2.5 h-2.5 text-gray-400 flex-shrink-0" />
+   267→              <span className="text-[9.5px] text-gray-500 truncate">{store.address}</span>
+   268→            </div>
+   269→          </div>
+   270→
+   271→          {/* Distance chip + reviews row */}
+   272→          <div className="flex items-center justify-between pt-1.5 border-t border-gray-100">
+   273→            <span className="text-[9.5px] text-gray-400 font-medium">{store.reviews} reviews</span>
+   274→            <span className="bg-[#0056b3]/8 text-[#0056b3] text-[9.5px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5">
+   275→              <Navigation className="w-2.5 h-2.5" />
+   276→              {store.distance}
+   277→            </span>
+   278→          </div>
+   279→        </div>
+   280→      </Link>
+   281→    </motion.div>
+   282→  );
+   283→
+   284→  return (
+   285→    <div className="min-h-[100dvh] bg-[#F2F2F7] flex flex-col max-w-[480px] mx-auto relative overflow-hidden">
+   286→      {/* ===== 1. STICKY HEADER (redesigned — search on top, location below) ===== */}
+   287→      <motion.header
+   288→        initial={{ y: -100 }}
+   289→        animate={{ y: 0 }}
+   290→        transition={{ type: "spring", damping: 25, stiffness: 200 }}
+   291→        className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.06)]"
+   292→      >
+   293→        <div className="pt-[env(safe-area-inset-top)]">
+   294→          {/* Row 1: Compact Logo + Actions */}
+   295→          <div className="flex items-center justify-between px-4 h-10">
+   296→            <div className="flex items-center gap-1.5">
+   297→              <div className="flex items-center">
+   298→                <span className="text-[18px] font-extrabold text-[#e42529] tracking-tight leading-none">J</span>
+   299→                <span className="text-[18px] font-extrabold text-[#0056b3] tracking-tight leading-none">ust</span>
+   300→                <span className="text-[18px] font-extrabold text-[#e42529] tracking-tight leading-none">D</span>
+   301→                <span className="text-[18px] font-extrabold text-[#0056b3] tracking-tight leading-none">ial</span>
+   302→              </div>
+   303→              <span className="text-[10px] font-semibold text-gray-400 tracking-wider uppercase hidden">India</span>
+   304→            </div>
+   305→            <div className="flex items-center gap-0.5">
+   306→              <motion.button whileTap={{ scale: 0.88 }} className="w-8 h-8 flex items-center justify-center rounded-full">
+   307→                <QrCode className="w-[18px] h-[18px] text-gray-600" />
+   308→              </motion.button>
+   309→              <motion.button whileTap={{ scale: 0.88 }} className="w-8 h-8 flex items-center justify-center rounded-full relative">
+   310→                <Bell className="w-[18px] h-[18px] text-gray-600" />
+   311→                <span className="absolute top-0.5 right-0.5 w-[14px] h-[14px] bg-[#e42529] rounded-full text-[8px] text-white flex items-center justify-center font-bold leading-none ring-2 ring-white">
+   312→                  3
+   313→                </span>
+   314→              </motion.button>
+   315→              <motion.button whileTap={{ scale: 0.88 }} className="w-8 h-8 flex items-center justify-center rounded-full">
+   316→                <UserCircle className="w-[22px] h-[22px] text-gray-400" />
+   317→              </motion.button>
+   318→            </div>
+   319→          </div>
+   320→
+   321→          {/* Row 2: SEARCH BAR (primary — off-white, rounded, search icon left + mic right) */}
+   322→          <div className="px-3.5 pt-0.5 pb-2">
+   323→            <div className="flex items-center bg-[#F1F3F5] rounded-2xl px-3.5 py-2.5 gap-2.5 ring-1 ring-black/[0.04]">
+   324→              <Search className="w-[18px] h-[18px] text-gray-500 flex-shrink-0" strokeWidth={2.5} />
+   325→              <input
+   326→                ref={searchInputRef}
+   327→                type="text"
+   328→                placeholder="Search home services..."
+   329→                value={searchQuery}
+   330→                onChange={(e) => setSearchQuery(e.target.value)}
+   331→                onFocus={() => { if (searchQuery.trim()) { setSuggestions(searchAll(searchQuery, selectedCity, 4)); setShowSuggestions(true); } }}
+   332→                className="flex-1 bg-transparent text-[14px] outline-none text-gray-800 placeholder-gray-500 font-medium min-w-0"
+   333→              />
+   334→              {searchQuery ? (
+   335→                <motion.button initial={{ scale: 0.8 }} animate={{ scale: 1 }} whileTap={{ scale: 0.88 }} onClick={() => { setSearchQuery(""); setShowSuggestions(false); searchInputRef.current?.blur(); }} className="w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0">
+   336→                  <X className="w-3.5 h-3.5 text-gray-600" />
+   337→                </motion.button>
+   338→              ) : (
+   339→                <motion.button whileTap={{ scale: 0.88 }} className="w-7 h-7 rounded-full bg-[#0056b3] flex items-center justify-center flex-shrink-0 shadow-sm shadow-[#0056b3]/30">
+   340→                  <Mic className="w-3.5 h-3.5 text-white" />
+   341→                </motion.button>
+   342→              )}
+   343→            </div>
+   344→          </div>
+   345→
+   346→          {/* Row 3: LOCATION BAR (below search — blue gradient, full-width pill) */}
+   347→          <div className="px-3.5 pb-2.5">
+   348→            <motion.button
+   349→              whileTap={{ scale: 0.98 }}
+   350→              onClick={() => { setLocationSheetOpen(true); }}
+   351→              className="w-full flex items-center gap-2 bg-gradient-to-r from-[#E3F2FD] to-[#BBDEFB] rounded-xl px-3.5 py-2 ring-1 ring-[#0056b3]/10"
+   352→            >
+   353→              <div className="w-6 h-6 rounded-full bg-[#0056b3] flex items-center justify-center flex-shrink-0">
+   354→                <MapPin className="w-3.5 h-3.5 text-white" />
+   355→              </div>
+   356→              <div className="flex-1 text-left min-w-0">
+   357→                <p className="text-[9px] font-semibold text-[#0056b3]/70 uppercase tracking-wider leading-tight">Deliver to</p>
+   358→                <p className="text-[13px] font-bold text-gray-800 leading-tight truncate">
+   359→                  {selectedCity}{selectedCity === "Mumbai" ? ", Maharashtra" : ""}
+   360→                </p>
+   361→              </div>
+   362→              <ChevronDown className="w-4 h-4 text-[#0056b3] flex-shrink-0" strokeWidth={2.5} />
+   363→            </motion.button>
+   364→          </div>
+   365→        </div>
+   366→      </motion.header>
+   367→
+   368→      {/* ===== LOCATION BOTTOM SHEET ===== */}
+   369→      <AnimatePresence>
+   370→        {locationSheetOpen && (
+   371→          <>
+   372→            <motion.div
+   373→              initial={{ opacity: 0 }}
+   374→              animate={{ opacity: 1 }}
+   375→              exit={{ opacity: 0 }}
+   376→              transition={{ duration: 0.2 }}
+   377→              className="fixed inset-0 bg-black/40 z-[60]"
+   378→              style={{ maxWidth: "480px", margin: "0 auto" }}
+   379→              onClick={() => { setLocationSheetOpen(false); setLocationSearch(""); }}
+   380→            />
+   381→            <motion.div
+   382→              initial={{ y: "100%" }}
+   383→              animate={{ y: 0 }}
+   384→              exit={{ y: "100%" }}
+   385→              transition={{ type: "spring", damping: 30, stiffness: 350 }}
+   386→              className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] bg-white rounded-t-[24px] z-[70] max-h-[75vh] flex flex-col"
+   387→              style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+   388→            >
+   389→              {/* Handle */}
+   390→              <div className="flex justify-center pt-3 pb-2">
+   391→                <div className="w-10 h-1 rounded-full bg-gray-300" />
+   392→              </div>
+   393→
+   394→              {/* Title */}
+   395→              <div className="px-5 pb-3 flex items-center justify-between">
+   396→                <h3 className="text-[17px] font-semibold text-gray-900">Select City</h3>
+   397→                <motion.button whileTap={{ scale: 0.9 }} onClick={() => { setLocationSheetOpen(false); setLocationSearch(""); }} className="w-8 h-8 rounded-full bg-[#F2F2F7] flex items-center justify-center">
+   398→                  <X className="w-4 h-4 text-gray-500" />
+   399→                </motion.button>
+   400→              </div>
+   401→
+   402→              {/* Search City */}
+   403→              <div className="px-5 pb-3">
+   404→                <div className="flex items-center bg-[#F2F2F7] rounded-xl px-3.5 py-2.5 gap-2.5">
+   405→                  <Search className="w-4 h-4 text-gray-400 flex-shrink-0" />
+   406→                  <input
+   407→                    ref={locationInputRef}
+   408→                    autoFocus
+   409→                    type="text"
+   410→                    placeholder="Search city..."
+   411→                    value={locationSearch}
+   412→                    onChange={(e) => setLocationSearch(e.target.value)}
+   413→                    className="flex-1 bg-transparent text-[14px] outline-none text-gray-700 placeholder-gray-400"
+   414→                  />
+   415→                </div>
+   416→              </div>
+   417→
+   418→              <div className="flex-1 overflow-y-auto px-5 pb-4 scrollbar-hide">
+   419→                {/* Use Current Location */}
+   420→                <motion.button
+   421→                  whileTap={{ scale: 0.97 }}
+   422→                  onClick={() => selectCity("Mumbai")}
+   423→                  className="w-full flex items-center gap-3 px-4 py-3 rounded-2xl bg-[#0056b3]/5 mb-3"
+   424→                >
+   425→                  <div className="w-9 h-9 rounded-full bg-[#0056b3]/10 flex items-center justify-center flex-shrink-0">
+   426→                    <Crosshair className="w-4 h-4 text-[#0056b3]" />
+   427→                  </div>
+   428→                  <div className="text-left">
+   429→                    <p className="text-[14px] font-medium text-[#0056b3]">Use Current Location</p>
+   430→                    <p className="text-[11px] text-gray-400">Detect your location automatically</p>
+   431→                  </div>
+   432→                </motion.button>
+   433→
+   434→                {/* Recent Locations */}
+   435→                {recentLocations.length > 0 && (
+   436→                  <div className="mb-3">
+   437→                    <p className="text-[12px] font-semibold text-gray-400 uppercase tracking-wider px-1 mb-2">Recent</p>
+   438→                    {recentLocations
+   439→                      .filter((c) => !locationSearch || c.toLowerCase().includes(locationSearch.toLowerCase()))
+   440→                      .map((city) => (
+   441→                        <motion.button
+   442→                          key={`recent-${city}`}
+   443→                          whileTap={{ scale: 0.97 }}
+   444→                          onClick={() => selectCity(city)}
+   445→                          className="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-gray-50"
+   446→                        >
+   447→                          <Clock className="w-4 h-4 text-gray-400" />
+   448→                          <span className="text-[14px] text-gray-700">{city}</span>
+   449→                          {city === selectedCity && <Check className="w-4 h-4 text-[#0056b3] ml-auto" />}
+   450→                        </motion.button>
+   451→                      ))}
+   452→                  </div>
+   453→                )}
+   454→
+   455→                {/* Popular Cities */}
+   456→                <div>
+   457→                  <p className="text-[12px] font-semibold text-gray-400 uppercase tracking-wider px-1 mb-2">Popular Cities</p>
+   458→                  {popularCities
+   459→                    .filter((c) => !locationSearch || c.name.toLowerCase().includes(locationSearch.toLowerCase()) || c.state.toLowerCase().includes(locationSearch.toLowerCase()))
+   460→                    .map((c) => (
+   461→                      <motion.button
+   462→                        key={c.name}
+   463→                        whileTap={{ scale: 0.97 }}
+   464→                        onClick={() => selectCity(c.name)}
+   465→                        className="w-full flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-gray-50"
+   466→                      >
+   467→                        <MapPin className="w-4 h-4 text-gray-400" />
+   468→                        <div className="text-left">
+   469→                          <span className="text-[14px] text-gray-700">{c.name}</span>
+   470→                          <span className="text-[12px] text-gray-400 ml-1.5">{c.state}</span>
+   471→                        </div>
+   472→                        {c.name === selectedCity && <Check className="w-4 h-4 text-[#0056b3] ml-auto" />}
+   473→                      </motion.button>
+   474→                    ))}
+   475→                </div>
+   476→              </div>
+   477→            </motion.div>
+   478→          </>
+   479→        )}
+   480→      </AnimatePresence>
+   481→
+   482→      {/* ===== SEARCH SUGGESTIONS OVERLAY ===== */}
+   483→      <AnimatePresence>
+   484→        {showSuggestions && suggestions.length > 0 && (
+   485→          <>
+   486→            <motion.div
+   487→              initial={{ opacity: 0 }}
+   488→              animate={{ opacity: 1 }}
+   489→              exit={{ opacity: 0 }}
+   490→              duration={0.15}
+   491→              className="fixed inset-0 bg-black/20 z-[55]"
+   492→              style={{ maxWidth: "480px", margin: "0 auto" }}
+   493→              onClick={() => { setShowSuggestions(false); searchInputRef.current?.blur(); }}
+   494→            />
+   495→            <motion.div
+   496→              initial={{ opacity: 0, y: -10 }}
+   497→              animate={{ opacity: 1, y: 0 }}
+   498→              exit={{ opacity: 0, y: -10 }}
+   499→              transition={{ duration: 0.15 }}
+   500→              className="fixed top-[148px] left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-[448px] bg-white rounded-2xl shadow-xl z-[58] max-h-[55vh] overflow-y-auto scrollbar-hide"
+   501→            >
+   502→              {/* Group by type */}
+   503→              {(() => {
+   504→                const groups: { type: SuggestionType; items: SearchSuggestion[] }[] = [];
+   505→                let currentType: SuggestionType | null = null;
+   506→                for (const s of suggestions) {
+   507→                  if (s.type !== currentType) {
+   508→                    currentType = s.type;
+   509→                    groups.push({ type: s.type, items: [s] });
+   510→                  } else {
+   511→                    groups[groups.length - 1].items.push(s);
+   512→                  }
+   513→                }
+   514→                return groups.map((group) => (
+   515→                  <div key={group.type}>
+   516→                    <div className="px-4 pt-3 pb-1.5">
+   517→                      <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">
+   518→                        {getTypeConfig(group.type).emoji} {getTypeConfig(group.type).label}
+   519→                      </span>
+   520→                    </div>
+   521→                    {group.items.map((s) => (
+   522→                      <motion.button
+   523→                        key={s.id}
+   524→                        whileTap={{ scale: 0.98, backgroundColor: "rgba(0,0,0,0.03)" }}
+   525→                        onClick={() => handleSuggestionTap(s)}
+   526→                        className="w-full flex items-center gap-3 px-4 py-2.5 text-left"
+   527→                      >
+   528→                        <span className="text-[18px] flex-shrink-0">{s.emoji}</span>
+   529→                        <div className="flex-1 min-w-0">
+   530→                          <p className="text-[14px] font-medium text-gray-800 truncate">{s.label}</p>
+   531→                          <p className="text-[12px] text-gray-400 truncate">{s.subtitle}</p>
+   532→                        </div>
+   533→                        <ChevronRight className="w-4 h-4 text-gray-300 flex-shrink-0" />
+   534→                      </motion.button>
+   535→                    ))}
+   536→                  </div>
+   537→                ));
+   538→              })()}
+   539→            </motion.div>
+   540→          </>
+   541→        )}
+   542→      </AnimatePresence>
+   543→
+   544→      {/* ===== 2. MAIN SCROLL AREA ===== */}
+   545→      <main ref={scrollRef} className="flex-1 overflow-y-auto pt-[148px] pb-[calc(100px+env(safe-area-inset-bottom))] scrollbar-hide">
+   546→        {/* ===== 3. HERO CARD ===== */}
+   547→        <motion.section
+   548→          initial={{ opacity: 0, scale: 0.98 }}
+   549→          animate={{ opacity: 1, scale: 1 }}
+   550→          transition={{ duration: 0.5 }}
+   551→          className="px-4 pt-3"
+   552→        >
+   553→          <div className="relative bg-gradient-to-br from-[#0056b3] via-[#004494] to-[#003060] rounded-[24px] p-5 overflow-hidden">
+   554→            <div className="absolute top-[-20px] right-[-20px] w-32 h-32 rounded-full bg-white/5" />
+   555→            <div className="absolute bottom-[-30px] left-[-10px] w-40 h-40 rounded-full bg-white/5" />
+   556→            <div className="absolute top-4 right-4 w-20 h-20 rounded-2xl bg-white/5 rotate-12" />
+   557→
+   558→            <div className="relative z-10">
+   559→              <div className="flex items-center gap-1.5 mb-2">
+   560→                <Zap className="w-4 h-4 text-yellow-400" />
+   561→                <span className="text-white/80 text-[11px] font-medium tracking-wide uppercase">JustDial for Business</span>
+   562→              </div>
+   563→              <h2 className="text-white text-[20px] font-bold leading-tight mb-1">List Your Business</h2>
+   564→              <p className="text-white/70 text-[13px] mb-4">Reach 18 Cr+ customers. Free listing.</p>
+   565→              <motion.button whileTap={{ scale: 0.95 }} className="bg-white text-[#0056b3] text-[13px] font-bold px-6 py-2.5 rounded-2xl shadow-lg shadow-black/10">
+   566→                List for FREE
+   567→              </motion.button>
+   568→            </div>
+   569→          </div>
+   570→        </motion.section>
+   571→
+   572→        {/* ===== 4. POPULAR CATEGORIES ===== */}
+   573→        <motion.section
+   574→          initial={{ opacity: 0, y: 24 }}
+   575→          whileInView={{ opacity: 1, y: 0 }}
+   576→          viewport={{ once: true, margin: "-40px" }}
+   577→          transition={{ duration: 0.4 }}
+   578→          className="pt-6"
+   579→        >
+   580→          <div className="flex items-center justify-between px-4 mb-3">
+   581→            <h2 className="text-[17px] font-bold text-gray-900">Popular Categories</h2>
+   582→            <Link href="/categories" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+   583→          </div>
+   584→          <div className="grid grid-cols-4 gap-1 px-1">
+   585→            {categories.map((cat, index) => (
+   586→              <motion.div
+   587→                key={cat.label}
+   588→                initial={{ opacity: 0, y: 16 }}
+   589→                whileInView={{ opacity: 1, y: 0 }}
+   590→                viewport={{ once: true }}
+   591→                transition={{ delay: index * 0.03, duration: 0.3 }}
+   592→                whileTap={{ scale: 0.88 }}
+   593→              >
+   594→                <Link href={`/category/${cat.slug}`} className="flex flex-col items-center gap-1 py-2.5">
+   595→                  <div className="w-[54px] h-[54px] rounded-[16px] flex items-center justify-center" style={{ backgroundColor: cat.bg }}>
+   596→                    <cat.icon className="w-[26px] h-[26px]" style={{ color: cat.color }} />
+   597→                  </div>
+   598→                  <span className="text-[11px] font-medium text-gray-700 text-center leading-tight">{cat.label}</span>
+   599→                </Link>
+   600→              </motion.div>
+   601→            ))}
+   602→          </div>
+   603→        </motion.section>
+   604→
+   605→        {/* ===== 5. FEATURED STORES ===== */}
+   606→        <motion.section
+   607→          initial={{ opacity: 0, y: 24 }}
+   608→          whileInView={{ opacity: 1, y: 0 }}
+   609→          viewport={{ once: true, margin: "-40px" }}
+   610→          transition={{ duration: 0.4 }}
+   611→          className="pt-6"
+   612→        >
+   613→          <div className="flex items-center justify-between px-4 mb-3">
+   614→            <div className="flex items-center gap-1.5">
+   615→              <TrendingUp className="w-4 h-4 text-[#0056b3]" />
+   616→              <h2 className="text-[17px] font-bold text-gray-900">Featured Near You</h2>
+   617→            </div>
+   618→            <Link href="#" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+   619→          </div>
+   620→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide">
+   621→            {featuredStores.map((store, index) => storeCard(store, index))}
+   622→          </div>
+   623→        </motion.section>
+   624→
+   625→        {/* ===== 5c. HOME SERVICES BANNER — Compact card with human illustration (Mobile App UI) ===== */}
+   626→        <motion.section
+   627→          initial={{ opacity: 0, y: 24 }}
+   628→          whileInView={{ opacity: 1, y: 0 }}
+   629→          viewport={{ once: true, margin: "-40px" }}
+   630→          transition={{ duration: 0.4 }}
+   631→          className="px-4 pt-6"
+   632→        >
+   633→          <motion.div
+   634→            whileTap={{ scale: 0.99 }}
+   635→            className="relative rounded-[20px] overflow-hidden shadow-xl shadow-slate-900/40 h-[112px] flex"
+   636→          >
+   637→            {/* Dark slate gradient background */}
+   638→            <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800" />
+   639→            {/* Decorative shape */}
+   640→            <div className="absolute -left-4 -bottom-4 w-16 h-16 rounded-full bg-white/5" />
+   641→
+   642→            {/* Human illustration (right side, clearly visible - minimal overlay) */}
+   643→            <div className="absolute right-0 top-0 bottom-0 w-[124px] z-10 overflow-hidden">
+   644→              <Image
+   645→                src="/banners/human-illustration.png"
+   646→                alt="Home service professional"
+   647→                fill
+   648→                priority
+   649→                sizes="124px"
+   650→                className="object-cover object-right"
+   651→              />
+   652→              {/* Subtle left-edge fade (only 30% width) so human blends softly */}
+   653→              <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-slate-900 to-transparent" />
+   654→            </div>
+   655→
+   656→            {/* Left content area: text top + button bottom (no overlap) */}
+   657→            <div className="relative z-20 flex flex-col justify-between py-3 pl-4 pr-3 w-[68%]">
+   658→              {/* Top: eyebrow + heading + subtext */}
+   659→              <div>
+   660→                <div className="flex items-center gap-1 mb-0.5">
+   661→                  <Home className="w-3 h-3 text-emerald-300" strokeWidth={2.5} />
+   662→                  <p className="text-emerald-200 text-[9.5px] font-semibold tracking-wider uppercase">Home Services</p>
+   663→                </div>
+   664→                <h3 className="text-white font-bold text-[13px] leading-tight mb-0.5">
+   665→                  Trusted Pros at Your Doorstep
+   666→                </h3>
+   667→                <p className="text-slate-300 text-[10px] leading-tight">
+   668→                  AC, Plumbing, Electrician &amp; more
+   669→                </p>
+   670→              </div>
+   671→
+   672→              {/* Bottom: button (left-aligned, no overlap with text) */}
+   673→              <Link
+   674→                href="/home-services"
+   675→                className="self-start inline-flex items-center gap-1 bg-emerald-500 hover:bg-emerald-400 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg shadow-md shadow-emerald-500/30 active:scale-95 transition-transform"
+   676→              >
+   677→                Book Now
+   678→                <ArrowRight className="w-2.5 h-2.5" strokeWidth={3} />
+   679→              </Link>
+   680→            </div>
+   681→          </motion.div>
+   682→        </motion.section>
+   683→
+   684→        {/* ===== 6. HOME SERVICES (Light gradient + simple horizontal scroll) ===== */}
+   685→        <motion.section
+   686→          initial={{ opacity: 0, y: 24 }}
+   687→          whileInView={{ opacity: 1, y: 0 }}
+   688→          viewport={{ once: true, margin: "-40px" }}
+   689→          transition={{ duration: 0.4 }}
+   690→          className="mt-6 mx-3 rounded-3xl overflow-hidden relative"
+   691→        >
+   692→          {/* Light gradient background */}
+   693→          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
+   694→          {/* Soft decorative blobs */}
+   695→          <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-blue-100/40 blur-3xl" />
+   696→          <div className="absolute -bottom-12 -left-10 w-36 h-36 rounded-full bg-purple-100/40 blur-3xl" />
+   697→
+   698→          <div className="relative z-10 px-4 pt-4 pb-4">
+   699→            {/* Header */}
+   700→            <div className="flex items-center justify-between mb-3">
+   701→              <div className="flex items-center gap-2">
+   702→                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#0056b3] to-[#0077E6] flex items-center justify-center flex-shrink-0">
+   703→                  <Home className="w-3.5 h-3.5 text-white" />
+   704→                </div>
+   705→                <h2 className="text-[16px] font-bold text-gray-900 tracking-tight leading-tight">Home Services</h2>
+   706→              </div>
+   707→              <Link
+   708→                href="/services"
+   709→                className="flex items-center gap-0.5 text-[11.5px] text-[#0056b3] font-semibold bg-white/70 backdrop-blur-sm px-2.5 py-1.5 rounded-full active:scale-95 transition-transform"
+   710→              >
+   711→                View All
+   712→                <ArrowRight className="w-3 h-3" strokeWidth={2.5} />
+   713→              </Link>
+   714→            </div>
+   715→
+   716→            {/* Single row horizontal scroll — just SVG icon + name */}
+   717→            <div
+   718→              className="flex gap-4 overflow-x-auto pb-1 scroll-smooth"
+   719→              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+   720→            >
+   721→              {homeServices.map((service, index) => (
+   722→                <motion.div
+   723→                  key={service.label}
+   724→                  initial={{ opacity: 0, y: 8 }}
+   725→                  whileInView={{ opacity: 1, y: 0 }}
+   726→                  viewport={{ once: true }}
+   727→                  transition={{ delay: index * 0.03, duration: 0.25 }}
+   728→                  whileTap={{ scale: 0.92 }}
+   729→                  className="flex-shrink-0"
+   730→                >
+   731→                  <Link
+   732→                    href={`/services?category=${service.slug}`}
+   733→                    className="flex flex-col items-center gap-1.5 w-[60px]"
+   734→                  >
+   735→                    {/* SVG icon in soft colored circle */}
+   736→                    <div
+   737→                      className="w-12 h-12 rounded-full flex items-center justify-center"
+   738→                      style={{ backgroundColor: service.bg }}
+   739→                    >
+   740→                      <service.icon
+   741→                        className="w-5 h-5"
+   742→                        style={{ color: service.color }}
+   743→                        strokeWidth={2.2}
+   744→                      />
+   745→                    </div>
+   746→                    {/* Service name */}
+   747→                    <span className="text-[10px] font-semibold text-gray-700 text-center leading-tight">
+   748→                      {service.label}
+   749→                    </span>
+   750→                  </Link>
+   751→                </motion.div>
+   752→              ))}
+   753→
+   754→              {/* More tile at end */}
+   755→              <motion.div
+   756→                initial={{ opacity: 0, y: 8 }}
+   757→                whileInView={{ opacity: 1, y: 0 }}
+   758→                viewport={{ once: true }}
+   759→                transition={{ delay: homeServices.length * 0.03, duration: 0.25 }}
+   760→                whileTap={{ scale: 0.92 }}
+   761→                className="flex-shrink-0"
+   762→              >
+   763→                <Link
+   764→                  href="/services"
+   765→                  className="flex flex-col items-center gap-1.5 w-[60px]"
+   766→                >
+   767→                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ring-1 ring-gray-200">
+   768→                    <MoreHorizontal className="w-5 h-5 text-gray-600" strokeWidth={2.5} />
+   769→                  </div>
+   770→                  <span className="text-[10px] font-semibold text-gray-700 text-center leading-tight">
+   771→                    More
+   772→                  </span>
+   773→                </Link>
+   774→              </motion.div>
+   775→            </div>
+   776→          </div>
+   777→        </motion.section>
+   778→
+   779→        {/* ===== 7. PROMOTIONAL BANNER (Green Loan Banner) ===== */}
+   780→        <motion.section
+   781→          initial={{ opacity: 0, y: 24 }}
+   782→          whileInView={{ opacity: 1, y: 0 }}
+   783→          viewport={{ once: true, margin: "-40px" }}
+   784→          transition={{ duration: 0.4 }}
+   785→          className="px-4 pt-6"
+   786→        >
+   787→          <motion.div whileTap={{ scale: 0.98 }} className="rounded-[20px] p-5 relative overflow-hidden">
+   788→            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 via-green-600 to-emerald-700" />
+   789→            <div className="absolute -right-4 -top-4 w-28 h-28 rounded-full bg-white/10" />
+   790→            <div className="absolute -left-6 -bottom-6 w-20 h-20 rounded-full bg-white/5" />
+   791→            <div className="absolute right-12 top-6 w-12 h-12 rounded-xl bg-white/5 rotate-45" />
+   792→            <div className="relative z-10 flex items-center justify-between">
+   793→              <div className="flex-1">
+   794→                <div className="flex items-center gap-1.5 mb-1">
+   795→                  <CreditCard className="w-4 h-4 text-green-200" />
+   796→                  <p className="text-green-100 text-[11px] font-medium">Instant Approval</p>
+   797→                </div>
+   798→                <h3 className="text-white font-bold text-[17px] leading-tight mb-1">Get Loan Against Property</h3>
+   799→                <p className="text-green-100/80 text-[13px]">Starting from 9.00% interest rate</p>
+   800→              </div>
+   801→              <motion.button whileTap={{ scale: 0.95 }} className="bg-white text-green-700 text-[13px] font-bold px-5 py-2.5 rounded-2xl shadow-lg shadow-black/10 whitespace-nowrap ml-3">
+   802→                Apply Now
+   803→              </motion.button>
+   804→            </div>
+   805→          </motion.div>
+   806→        </motion.section>
+   807→
+   808→        {/* ===== 8. TRENDING NEAR YOU ===== */}
+   809→        <motion.section
+   810→          initial={{ opacity: 0, y: 24 }}
+   811→          whileInView={{ opacity: 1, y: 0 }}
+   812→          viewport={{ once: true, margin: "-40px" }}
+   813→          transition={{ duration: 0.4 }}
+   814→          className="pt-6"
+   815→        >
+   816→          <div className="flex items-center justify-between px-4 mb-3">
+   817→            <div className="flex items-center gap-1.5">
+   818→              <Zap className="w-4 h-4 text-orange-500" />
+   819→              <h2 className="text-[17px] font-bold text-gray-900">Trending Near You</h2>
+   820→            </div>
+   821→            <Link href="#" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+   822→          </div>
+   823→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide">
+   824→            {trendingStores.map((store, index) => storeCard(store, index))}
+   825→          </div>
+   826→        </motion.section>
+   827→
+   828→        {/* ===== 8.5 TRENDING PRODUCTS (Premium Shopping Cards) ===== */}
+   829→        <motion.section
+   830→          initial={{ opacity: 0, y: 24 }}
+   831→          whileInView={{ opacity: 1, y: 0 }}
+   832→          viewport={{ once: true, margin: "-40px" }}
+   833→          transition={{ duration: 0.4 }}
+   834→          className="pt-6"
+   835→        >
+   836→          <div className="flex items-center justify-between px-4 mb-3">
+   837→            <div>
+   838→              <div className="flex items-center gap-1.5">
+   839→                <span className="text-[16px]">🔥</span>
+   840→                <h2 className="text-[17px] font-bold text-gray-900">Trending Products</h2>
+   841→              </div>
+   842→              <p className="text-[12px] text-gray-500 mt-0.5">Popular products from verified businesses</p>
+   843→            </div>
+   844→            <Link href="/services" className="text-[13px] text-[#0056b3] font-semibold flex items-center gap-0.5">
+   845→              View All <ChevronRight className="w-3.5 h-3.5" />
+   846→            </Link>
+   847→          </div>
+   848→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-1">
+   849→            {trendingProducts.map((product, index) => {
+   850→              const origNum = product.originalPrice ? parseInt(product.originalPrice.replace(/[^\d]/g, ""), 10) : 0;
+   851→              const currNum = parseInt(product.price.replace(/[^\d]/g, ""), 10);
+   852→              const discount = origNum > 0 ? Math.round(((origNum - currNum) / origNum) * 100) : 0;
+   853→              const catGradients: Record<string, string> = {
+   854→                Ayurvedic: "from-green-50 to-emerald-100",
+   855→                "Pain Relief": "from-blue-50 to-sky-100",
+   856→                Nutrition: "from-orange-50 to-amber-100",
+   857→                Grocery: "from-yellow-50 to-lime-100",
+   858→                "Cooking Oil": "from-amber-50 to-yellow-100",
+   859→                Flour: "from-orange-50 to-yellow-100",
+   860→                Dairy: "from-sky-50 to-blue-100",
+   861→                Rice: "from-green-50 to-lime-100",
+   862→                "Instant Food": "from-red-50 to-orange-100",
+   863→                "Mobile Accessories": "from-slate-50 to-gray-100",
+   864→                Cables: "from-gray-50 to-slate-100",
+   865→                Audio: "from-violet-50 to-purple-100",
+   866→                "Power Banks": "from-green-50 to-teal-100",
+   867→                Snacks: "from-orange-50 to-red-50",
+   868→                Supplements: "from-red-50 to-pink-100",
+   869→                Equipment: "from-blue-50 to-indigo-100",
+   870→                Accessories: "from-pink-50 to-rose-100",
+   871→                Makeup: "from-pink-50 to-fuchsia-100",
+   872→                Skincare: "from-teal-50 to-cyan-100",
+   873→                Wearables: "from-indigo-50 to-violet-100",
+   874→                Speakers: "from-purple-50 to-indigo-100",
+   875→                Chargers: "from-yellow-50 to-orange-100",
+   876→                "Computer Peripherals": "from-slate-50 to-zinc-100",
+   877→                Spices: "from-red-50 to-orange-100",
+   878→                "Frozen Food": "from-cyan-50 to-sky-100",
+   879→                "Hair Care": "from-pink-50 to-purple-100",
+   880→                "Hair Color": "from-purple-50 to-fuchsia-100",
+   881→                Pickles: "from-green-50 to-emerald-100",
+   882→              };
+   883→              const gradient = catGradients[product.category] || "from-gray-50 to-slate-100";
+   884→              const emojiMap: Record<string, string> = {
+   885→                Ayurvedic: "🌿", "Pain Relief": "💉", Nutrition: "💊", Grocery: "🛒",
+   886→                "Cooking Oil": "🫒", Flour: "🌾", Dairy: "🥛", Rice: "🍚",
+   887→                "Instant Food": "🍜", "Mobile Accessories": "📱", Cables: "🔌",
+   888→                Audio: "🎧", "Power Banks": "🔋", Snacks: "🍪", Supplements: "💪",
+   889→                Equipment: "🏋️", Accessories: "🧤", Makeup: "💄", Skincare: "🧴",
+   890→                Wearables: "⌚", Speakers: "🔊", Chargers: "⚡",
+   891→                "Computer Peripherals": "⌨️", Spices: "🌶️", "Frozen Food": "🧊",
+   892→                "Hair Care": "💇", "Hair Color": "🎨", Pickles: "🥒",
+   893→              };
+   894→              const emoji = emojiMap[product.category] || "📦";
+   895→              return (
+   896→                <motion.div
+   897→                  key={product.id}
+   898→                  initial={{ opacity: 0, y: 20 }}
+   899→                  whileInView={{ opacity: 1, y: 0 }}
+   900→                  viewport={{ once: true }}
+   901→                  transition={{ delay: index * 0.05, duration: 0.35 }}
+   902→                  className="snap-start flex-shrink-0 w-[175px]"
+   903→                >
+   904→                  <Link href={`/store/${product.storeId}?product=${product.id}`}>
+   905→                    <motion.div
+   906→                      whileTap={{ scale: 0.96 }}
+   907→                      className="bg-white rounded-[18px] overflow-hidden shadow-sm shadow-black/[0.06] active:shadow-md transition-shadow"
+   908→                    >
+   909→                      {/* Product Image Area */}
+   910→                      <div className={`relative h-[155px] bg-gradient-to-br ${gradient} flex items-center justify-center overflow-hidden`}>
+   911→                        <span className="text-[60px] select-none drop-shadow-sm">{emoji}</span>
+   912→                        {discount > 0 && (
+   913→                          <span className="absolute top-2 left-2 bg-[#e42529] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-md leading-tight">
+   914→                            {discount}% OFF
+   915→                          </span>
+   916→                        )}
+   917→                        {product.badge && (
+   918→                          <span className="absolute top-2 right-2 bg-amber-500 text-white text-[8px] font-bold px-1.5 py-0.5 rounded-full leading-tight">
+   919→                            {product.badge}
+   920→                          </span>
+   921→                        )}
+   922→                        <motion.button
+   923→                          whileTap={{ scale: 0.8 }}
+   924→                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleWishlist(product.id); }}
+   925→                          className="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm z-10"
+   926→                        >
+   927→                          <Heart className={`w-3.5 h-3.5 ${wishlisted.has(product.id) ? "text-red-500 fill-red-500" : "text-gray-400"}`} />
+   928→                        </motion.button>
+   929→                      </div>
+   930→                      {/* Product Info */}
+   931→                      <div className="p-2.5">
+   932→                        <h3 className="text-[12px] font-semibold text-gray-900 leading-tight line-clamp-2 min-h-[32px]">{product.name}</h3>
+   933→                        <div className="flex items-center gap-0.5 mt-1.5">
+   934→                          <span className="text-[10px] text-gray-500 truncate">{product.storeName}</span>
+   935→                          <BadgeCheck className="w-3 h-3 text-[#0056b3] flex-shrink-0" />
+   936→                        </div>
+   937→                        <div className="flex items-center gap-0.5 mt-0.5">
+   938→                          <Star className="w-2.5 h-2.5 fill-orange-500 text-orange-500" />
+   939→                          <span className="text-[10px] font-semibold text-gray-700">{product.rating}</span>
+   940→                          <span className="text-[9px] text-gray-400">({product.reviews})</span>
+   941→                        </div>
+   942→                        <div className="flex items-baseline gap-1.5 mt-1.5">
+   943→                          <span className="text-[14px] font-bold text-gray-900">{product.price}</span>
+   944→                          {product.originalPrice && (
+   945→                            <span className="text-[10px] text-gray-400 line-through">{product.originalPrice}</span>
+   946→                          )}
+   947→                        </div>
+   948→                      </div>
+   949→                    </motion.div>
+   950→                  </Link>
+   951→                </motion.div>
+   952→              );
+   953→            })}
+   954→          </div>
+   955→        </motion.section>
+   956→
+   957→        {/* ===== 9. TOURIST PLACES (Airbnb-style Travel Cards) ===== */}
+   958→        <motion.section
+   959→          initial={{ opacity: 0, y: 24 }}
+   960→          whileInView={{ opacity: 1, y: 0 }}
+   961→          viewport={{ once: true, margin: "-40px" }}
+   962→          transition={{ duration: 0.4 }}
+   963→          className="pt-6"
+   964→        >
+   965→          <div className="flex items-center justify-between px-4 mb-3">
+   966→            <div>
+   967→              <h2 className="text-[17px] font-bold text-gray-900">Explore Places</h2>
+   968→              <p className="text-[12px] text-gray-500 mt-0.5">Discover amazing destinations</p>
+   969→            </div>
+   970→            <Link href="/places" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+   971→          </div>
+   972→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+   973→            {touristPlaces.map((place, index) => (
+   974→              <motion.div
+   975→                key={place.slug}
+   976→                initial={{ opacity: 0, scale: 0.92 }}
+   977→                whileInView={{ opacity: 1, scale: 1 }}
+   978→                viewport={{ once: true }}
+   979→                transition={{ delay: index * 0.06, duration: 0.4 }}
+   980→              >
+   981→                <Link href={`/place/${place.slug}`} className="snap-start">
+   982→                  <motion.div whileTap={{ scale: 0.96 }} className="flex-shrink-0 w-[240px] relative rounded-[24px] overflow-hidden shadow-md shadow-black/10">
+   983→                    <div className="relative h-[160px]">
+   984→                      <Image src={place.img} alt={place.name} fill className="object-cover" sizes="240px" />
+   985→                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 via-transparent to-transparent" />
+   986→                    </div>
+   987→                    <motion.button
+   988→                      whileTap={{ scale: 0.85 }}
+   989→                      onClick={(e) => { e.preventDefault(); toggleSave(place.slug); }}
+   990→                      className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center z-10"
+   991→                    >
+   992→                      <Heart className={`w-4 h-4 ${savedPlaces.has(place.slug) ? "text-red-400 fill-red-400" : "text-white"}`} />
+   993→                    </motion.button>
+   994→                    <div className="absolute bottom-0 left-0 right-0 p-4">
+   995→                      <h3 className="text-[16px] font-bold text-white mb-0.5">{place.name}</h3>
+   996→                      <div className="flex items-center gap-1 mb-2">
+   997→                        <MapPin className="w-3 h-3 text-white/70" />
+   998→                        <span className="text-[12px] text-white/80">{place.city}</span>
+   999→                      </div>
+  1000→                      <motion.button whileTap={{ scale: 0.95 }} className="bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-1.5 rounded-full border border-white/20">
+  1001→                        Explore →
+  1002→                      </motion.button>
+  1003→                    </div>
+  1004→                  </motion.div>
+  1005→                </Link>
+  1006→              </motion.div>
+  1007→            ))}
+  1008→          </div>
+  1009→        </motion.section>
+  1010→
+  1011→        {/* ===== 10. RENT & HIRE ===== */}
+  1012→        <motion.section
+  1013→          initial={{ opacity: 0, y: 24 }}
+  1014→          whileInView={{ opacity: 1, y: 0 }}
+  1015→          viewport={{ once: true, margin: "-40px" }}
+  1016→          transition={{ duration: 0.4 }}
+  1017→          className="pt-6"
+  1018→        >
+  1019→          <div className="flex items-center justify-between px-4 mb-3">
+  1020→            <h2 className="text-[17px] font-bold text-gray-900">Rent & Hire</h2>
+  1021→            <Link href="/services" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+  1022→          </div>
+  1023→          <div className="grid grid-cols-4 gap-2 px-4">
+  1024→            {rentServices.map((service, index) => (
+  1025→              <motion.div
+  1026→                key={service.label}
+  1027→                initial={{ opacity: 0, scale: 0.9 }}
+  1028→                whileInView={{ opacity: 1, scale: 1 }}
+  1029→                viewport={{ once: true }}
+  1030→                transition={{ delay: index * 0.06, duration: 0.3 }}
+  1031→                whileTap={{ scale: 0.88 }}
+  1032→              >
+  1033→                <Link href="/services" className="flex flex-col items-center gap-2 bg-white rounded-[16px] py-3.5 shadow-sm shadow-black/[0.03]">
+  1034→                  <div className="w-[48px] h-[48px] rounded-[14px] flex items-center justify-center" style={{ backgroundColor: service.bg }}>
+  1035→                    <service.icon className="w-[24px] h-[24px]" style={{ color: service.color }} />
+  1036→                  </div>
+  1037→                  <span className="text-[11px] font-semibold text-gray-800 text-center">{service.label}</span>
+  1038→                </Link>
+  1039→              </motion.div>
+  1040→            ))}
+  1041→          </div>
+  1042→        </motion.section>
+  1043→
+  1044→        {/* ===== 11. MOVIES (Cinematic Cards) ===== */}
+  1045→        <motion.section
+  1046→          initial={{ opacity: 0, y: 24 }}
+  1047→          whileInView={{ opacity: 1, y: 0 }}
+  1048→          viewport={{ once: true, margin: "-40px" }}
+  1049→          transition={{ duration: 0.4 }}
+  1050→          className="pt-6"
+  1051→        >
+  1052→          <div className="flex items-center justify-between px-4 mb-3">
+  1053→            <div className="flex items-center gap-1.5">
+  1054→              <Film className="w-4 h-4 text-red-500" />
+  1055→              <h2 className="text-[17px] font-bold text-gray-900">Latest Movies</h2>
+  1056→            </div>
+  1057→            <Link href="#" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+  1058→          </div>
+  1059→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide">
+  1060→            {movies.map((movie, index) => (
+  1061→              <motion.div
+  1062→                key={movie.title}
+  1063→                initial={{ opacity: 0, y: 20 }}
+  1064→                whileInView={{ opacity: 1, y: 0 }}
+  1065→                viewport={{ once: true }}
+  1066→                transition={{ delay: index * 0.08, duration: 0.4 }}
+  1067→                whileTap={{ scale: 0.96 }}
+  1068→                className="flex-shrink-0 w-[140px] bg-white rounded-[20px] overflow-hidden shadow-sm shadow-black/[0.04]"
+  1069→              >
+  1070→                <div className="relative h-[190px] overflow-hidden">
+  1071→                  <Image src={movie.img} alt={movie.title} fill className="object-cover" sizes="140px" />
+  1072→                  <div className="absolute top-2 right-2 flex items-center gap-0.5 bg-black/60 backdrop-blur-sm rounded-full px-2 py-0.5">
+  1073→                    <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
+  1074→                    <span className="text-[10px] font-bold text-white">{movie.rating}</span>
+  1075→                  </div>
+  1076→                </div>
+  1077→                <div className="p-3">
+  1078→                  <h3 className="font-bold text-[14px] text-gray-900 truncate">{movie.title}</h3>
+  1079→                  <p className="text-[12px] text-gray-500 mt-0.5">{movie.genre}</p>
+  1080→                </div>
+  1081→              </motion.div>
+  1082→            ))}
+  1083→          </div>
+  1084→        </motion.section>
+  1085→
+  1086→        {/* ===== 12. POPULAR SEARCHES (Pill Design) ===== */}
+  1087→        <motion.section
+  1088→          initial={{ opacity: 0, y: 24 }}
+  1089→          whileInView={{ opacity: 1, y: 0 }}
+  1090→          viewport={{ once: true, margin: "-40px" }}
+  1091→          transition={{ duration: 0.4 }}
+  1092→          className="px-4 pt-6"
+  1093→        >
+  1094→          <h2 className="text-[17px] font-bold text-gray-900 mb-3">Popular Searches</h2>
+  1095→          <div className="flex flex-wrap gap-2">
+  1096→            {trendingSearches.map((item, index) => (
+  1097→              <motion.button
+  1098→                key={item.label}
+  1099→                initial={{ opacity: 0, scale: 0.9 }}
+  1100→                whileInView={{ opacity: 1, scale: 1 }}
+  1101→                viewport={{ once: true }}
+  1102→                transition={{ delay: index * 0.04, duration: 0.3 }}
+  1103→                whileTap={{ scale: 0.95 }}
+  1104→                className="bg-white rounded-full px-4 py-2.5 shadow-sm shadow-black/[0.04] flex items-center gap-2"
+  1105→              >
+  1106→                <span className="text-[14px]">{item.emoji}</span>
+  1107→                <span className="text-[13px] font-medium text-gray-700">{item.label}</span>
+  1108→              </motion.button>
+  1109→            ))}
+  1110→          </div>
+  1111→        </motion.section>
+  1112→
+  1113→        {/* ===== 13. JD GUIDES ===== */}
+  1114→        <motion.section
+  1115→          initial={{ opacity: 0, y: 24 }}
+  1116→          whileInView={{ opacity: 1, y: 0 }}
+  1117→          viewport={{ once: true, margin: "-40px" }}
+  1118→          transition={{ duration: 0.4 }}
+  1119→          className="pt-6"
+  1120→        >
+  1121→          <div className="flex items-center justify-between px-4 mb-3">
+  1122→            <h2 className="text-[17px] font-bold text-gray-900">JD Guides</h2>
+  1123→            <Link href="#" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+  1124→          </div>
+  1125→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide">
+  1126→            {[
+  1127→              { title: "Best Restaurants in Mumbai", desc: "Top rated places to eat", img: "/images/guides/restaurants-mumbai.png" },
+  1128→              { title: "Top Schools in Delhi", desc: "Education guide 2024", img: "/images/guides/schools-delhi.png" },
+  1129→            ].map((guide, index) => (
+  1130→              <motion.div
+  1131→                key={guide.title}
+  1132→                initial={{ opacity: 0, y: 16 }}
+  1133→                whileInView={{ opacity: 1, y: 0 }}
+  1134→                viewport={{ once: true }}
+  1135→                transition={{ delay: index * 0.08, duration: 0.4 }}
+  1136→                whileTap={{ scale: 0.96 }}
+  1137→                className="flex-shrink-0 w-[260px] h-[140px] rounded-[24px] relative overflow-hidden shadow-sm shadow-black/[0.06]"
+  1138→              >
+  1139→                <Image src={guide.img} alt={guide.title} fill className="object-cover" sizes="260px" />
+  1140→                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+  1141→                <div className="absolute bottom-4 left-4 right-4">
+  1142→                  <h3 className="font-bold text-[15px] text-white mb-0.5 leading-tight">{guide.title}</h3>
+  1143→                  <p className="text-[12px] text-white/70 mb-2.5">{guide.desc}</p>
+  1144→                  <motion.button whileTap={{ scale: 0.95 }} className="bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-1.5 rounded-full border border-white/20">
+  1145→                    Explore →
+  1146→                  </motion.button>
+  1147→                </div>
+  1148→              </motion.div>
+  1149→            ))}
+  1150→          </div>
+  1151→        </motion.section>
+  1152→
+  1153→        {/* ===== 14. JD COLLECTIONS ===== */}
+  1154→        <motion.section
+  1155→          initial={{ opacity: 0, y: 24 }}
+  1156→          whileInView={{ opacity: 1, y: 0 }}
+  1157→          viewport={{ once: true, margin: "-40px" }}
+  1158→          transition={{ duration: 0.4 }}
+  1159→          className="pt-6"
+  1160→        >
+  1161→          <div className="flex items-center justify-between px-4 mb-3">
+  1162→            <h2 className="text-[17px] font-bold text-gray-900">JD Collections</h2>
+  1163→            <Link href="#" className="text-[13px] text-[#0056b3] font-semibold">See All</Link>
+  1164→          </div>
+  1165→          <div className="flex gap-3 px-4 overflow-x-auto scrollbar-hide">
+  1166→            {[
+  1167→              { title: "Best Wedding Planners", desc: "Make your day special", img: "/images/collections/wedding-planners.png" },
+  1168→              { title: "Home Interior Ideas", desc: "Transform your space", img: "/images/collections/home-interior.png" },
+  1169→            ].map((col, index) => (
+  1170→              <motion.div
+  1171→                key={col.title}
+  1172→                initial={{ opacity: 0, y: 16 }}
+  1173→                whileInView={{ opacity: 1, y: 0 }}
+  1174→                viewport={{ once: true }}
+  1175→                transition={{ delay: index * 0.08, duration: 0.4 }}
+  1176→                whileTap={{ scale: 0.96 }}
+  1177→                className="flex-shrink-0 w-[260px] h-[140px] rounded-[24px] relative overflow-hidden shadow-sm shadow-black/[0.06]"
+  1178→              >
+  1179→                <Image src={col.img} alt={col.title} fill className="object-cover" sizes="260px" />
+  1180→                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+  1181→                <div className="absolute bottom-4 left-4 right-4">
+  1182→                  <h3 className="font-bold text-[15px] text-white mb-0.5 leading-tight">{col.title}</h3>
+  1183→                  <p className="text-[12px] text-white/70 mb-2.5">{col.desc}</p>
+  1184→                  <motion.button whileTap={{ scale: 0.95 }} className="bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-1.5 rounded-full border border-white/20">
+  1185→                    Explore →
+  1186→                  </motion.button>
+  1187→                </div>
+  1188→              </motion.div>
+  1189→            ))}
+  1190→          </div>
+  1191→        </motion.section>
+  1192→
+  1193→        {/* ===== 15. FOOTER SECTIONS (Bottom Sheet Style) ===== */}
+  1194→        <motion.section
+  1195→          initial={{ opacity: 0, y: 24 }}
+  1196→          whileInView={{ opacity: 1, y: 0 }}
+  1197→          viewport={{ once: true, margin: "-40px" }}
+  1198→          transition={{ duration: 0.4 }}
+  1199→          className="pt-6 pb-4"
+  1200→        >
+  1201→          <div className="mx-4 mb-2 bg-white rounded-[20px] overflow-hidden shadow-sm shadow-black/[0.04]">
+  1202→            {footerSections.map((section, index) => (
+  1203→              <div key={section.title}>
+  1204→                {index > 0 && <div className="mx-4 border-t border-black/[0.04]" />}
+  1205→                <motion.button
+  1206→                  whileTap={{ scale: 0.99 }}
+  1207→                  onClick={() => toggleSection(section.title)}
+  1208→                  className="w-full flex items-center justify-between px-4 py-3.5"
+  1209→                >
+  1210→                  <span className="text-[14px] font-bold text-gray-900">{section.title}</span>
+  1211→                  <motion.div
+  1212→                    animate={{ rotate: expandedSections[section.title] ? 180 : 0 }}
+  1213→                    transition={{ duration: 0.25, ease: "easeInOut" }}
+  1214→                  >
+  1215→                    <ChevronDown className="w-4 h-4 text-gray-400" />
+  1216→                  </motion.div>
+  1217→                </motion.button>
+  1218→                <AnimatePresence initial={false}>
+  1219→                  {expandedSections[section.title] && (
+  1220→                    <motion.div
+  1221→                      initial={{ opacity: 0, height: 0 }}
+  1222→                      animate={{ opacity: 1, height: "auto" }}
+  1223→                      exit={{ opacity: 0, height: 0 }}
+  1224→                      transition={{ duration: 0.25, ease: "easeInOut" }}
+  1225→                      className="overflow-hidden"
+  1226→                    >
+  1227→                      <div className="px-4 pb-3.5 flex flex-wrap gap-2">
+  1228→                        {section.items.map((item) => (
+  1229→                          <motion.div
+  1230→                            key={item}
+  1231→                            whileTap={{ scale: 0.95 }}
+  1232→                            className="bg-[#F2F2F7] rounded-full px-3.5 py-2"
+  1233→                          >
+  1234→                            <Link href="#" className="text-[12px] font-medium text-gray-600">
+  1235→                              {item}
+  1236→                            </Link>
+  1237→                          </motion.div>
+  1238→                        ))}
+  1239→                      </div>
+  1240→                    </motion.div>
+  1241→                  )}
+  1242→                </AnimatePresence>
+  1243→              </div>
+  1244→            ))}
+  1245→          </div>
+  1246→
+  1247→          {/* App version */}
+  1248→          <div className="text-center pt-2 pb-4">
+  1249→            <p className="text-[11px] text-gray-400">JustDial v14.2.0</p>
+  1250→          </div>
+  1251→        </motion.section>
+  1252→      </main>
+  1253→
+  1254→      {/* ===== 16. STICKY BOTTOM NAVIGATION ===== */}
+  1255→      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-50">
+  1256→        {/* Category pills row */}
+  1257→        <div className="bg-white/90 backdrop-blur-xl border-t border-black/[0.04] px-2 pt-2 pb-1">
+  1258→          <div className="flex gap-1 overflow-x-auto scrollbar-hide">
+  1259→            {bottomNavTabs.map((tab) => (
+  1260→              <motion.button
+  1261→                key={tab}
+  1262→                whileTap={{ scale: 0.92 }}
+  1263→                onClick={() => setActiveTab(tab)}
+  1264→                className={`flex-shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold transition-colors ${
+  1265→                  activeTab === tab ? "bg-[#0056b3] text-white" : "bg-[#F2F2F7] text-gray-600"
+  1266→                }`}
+  1267→              >
+  1268→                {tab}
+  1269→              </motion.button>
+  1270→            ))}
+  1271→          </div>
+  1272→        </div>
+  1273→
+  1274→        {/* Nav icons row */}
+  1275→        <nav className="bg-white/95 backdrop-blur-xl border-t border-black/[0.04] pb-[env(safe-area-inset-bottom)]">
+  1276→          <div className="flex items-center justify-around py-1.5">
+  1277→            {navItems.map((item) => (
+  1278→              <motion.button
+  1279→                key={item.id}
+  1280→                whileTap={{ scale: 0.85 }}
+  1281→                onClick={() => setActiveNav(item.id)}
+  1282→                className="flex flex-col items-center gap-0.5 min-w-[56px] min-h-[48px] justify-center relative"
+  1283→              >
+  1284→                {activeNav === item.id && (
+  1285→                  <motion.div layoutId="navIndicator" className="absolute -top-1.5 w-5 h-0.5 rounded-full bg-[#0056b3]" />
+  1286→                )}
+  1287→                <item.icon
+  1288→                  className={`w-[22px] h-[22px] ${activeNav === item.id ? "text-[#0056b3]" : "text-gray-400"}`}
+  1289→                  fill={activeNav === item.id ? "#0056b3" : "none"}
+  1290→                  strokeWidth={activeNav === item.id ? 2.5 : 1.5}
+  1291→                />
+  1292→                <span className={`text-[10px] ${activeNav === item.id ? "font-semibold text-[#0056b3]" : "font-medium text-gray-400"}`}>
+  1293→                  {item.label}
+  1294→                </span>
+  1295→              </motion.button>
+  1296→            ))}
+  1297→          </div>
+  1298→        </nav>
+  1299→      </div>
+  1300→    </div>
+  1301→  );
+  1302→}

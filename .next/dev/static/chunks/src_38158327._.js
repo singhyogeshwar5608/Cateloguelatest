@@ -19506,58 +19506,27 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as Search>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mic.js [app-client] (ecmascript) <export default as Mic>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bell.js [app-client] (ecmascript) <export default as Bell>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-user.js [app-client] (ecmascript) <export default as UserCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sliders$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SlidersHorizontal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sliders-horizontal.js [app-client] (ecmascript) <export default as SlidersHorizontal>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/house.js [app-client] (ecmascript) <export default as Home>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chart-column.js [app-client] (ecmascript) <export default as BarChart3>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-client] (ecmascript) <export default as Briefcase>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$newspaper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Newspaper$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/newspaper.js [app-client] (ecmascript) <export default as Newspaper>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/ellipsis.js [app-client] (ecmascript) <export default as MoreHorizontal>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutGrid$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layout-grid.js [app-client] (ecmascript) <export default as LayoutGrid>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$days$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarDays$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar-days.js [app-client] (ecmascript) <export default as CalendarDays>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript) <export default as Heart>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$badge$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BadgeCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/badge-check.js [app-client] (ecmascript) <export default as BadgeCheck>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$stethoscope$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Stethoscope$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/stethoscope.js [app-client] (ecmascript) <export default as Stethoscope>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plane$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plane$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plane.js [app-client] (ecmascript) <export default as Plane>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Car$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/car.js [app-client] (ecmascript) <export default as Car>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/graduation-cap.js [app-client] (ecmascript) <export default as GraduationCap>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$dumbbell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Dumbbell$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/dumbbell.js [app-client] (ecmascript) <export default as Dumbbell>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/truck.js [app-client] (ecmascript) <export default as Truck>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$landmark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Landmark$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/landmark.js [app-client] (ecmascript) <export default as Landmark>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hotel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Hotel$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/hotel.js [app-client] (ecmascript) <export default as Hotel>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$film$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Film$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/film.js [app-client] (ecmascript) <export default as Film>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/credit-card.js [app-client] (ecmascript) <export default as CreditCard>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shirt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shirt$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shirt.js [app-client] (ecmascript) <export default as Shirt>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scissors$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scissors$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/scissors.js [app-client] (ecmascript) <export default as Scissors>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wrench.js [app-client] (ecmascript) <export default as Wrench>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/paintbrush.js [app-client] (ecmascript) <export default as Paintbrush>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bug$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bug$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bug.js [app-client] (ecmascript) <export default as Bug>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$droplets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Droplets$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/droplets.js [app-client] (ecmascript) <export default as Droplets>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sofa$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sofa$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sofa.js [app-client] (ecmascript) <export default as Sofa>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refrigerator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Refrigerator$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/refrigerator.js [app-client] (ecmascript) <export default as Refrigerator>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tv$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tv$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/tv.js [app-client] (ecmascript) <export default as Tv>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript) <export default as Heart>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Navigation$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/navigation.js [app-client] (ecmascript) <export default as Navigation>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trending-up.js [app-client] (ecmascript) <export default as TrendingUp>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$qr$2d$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__QrCode$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/qr-code.js [app-client] (ecmascript) <export default as QrCode>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flame.js [app-client] (ecmascript) <export default as Flame>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crosshair$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crosshair$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/crosshair.js [app-client] (ecmascript) <export default as Crosshair>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$product$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/product-data.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bug$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bug$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bug.js [app-client] (ecmascript) <export default as Bug>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$justdial$2f$StoreCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/justdial/StoreCard.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/search-data.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -19569,557 +19538,304 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
-const categories = [
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"],
-        label: "B2B",
-        color: "#3B82F6",
-        bg: "#EFF6FF",
-        slug: "b2b"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$stethoscope$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Stethoscope$3e$__["Stethoscope"],
-        label: "Doctors",
-        color: "#EF4444",
-        bg: "#FEF2F2",
-        slug: "doctors"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plane$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plane$3e$__["Plane"],
-        label: "Travel",
-        color: "#F59E0B",
-        bg: "#FFFBEB",
-        slug: "travel"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Car$3e$__["Car"],
-        label: "Car Hire",
-        color: "#10B981",
-        bg: "#ECFDF5",
-        slug: "car-hire"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
-        label: "Beauty",
-        color: "#EC4899",
-        bg: "#FDF2F8",
-        slug: "beauty"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"],
-        label: "Education",
-        color: "#8B5CF6",
-        bg: "#F5F3FF",
-        slug: "education"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shirt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shirt$3e$__["Shirt"],
-        label: "Fashion",
-        color: "#F97316",
-        bg: "#FFF7ED",
-        slug: "fashion"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scissors$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scissors$3e$__["Scissors"],
-        label: "Wedding",
-        color: "#D946EF",
-        bg: "#FAF5FF",
-        slug: "wedding"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__["Truck"],
-        label: "Packers",
-        color: "#14B8A6",
-        bg: "#F0FDFA",
-        slug: "packers"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$dumbbell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Dumbbell$3e$__["Dumbbell"],
-        label: "Gyms",
-        color: "#06B6D4",
-        bg: "#ECFEFF",
-        slug: "gyms"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tv$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tv$3e$__["Tv"],
-        label: "Rent/Hire",
-        color: "#6366F1",
-        bg: "#EEF2FF",
-        slug: "rent-hire"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"],
-        label: "Jobs",
-        color: "#6366F1",
-        bg: "#EEF2FF",
-        slug: "jobs"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__["CreditCard"],
-        label: "Loans",
-        color: "#15803D",
-        bg: "#F0FDF4",
-        slug: "loans"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$landmark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Landmark$3e$__["Landmark"],
-        label: "Real Estate",
-        color: "#D97706",
-        bg: "#FFFBEB",
-        slug: "real-estate"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hotel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Hotel$3e$__["Hotel"],
-        label: "PG/Hostel",
-        color: "#DC2626",
-        bg: "#FEF2F2",
-        slug: "pg-hostel"
-    }
-];
-const homeServices = [
+/* ═══════════════════════════════════════════════════════════════
+   DATA — all static content that feeds the page sections
+   ═══════════════════════════════════════════════════════════════ */ const quickServices = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__["Wrench"],
         label: "AC Repair",
-        sub: "Certified Experts",
+        bg: "#F3F4F6",
         color: "#3B82F6",
-        bg: "#EFF6FF",
-        slug: "ac-repair",
-        rating: "4.8",
-        reviews: "320",
-        pros: "250",
-        glow: "#3B82F6"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$droplets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Droplets$3e$__["Droplets"],
-        label: "Plumbing",
-        sub: "Licensed Plumbers",
-        color: "#10B981",
-        bg: "#ECFDF5",
-        slug: "plumber",
-        rating: "4.6",
-        reviews: "180",
-        pros: "180",
-        glow: "#10B981"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
-        label: "Electrician",
-        sub: "Verified Pros",
-        color: "#F59E0B",
-        bg: "#FFFBEB",
-        slug: "electrician",
-        rating: "4.7",
-        reviews: "410",
-        pros: "320",
-        glow: "#F59E0B"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sofa$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sofa$3e$__["Sofa"],
-        label: "Carpenter",
-        sub: "Skilled Craftsmen",
-        color: "#8B5CF6",
-        bg: "#F5F3FF",
-        slug: "carpenter",
-        rating: "4.5",
-        reviews: "140",
-        pros: "95",
-        glow: "#8B5CF6"
+        slug: "ac-repair"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"],
         label: "Painter",
-        sub: "Pro Painters",
-        color: "#EC4899",
-        bg: "#FDF2F8",
-        slug: "painter",
-        rating: "4.6",
-        reviews: "210",
-        pros: "150",
-        glow: "#EC4899"
+        bg: "#FEF3C7",
+        color: "#D97706",
+        slug: "painter"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$droplets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Droplets$3e$__["Droplets"],
+        label: "Plumber",
+        bg: "#D1FAE5",
+        color: "#059669",
+        slug: "plumber"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
+        label: "Electrician",
+        bg: "#FEF3C7",
+        color: "#B45309",
+        slug: "electrician"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
-        label: "Home Cleaning",
-        sub: "Deep Clean Team",
-        color: "#06B6D4",
-        bg: "#ECFEFF",
-        slug: "deep-cleaning",
-        rating: "4.8",
-        reviews: "520",
-        pros: "400",
-        glow: "#06B6D4"
+        label: "Cleaning",
+        bg: "#DBEAFE",
+        color: "#2563EB",
+        slug: "deep-cleaning"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bug$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bug$3e$__["Bug"],
         label: "Pest Control",
-        sub: "Certified Experts",
-        color: "#A78BFA",
-        bg: "#F5F3FF",
-        slug: "pest-control",
-        rating: "4.5",
-        reviews: "85",
-        pros: "60",
-        glow: "#A78BFA"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scissors$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scissors$3e$__["Scissors"],
-        label: "Salon at Home",
-        sub: "Beauty Experts",
-        color: "#F43F5E",
-        bg: "#FFF1F2",
-        slug: "salon-home",
-        rating: "4.8",
-        reviews: "290",
-        pros: "175",
-        glow: "#F43F5E"
+        bg: "#FCE7F3",
+        color: "#DB2777",
+        slug: "pest-control"
     }
 ];
-const rentServices = [
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Car$3e$__["Car"],
-        label: "Vehicles",
-        color: "#2563EB",
-        bg: "#EFF6FF"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shirt$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shirt$3e$__["Shirt"],
-        label: "Rent Clothes",
-        color: "#EC4899",
-        bg: "#FDF2F8"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sofa$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sofa$3e$__["Sofa"],
-        label: "Furniture",
-        color: "#D97706",
-        bg: "#FFFBEB"
-    },
-    {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refrigerator$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Refrigerator$3e$__["Refrigerator"],
-        label: "Appliances",
-        color: "#6366F1",
-        bg: "#EEF2FF"
-    }
+const categoryChips = [
+    "All",
+    "Popular",
+    "Top Rated",
+    "Nearby",
+    "Open Now",
+    "Verified"
 ];
-const movies = [
+const popularServices = [
     {
-        title: "Pushpa 2",
-        genre: "Action/Drama",
-        rating: "8.2",
-        img: "/images/movies/pushpa2.png"
-    },
-    {
-        title: "Singham Again",
-        genre: "Action/Comedy",
-        rating: "7.5",
-        img: "/images/movies/singham-again.png"
-    },
-    {
-        title: "Bhool Bhulaiyaa 3",
-        genre: "Comedy/Horror",
-        rating: "7.8",
-        img: "/images/movies/bhool-bhulaiyaa3.png"
-    }
-];
-const trendingSearches = [
-    {
-        label: "Schools",
-        emoji: "🏫"
-    },
-    {
-        label: "Beauty Parlours",
-        emoji: "💇"
-    },
-    {
-        label: "Vijay Sales",
-        emoji: "📱"
-    },
-    {
-        label: "Interior Design",
-        emoji: "🏠"
-    },
-    {
-        label: "Banquet Halls",
-        emoji: "🎉"
-    },
-    {
-        label: "Dentists",
-        emoji: "🦷"
-    }
-];
-const touristPlaces = [
-    {
-        name: "India Gate",
-        city: "Delhi",
-        img: "/images/tourist/delhi.png",
-        slug: "india-gate"
-    },
-    {
-        name: "Taj Mahal",
-        city: "Agra",
-        img: "/images/tourist/agra.png",
-        slug: "taj-mahal"
-    },
-    {
-        name: "Laxman Jhula",
-        city: "Rishikesh",
-        img: "/images/tourist/rishikesh.png",
-        slug: "rishikesh"
-    },
-    {
-        name: "Robbers Cave",
-        city: "Dehradun",
-        img: "/images/tourist/dehradun.png",
-        slug: "dehradun"
-    },
-    {
-        name: "Gateway of India",
-        city: "Mumbai",
-        img: "/images/tourist/delhi.png",
-        slug: "gateway-of-india"
-    },
-    {
-        name: "Red Fort",
-        city: "Delhi",
-        img: "/images/tourist/agra.png",
-        slug: "red-fort"
-    }
-];
-const bottomNavTabs = [
-    "SHOPPING",
-    "FASHION",
-    "BEAUTY",
-    "FOOD"
-];
-const footerSections = [
-    {
-        title: "Popular Categories",
-        items: [
-            "Restaurants",
-            "Hotels",
-            "Doctors",
-            "Salons",
-            "Gyms",
-            "Real Estate"
-        ]
-    },
-    {
-        title: "Trending Searches",
-        items: [
-            "Schools Near Me",
-            "PG Near Me",
-            "AC Repair",
-            "Packers & Movers"
-        ]
-    },
-    {
-        title: "Deals and Offers",
-        items: [
-            "Restaurant Deals",
-            "Spa Offers",
-            "Gym Membership",
-            "Travel Deals"
-        ]
-    },
-    {
-        title: "About JustDial",
-        items: [
-            "About Us",
-            "Careers",
-            "Blog",
-            "Contact Us",
-            "Privacy Policy"
-        ]
-    }
-];
-const featuredStores = [
-    {
-        name: "Shivam Fast Food",
-        category: "Fast Food • Restaurant",
-        rating: "4.5",
-        reviews: "128",
-        distance: "0.3 km",
-        address: "MG Road, Andheri West",
-        logoEmoji: "🍔",
-        img: "/images/stores/shivam-fast-food.png",
-        storeId: "STR-10005"
-    },
-    {
-        name: "Look & Style Salon",
-        category: "Beauty • Salon",
-        rating: "4.7",
-        reviews: "96",
-        distance: "0.5 km",
-        address: "Link Square Mall",
-        logoEmoji: "✂️",
-        img: "/images/stores/look-style-salon.png",
-        storeId: "STR-70001"
-    },
-    {
-        name: "CareWell Pharmacy",
-        category: "Medical • Pharmacy",
-        rating: "4.6",
-        reviews: "88",
-        distance: "0.7 km",
-        address: "City Center, Malad",
-        logoEmoji: "💊",
-        img: "/images/stores/carewell-pharmacy.png",
-        storeId: "STR-100001"
-    },
-    {
-        name: "Fresh Mart Grocery",
-        category: "Grocery • Supermarket",
-        rating: "4.4",
-        reviews: "215",
-        distance: "0.4 km",
-        address: "SV Road, Malad West",
-        logoEmoji: "🛒",
-        img: "/images/stores/fresh-mart-grocery.png",
-        storeId: "STR-40006"
-    },
-    {
-        name: "QuickFix Electronics",
-        category: "Electronics • Mobile",
-        rating: "4.3",
-        reviews: "167",
-        distance: "0.9 km",
-        address: "Heera Panna Mall",
-        logoEmoji: "📱",
-        img: "/images/stores/quickfix-electronics.png",
-        storeId: "STR-90001"
-    },
-    {
-        name: "Green Leaf Cafe",
-        category: "Cafe • Restaurant",
-        rating: "4.8",
-        reviews: "302",
-        distance: "1.2 km",
-        address: "Hill Road, Bandra",
-        logoEmoji: "☕",
-        img: "/images/stores/green-leaf-cafe.png",
-        storeId: "STR-30004"
-    }
-];
-const trendingStores = [
-    {
-        name: "Sunrise Public School",
-        category: "Education • School",
-        rating: "4.6",
-        reviews: "340",
-        distance: "0.8 km",
-        address: "DPS Road, Nerul",
-        logoEmoji: "🏫",
-        img: "/images/guides/schools-delhi.png",
-        storeId: "STR-130001"
-    },
-    {
-        name: "Glow Beauty Parlour",
-        category: "Beauty • Parlour",
+        name: "CoolAir AC Services",
+        category: "AC Repair • Installation",
         rating: "4.8",
         reviews: "256",
-        distance: "0.4 km",
-        address: "Linking Road, Bandra",
-        logoEmoji: "💅",
-        img: "/images/stores/look-style-salon.png",
-        storeId: "STR-70003"
+        distance: "0.3 km",
+        address: "Andheri West, Mumbai",
+        logoIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__["Wrench"],
+        coverGradient: "from-blue-500 to-blue-700",
+        storeId: "STR-10001",
+        href: "/service/ac-repair"
     },
     {
-        name: "Vijay Sales Store",
-        category: "Electronics • Appliances",
-        rating: "4.3",
-        reviews: "512",
-        distance: "1.1 km",
-        address: "MG Road, Andheri East",
-        logoEmoji: "📦",
-        img: "/images/stores/quickfix-electronics.png",
-        storeId: "STR-90002"
-    },
-    {
-        name: "Royal Banquet Hall",
-        category: "Venue • Banquet",
-        rating: "4.5",
+        name: "ShineHome Painters",
+        category: "Interior • Exterior Painting",
+        rating: "4.6",
         reviews: "189",
-        distance: "1.5 km",
-        address: "Juhu Tara Road",
-        logoEmoji: "🎉",
-        img: "/images/collections/wedding-planners.png",
-        storeId: "STR-10005"
+        distance: "0.5 km",
+        address: "Malad West, Mumbai",
+        logoIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"],
+        coverGradient: "from-amber-500 to-orange-600",
+        storeId: "STR-10002",
+        href: "/service/painter"
     },
     {
-        name: "SmileCare Dental",
-        category: "Medical • Dentist",
+        name: "FixRight Plumbing",
+        category: "Plumbing • Repairs",
         rating: "4.7",
-        reviews: "421",
-        distance: "0.6 km",
-        address: "Kohinoor City",
-        logoEmoji: "🦷",
-        img: "/images/businesses/sharma-dental.png",
-        storeId: "STR-60008"
+        reviews: "312",
+        distance: "0.8 km",
+        address: "Bandra West, Mumbai",
+        logoIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$droplets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Droplets$3e$__["Droplets"],
+        coverGradient: "from-emerald-500 to-green-600",
+        storeId: "STR-10003",
+        href: "/service/plumber"
     },
     {
-        name: "FitPro Gym & Spa",
-        category: "Fitness • Gym",
+        name: "BrightSpark Electric",
+        category: "Electrical • Wiring",
+        rating: "4.5",
+        reviews: "145",
+        distance: "1.2 km",
+        address: "Khar West, Mumbai",
+        logoIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
+        coverGradient: "from-yellow-500 to-amber-600",
+        storeId: "STR-10004",
+        href: "/service/electrician"
+    },
+    {
+        name: "GleamClean Services",
+        category: "Deep Cleaning • Sanitization",
+        rating: "4.8",
+        reviews: "428",
+        distance: "0.6 km",
+        address: "Juhu, Mumbai",
+        logoIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
+        coverGradient: "from-cyan-500 to-blue-600",
+        storeId: "STR-10005",
+        href: "/service/deep-cleaning"
+    },
+    {
+        name: "PestFree Solutions",
+        category: "Pest Control • Fumigation",
         rating: "4.4",
-        reviews: "198",
-        distance: "0.9 km",
-        address: "Oberoi Mall, Goregaon",
-        logoEmoji: "💪",
-        img: "/images/businesses/fitzone-gym.png",
-        storeId: "STR-80001"
+        reviews: "97",
+        distance: "1.5 km",
+        address: "Goregaon, Mumbai",
+        logoIcon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bug$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bug$3e$__["Bug"],
+        coverGradient: "from-pink-500 to-rose-600",
+        storeId: "STR-10006",
+        href: "/service/pest-control"
     }
 ];
-const navItems = [
+const allCategories = [
+    {
+        emoji: "❄️",
+        label: "AC Repair",
+        pros: "250+",
+        slug: "ac-repair"
+    },
+    {
+        emoji: "🖌️",
+        label: "Painters",
+        pros: "180+",
+        slug: "painter"
+    },
+    {
+        emoji: "🚰",
+        label: "Plumbers",
+        pros: "180+",
+        slug: "plumber"
+    },
+    {
+        emoji: "⚡",
+        label: "Electricians",
+        pros: "320+",
+        slug: "electrician"
+    },
+    {
+        emoji: "🐛",
+        label: "Pest Control",
+        pros: "60+",
+        slug: "pest-control"
+    },
+    {
+        emoji: "🔨",
+        label: "Carpenters",
+        pros: "95+",
+        slug: "carpenter"
+    },
+    {
+        emoji: "✨",
+        label: "Deep Cleaning",
+        pros: "400+",
+        slug: "deep-cleaning"
+    },
+    {
+        emoji: "💇",
+        label: "Salons at Home",
+        pros: "175+",
+        slug: "salon-home"
+    }
+];
+const recentlyViewed = [
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__["Wrench"],
+        name: "CoolAir AC Services",
+        rating: "4.6",
+        color: "#3B82F6",
+        bg: "#EFF6FF",
+        href: "/service/ac-repair"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$droplets$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Droplets$3e$__["Droplets"],
+        name: "FixRight Plumbing",
+        rating: "4.4",
+        color: "#059669",
+        bg: "#ECFDF5",
+        href: "/service/plumber"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
+        name: "GleamClean Services",
+        rating: "4.8",
+        color: "#2563EB",
+        bg: "#DBEAFE",
+        href: "/service/deep-cleaning"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
+        name: "BrightSpark Electric",
+        rating: "4.5",
+        color: "#B45309",
+        bg: "#FFFBEB",
+        href: "/service/electrician"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$paintbrush$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paintbrush$3e$__["Paintbrush"],
+        name: "ShineHome Painters",
+        rating: "4.6",
+        color: "#D97706",
+        bg: "#FEF3C7",
+        href: "/service/painter"
+    }
+];
+const bottomNavItems = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"],
         label: "Home",
-        id: "Home"
+        id: "home"
     },
     {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__["BarChart3"],
-        label: "Leads",
-        id: "Leads"
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$grid$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutGrid$3e$__["LayoutGrid"],
+        label: "Categories",
+        id: "categories"
     },
     {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"],
-        label: "B2B",
-        id: "B2B"
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$days$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarDays$3e$__["CalendarDays"],
+        label: "Bookings",
+        id: "bookings"
     },
     {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$newspaper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Newspaper$3e$__["Newspaper"],
-        label: "News",
-        id: "News"
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"],
+        label: "Favorites",
+        id: "favorites"
     },
     {
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"],
-        label: "More",
-        id: "More"
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"],
+        label: "Profile",
+        id: "profile"
     }
 ];
+/* ═══════════════════════════════════════════════════════════════
+   SECTION HEADING — reused across multiple sections
+   ═══════════════════════════════════════════════════════════════ */ function SectionHeading({ title, action, onAction }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex items-center justify-between mb-3",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-[17px] font-bold text-gray-900 leading-tight",
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                lineNumber: 77,
+                columnNumber: 7
+            }, this),
+            action && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: onAction,
+                className: "text-[13px] font-semibold text-blue-500 flex items-center gap-0.5 active:opacity-60",
+                children: [
+                    action,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                        className: "w-3.5 h-3.5"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 84,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                lineNumber: 79,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+        lineNumber: 76,
+        columnNumber: 5
+    }, this);
+}
+_c = SectionHeading;
 function MobileLayout() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [activeNav, setActiveNav] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Home");
-    const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("SHOPPING");
-    const [expandedSections, setExpandedSections] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
-    const scrollRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const [savedPlaces, setSavedPlaces] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(new Set());
-    const [wishlisted, setWishlisted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(new Set());
-    const trendingProducts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$product$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTrendingProducts"])();
-    // ── Location & Search State ──
     const [selectedCity, setSelectedCity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Mumbai");
-    const [locationSheetOpen, setLocationSheetOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [locationSearch, setLocationSearch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [activeChip, setActiveChip] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All");
+    const [activeNav, setActiveNav] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("home");
+    const [showSearch, setShowSearch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [showSuggestions, setShowSuggestions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [suggestions, setSuggestions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [recentLocations, setRecentLocations] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const searchInputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const locationInputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "MobileLayout.useEffect": ()=>{
-            setRecentLocations((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getRecentLocations"])());
-        }
-    }["MobileLayout.useEffect"], []);
     // Debounced search
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "MobileLayout.useEffect": ()=>{
@@ -20142,17 +19858,19 @@ function MobileLayout() {
         searchQuery,
         selectedCity
     ]);
-    const selectCity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "MobileLayout.useCallback[selectCity]": (city)=>{
-            setSelectedCity(city);
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["saveRecentLocation"])(city);
-            setRecentLocations((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getRecentLocations"])());
-            setLocationSheetOpen(false);
-            setLocationSearch("");
+    // Focus search when opened
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "MobileLayout.useEffect": ()=>{
+            if (showSearch && searchInputRef.current) {
+                searchInputRef.current.focus();
+            }
         }
-    }["MobileLayout.useCallback[selectCity]"], []);
+    }["MobileLayout.useEffect"], [
+        showSearch
+    ]);
     const handleSuggestionTap = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "MobileLayout.useCallback[handleSuggestionTap]": (s)=>{
+            setShowSearch(false);
             setShowSuggestions(false);
             setSearchQuery("");
             router.push(s.href);
@@ -20160,3546 +19878,806 @@ function MobileLayout() {
     }["MobileLayout.useCallback[handleSuggestionTap]"], [
         router
     ]);
-    const toggleWishlist = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "MobileLayout.useCallback[toggleWishlist]": (id)=>{
-            setWishlisted({
-                "MobileLayout.useCallback[toggleWishlist]": (prev)=>{
-                    const next = new Set(prev);
-                    if (next.has(id)) next.delete(id);
-                    else next.add(id);
-                    return next;
-                }
-            }["MobileLayout.useCallback[toggleWishlist]"]);
-        }
-    }["MobileLayout.useCallback[toggleWishlist]"], []);
-    const toggleSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "MobileLayout.useCallback[toggleSection]": (title)=>{
-            setExpandedSections({
-                "MobileLayout.useCallback[toggleSection]": (prev)=>({
-                        ...prev,
-                        [title]: !prev[title]
-                    })
-            }["MobileLayout.useCallback[toggleSection]"]);
-        }
-    }["MobileLayout.useCallback[toggleSection]"], []);
-    const toggleSave = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "MobileLayout.useCallback[toggleSave]": (slug)=>{
-            setSavedPlaces({
-                "MobileLayout.useCallback[toggleSave]": (prev)=>{
-                    const next = new Set(prev);
-                    if (next.has(slug)) next.delete(slug);
-                    else next.add(slug);
-                    return next;
-                }
-            }["MobileLayout.useCallback[toggleSave]"]);
-        }
-    }["MobileLayout.useCallback[toggleSave]"], []);
-    const storeCard = (store, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-            initial: {
-                opacity: 0,
-                y: 12
-            },
-            whileInView: {
-                opacity: 1,
-                y: 0
-            },
-            viewport: {
-                once: true
-            },
-            transition: {
-                delay: index * 0.05,
-                duration: 0.3
-            },
-            whileTap: {
-                scale: 0.97
-            },
-            className: "flex-shrink-0 w-[185px] bg-white rounded-2xl overflow-hidden shadow-[0_2px_12px_rgba(0,0,0,0.06)] ring-1 ring-black/[0.04]",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                href: `/store/${store.storeId}`,
-                className: "block",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[78px] overflow-hidden",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                src: store.img,
-                                alt: store.name,
-                                fill: true,
-                                className: "object-cover",
-                                sizes: "185px"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 209,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/5"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 217,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute top-1.5 left-1.5 right-1.5 flex items-center justify-between",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "bg-amber-500/95 backdrop-blur-sm text-white text-[8.5px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flame$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flame$3e$__["Flame"], {
-                                                className: "w-2 h-2"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 222,
-                                                columnNumber: 15
-                                            }, this),
-                                            "Featured"
-                                        ]
-                                    }, void 0, true, {
+    /* ── 1. STICKY APP HEADER ─────────────────────────────────── */ const renderHeader = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "sticky top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-100/80",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-center justify-between px-4 h-[56px]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-[16px] font-bold text-gray-900",
+                            children: "Home Services"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 134,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>{
+                                        setShowSearch(true);
+                                    },
+                                    className: "w-9 h-9 flex items-center justify-center rounded-full bg-gray-50 active:bg-gray-100",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                        className: "w-[18px] h-[18px] text-gray-600"
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 221,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "bg-emerald-500/95 backdrop-blur-sm text-white text-[8.5px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "w-1 h-1 bg-white rounded-full"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 226,
-                                                columnNumber: 15
-                                            }, this),
-                                            "Open"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 225,
+                                        lineNumber: 140,
                                         columnNumber: 13
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 220,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute bottom-1.5 left-1.5",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-white/95 backdrop-blur-sm text-gray-900 text-[10px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5 shadow-sm",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                            className: "w-2.5 h-2.5 text-amber-500 fill-amber-500"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 234,
-                                            columnNumber: 15
-                                        }, this),
-                                        store.rating
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 233,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 232,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute -bottom-4 right-2.5 z-10",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[16px] ring-2 ring-white",
-                                            children: store.logoEmoji
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 242,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute -bottom-0.5 -left-0.5 w-[14px] h-[14px] bg-[#0056b3] rounded-full flex items-center justify-center ring-[1.5px] ring-white",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                className: "w-[9px] h-[9px] text-white",
-                                                strokeWidth: 4
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 247,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 246,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 241,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 240,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 208,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "px-2.5 pt-2.5 pb-2.5",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-start gap-1 mb-0.5 pr-11",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-[12.5px] font-bold text-gray-900 leading-tight line-clamp-1 flex-1",
-                                    children: store.name
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 257,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 256,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[10px] text-gray-500 font-medium truncate mb-1.5",
-                                children: store.category
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 261,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between gap-1 mb-1.5",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-0.5 min-w-0 flex-1",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                            className: "w-2.5 h-2.5 text-gray-400 flex-shrink-0"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 266,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-[9.5px] text-gray-500 truncate",
-                                            children: store.address
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 267,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 265,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 264,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between pt-1.5 border-t border-gray-100",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[9.5px] text-gray-400 font-medium",
-                                        children: [
-                                            store.reviews,
-                                            " reviews"
-                                        ]
-                                    }, void 0, true, {
+                                    lineNumber: 136,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "w-9 h-9 flex items-center justify-center rounded-full bg-gray-50 active:bg-gray-100",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sliders$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SlidersHorizontal$3e$__["SlidersHorizontal"], {
+                                        className: "w-[18px] h-[18px] text-gray-600"
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 273,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "bg-[#0056b3]/8 text-[#0056b3] text-[9.5px] font-bold px-1.5 py-0.5 rounded-full flex items-center gap-0.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Navigation$3e$__["Navigation"], {
-                                                className: "w-2.5 h-2.5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 275,
-                                                columnNumber: 15
-                                            }, this),
-                                            store.distance
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 143,
                                         columnNumber: 13
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 272,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 254,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                lineNumber: 206,
-                columnNumber: 7
-            }, this)
-        }, store.name, false, {
-            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-            lineNumber: 197,
-            columnNumber: 5
-        }, this);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-[100dvh] bg-[#F2F2F7] flex flex-col max-w-[480px] mx-auto relative overflow-hidden",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].header, {
-                initial: {
-                    y: -100
-                },
-                animate: {
-                    y: 0
-                },
-                transition: {
-                    type: "spring",
-                    damping: 25,
-                    stiffness: 200
-                },
-                className: "fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-50 bg-white/95 backdrop-blur-2xl shadow-[0_1px_12px_rgba(0,0,0,0.06)]",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "pt-[env(safe-area-inset-top)]",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center justify-between px-4 h-10",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-1.5",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[18px] font-extrabold text-[#e42529] tracking-tight leading-none",
-                                                    children: "J"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 298,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[18px] font-extrabold text-[#0056b3] tracking-tight leading-none",
-                                                    children: "ust"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 299,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[18px] font-extrabold text-[#e42529] tracking-tight leading-none",
-                                                    children: "D"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 300,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[18px] font-extrabold text-[#0056b3] tracking-tight leading-none",
-                                                    children: "ial"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 301,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 297,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-[10px] font-semibold text-gray-400 tracking-wider uppercase hidden",
-                                            children: "India"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 303,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 296,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-0.5",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.88
-                                            },
-                                            className: "w-8 h-8 flex items-center justify-center rounded-full",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$qr$2d$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__QrCode$3e$__["QrCode"], {
-                                                className: "w-[18px] h-[18px] text-gray-600"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 307,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 306,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.88
-                                            },
-                                            className: "w-8 h-8 flex items-center justify-center rounded-full relative",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__["Bell"], {
-                                                    className: "w-[18px] h-[18px] text-gray-600"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 310,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "absolute top-0.5 right-0.5 w-[14px] h-[14px] bg-[#e42529] rounded-full text-[8px] text-white flex items-center justify-center font-bold leading-none ring-2 ring-white",
-                                                    children: "3"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 311,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 309,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.88
-                                            },
-                                            className: "w-8 h-8 flex items-center justify-center rounded-full",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCircle$3e$__["UserCircle"], {
-                                                className: "w-[22px] h-[22px] text-gray-400"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 316,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 315,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 305,
-                                    columnNumber: 13
+                                    lineNumber: 142,
+                                    columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 295,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "px-3.5 pt-0.5 pb-2",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center bg-[#F1F3F5] rounded-2xl px-3.5 py-2.5 gap-2.5 ring-1 ring-black/[0.04]",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                        className: "w-[18px] h-[18px] text-gray-500 flex-shrink-0",
-                                        strokeWidth: 2.5
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 324,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        ref: searchInputRef,
-                                        type: "text",
-                                        placeholder: "Search home services...",
-                                        value: searchQuery,
-                                        onChange: (e)=>setSearchQuery(e.target.value),
-                                        onFocus: ()=>{
-                                            if (searchQuery.trim()) {
-                                                setSuggestions((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["searchAll"])(searchQuery, selectedCity, 4));
-                                                setShowSuggestions(true);
-                                            }
-                                        },
-                                        className: "flex-1 bg-transparent text-[14px] outline-none text-gray-800 placeholder-gray-500 font-medium min-w-0"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 325,
-                                        columnNumber: 15
-                                    }, this),
-                                    searchQuery ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                        initial: {
-                                            scale: 0.8
-                                        },
-                                        animate: {
-                                            scale: 1
-                                        },
-                                        whileTap: {
-                                            scale: 0.88
-                                        },
-                                        onClick: ()=>{
-                                            setSearchQuery("");
-                                            setShowSuggestions(false);
-                                            searchInputRef.current?.blur();
-                                        },
-                                        className: "w-7 h-7 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                            className: "w-3.5 h-3.5 text-gray-600"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 336,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 335,
-                                        columnNumber: 17
-                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                        whileTap: {
-                                            scale: 0.88
-                                        },
-                                        className: "w-7 h-7 rounded-full bg-[#0056b3] flex items-center justify-center flex-shrink-0 shadow-sm shadow-[#0056b3]/30",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__["Mic"], {
-                                            className: "w-3.5 h-3.5 text-white"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 340,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 339,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 323,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 322,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "px-3.5 pb-2.5",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                whileTap: {
-                                    scale: 0.98
-                                },
-                                onClick: ()=>{
-                                    setLocationSheetOpen(true);
-                                },
-                                className: "w-full flex items-center gap-2 bg-gradient-to-r from-[#E3F2FD] to-[#BBDEFB] rounded-xl px-3.5 py-2 ring-1 ring-[#0056b3]/10",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-6 h-6 rounded-full bg-[#0056b3] flex items-center justify-center flex-shrink-0",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                            className: "w-3.5 h-3.5 text-white"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 354,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 353,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex-1 text-left min-w-0",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[9px] font-semibold text-[#0056b3]/70 uppercase tracking-wider leading-tight",
-                                                children: "Deliver to"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 357,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[13px] font-bold text-gray-800 leading-tight truncate",
-                                                children: [
-                                                    selectedCity,
-                                                    selectedCity === "Mumbai" ? ", Maharashtra" : ""
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 358,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 356,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                        className: "w-4 h-4 text-[#0056b3] flex-shrink-0",
-                                        strokeWidth: 2.5
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 362,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 348,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 347,
-                            columnNumber: 11
+                            lineNumber: 135,
+                            columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                    lineNumber: 293,
+                    lineNumber: 133,
+                    columnNumber: 7
+                }, this),
+                showSearch && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    initial: {
+                        opacity: 0,
+                        y: -8
+                    },
+                    animate: {
+                        opacity: 1,
+                        y: 0
+                    },
+                    className: "absolute inset-x-0 top-0 z-50 bg-white shadow-lg",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-2 px-4 h-[56px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>{
+                                        setShowSearch(false);
+                                        setShowSuggestions(false);
+                                        setSearchQuery("");
+                                    },
+                                    className: "text-blue-500 text-[15px] font-medium",
+                                    children: "Cancel"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 156,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-1 relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                            className: "absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 163,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            ref: searchInputRef,
+                                            type: "text",
+                                            value: searchQuery,
+                                            onChange: (e)=>setSearchQuery(e.target.value),
+                                            placeholder: "Search services...",
+                                            className: "w-full h-9 pl-9 pr-3 bg-gray-100 rounded-full text-[14px] text-gray-900 placeholder:text-gray-400 outline-none"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 162,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 155,
+                            columnNumber: 11
+                        }, this),
+                        showSuggestions && suggestions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "border-t border-gray-100 bg-white max-h-[60vh] overflow-y-auto",
+                            children: suggestions.map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>handleSuggestionTap(s),
+                                    className: "w-full flex items-center gap-3 px-4 py-3 active:bg-gray-50 border-b border-gray-50",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-[18px]",
+                                            children: s.emoji
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 183,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-left flex-1 min-w-0",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[14px] font-medium text-gray-900 truncate",
+                                                    children: s.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                                    lineNumber: 185,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[12px] text-gray-400",
+                                                    children: s.type
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                                    lineNumber: 186,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 184,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                            className: "w-4 h-4 text-gray-300 flex-shrink-0"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 188,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, `${s.label}-${i}`, true, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 178,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 176,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 150,
                     columnNumber: 9
                 }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                lineNumber: 287,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                children: locationSheetOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0
-                            },
-                            animate: {
-                                opacity: 1
-                            },
-                            exit: {
-                                opacity: 0
-                            },
-                            transition: {
-                                duration: 0.2
-                            },
-                            className: "fixed inset-0 bg-black/40 z-[60]",
-                            style: {
-                                maxWidth: "480px",
-                                margin: "0 auto"
-                            },
-                            onClick: ()=>{
-                                setLocationSheetOpen(false);
-                                setLocationSearch("");
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 372,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                y: "100%"
-                            },
-                            animate: {
-                                y: 0
-                            },
-                            exit: {
-                                y: "100%"
-                            },
-                            transition: {
-                                type: "spring",
-                                damping: 30,
-                                stiffness: 350
-                            },
-                            className: "fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] bg-white rounded-t-[24px] z-[70] max-h-[75vh] flex flex-col",
-                            style: {
-                                paddingBottom: "env(safe-area-inset-bottom)"
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex justify-center pt-3 pb-2",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-10 h-1 rounded-full bg-gray-300"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 391,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 390,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "px-5 pb-3 flex items-center justify-between",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-[17px] font-semibold text-gray-900",
-                                            children: "Select City"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 396,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.9
-                                            },
-                                            onClick: ()=>{
-                                                setLocationSheetOpen(false);
-                                                setLocationSearch("");
-                                            },
-                                            className: "w-8 h-8 rounded-full bg-[#F2F2F7] flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                                className: "w-4 h-4 text-gray-500"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 398,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 397,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 395,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "px-5 pb-3",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center bg-[#F2F2F7] rounded-xl px-3.5 py-2.5 gap-2.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                                className: "w-4 h-4 text-gray-400 flex-shrink-0"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 405,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                                ref: locationInputRef,
-                                                autoFocus: true,
-                                                type: "text",
-                                                placeholder: "Search city...",
-                                                value: locationSearch,
-                                                onChange: (e)=>setLocationSearch(e.target.value),
-                                                className: "flex-1 bg-transparent text-[14px] outline-none text-gray-700 placeholder-gray-400"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 406,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 404,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 403,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex-1 overflow-y-auto px-5 pb-4 scrollbar-hide",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.97
-                                            },
-                                            onClick: ()=>selectCity("Mumbai"),
-                                            className: "w-full flex items-center gap-3 px-4 py-3 rounded-2xl bg-[#0056b3]/5 mb-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-9 h-9 rounded-full bg-[#0056b3]/10 flex items-center justify-center flex-shrink-0",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$crosshair$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Crosshair$3e$__["Crosshair"], {
-                                                        className: "w-4 h-4 text-[#0056b3]"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 426,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 425,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-left",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-[14px] font-medium text-[#0056b3]",
-                                                            children: "Use Current Location"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 429,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-[11px] text-gray-400",
-                                                            children: "Detect your location automatically"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 430,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 428,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 420,
-                                            columnNumber: 17
-                                        }, this),
-                                        recentLocations.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mb-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[12px] font-semibold text-gray-400 uppercase tracking-wider px-1 mb-2",
-                                                    children: "Recent"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 437,
-                                                    columnNumber: 21
-                                                }, this),
-                                                recentLocations.filter((c)=>!locationSearch || c.toLowerCase().includes(locationSearch.toLowerCase())).map((city)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                        whileTap: {
-                                                            scale: 0.97
-                                                        },
-                                                        onClick: ()=>selectCity(city),
-                                                        className: "w-full flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-gray-50",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
-                                                                className: "w-4 h-4 text-gray-400"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 447,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[14px] text-gray-700",
-                                                                children: city
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 448,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            city === selectedCity && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                className: "w-4 h-4 text-[#0056b3] ml-auto"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 449,
-                                                                columnNumber: 53
-                                                            }, this)
-                                                        ]
-                                                    }, `recent-${city}`, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 441,
-                                                        columnNumber: 25
-                                                    }, this))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 436,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[12px] font-semibold text-gray-400 uppercase tracking-wider px-1 mb-2",
-                                                    children: "Popular Cities"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 457,
-                                                    columnNumber: 19
-                                                }, this),
-                                                __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["popularCities"].filter((c)=>!locationSearch || c.name.toLowerCase().includes(locationSearch.toLowerCase()) || c.state.toLowerCase().includes(locationSearch.toLowerCase())).map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                        whileTap: {
-                                                            scale: 0.97
-                                                        },
-                                                        onClick: ()=>selectCity(c.name),
-                                                        className: "w-full flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-gray-50",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                                className: "w-4 h-4 text-gray-400"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 467,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-left",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[14px] text-gray-700",
-                                                                        children: c.name
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 469,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[12px] text-gray-400 ml-1.5",
-                                                                        children: c.state
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 470,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 468,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            c.name === selectedCity && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                className: "w-4 h-4 text-[#0056b3] ml-auto"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 472,
-                                                                columnNumber: 53
-                                                            }, this)
-                                                        ]
-                                                    }, c.name, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 461,
-                                                        columnNumber: 23
-                                                    }, this))
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 456,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 418,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 381,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true)
-            }, void 0, false, {
-                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                lineNumber: 369,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                children: showSuggestions && suggestions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0
-                            },
-                            animate: {
-                                opacity: 1
-                            },
-                            exit: {
-                                opacity: 0
-                            },
-                            duration: 0.15,
-                            className: "fixed inset-0 bg-black/20 z-[55]",
-                            style: {
-                                maxWidth: "480px",
-                                margin: "0 auto"
-                            },
-                            onClick: ()=>{
-                                setShowSuggestions(false);
-                                searchInputRef.current?.blur();
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 486,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0,
-                                y: -10
-                            },
-                            animate: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            exit: {
-                                opacity: 0,
-                                y: -10
-                            },
-                            transition: {
-                                duration: 0.15
-                            },
-                            className: "fixed top-[148px] left-1/2 -translate-x-1/2 w-[calc(100%-32px)] max-w-[448px] bg-white rounded-2xl shadow-xl z-[58] max-h-[55vh] overflow-y-auto scrollbar-hide",
-                            children: (()=>{
-                                const groups = [];
-                                let currentType = null;
-                                for (const s of suggestions){
-                                    if (s.type !== currentType) {
-                                        currentType = s.type;
-                                        groups.push({
-                                            type: s.type,
-                                            items: [
-                                                s
-                                            ]
-                                        });
-                                    } else {
-                                        groups[groups.length - 1].items.push(s);
-                                    }
-                                }
-                                return groups.map((group)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "px-4 pt-3 pb-1.5",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[11px] font-semibold text-gray-400 uppercase tracking-wider",
-                                                    children: [
-                                                        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTypeConfig"])(group.type).emoji,
-                                                        " ",
-                                                        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$search$2d$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTypeConfig"])(group.type).label
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 517,
-                                                    columnNumber: 23
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 516,
-                                                columnNumber: 21
-                                            }, this),
-                                            group.items.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                    whileTap: {
-                                                        scale: 0.98,
-                                                        backgroundColor: "rgba(0,0,0,0.03)"
-                                                    },
-                                                    onClick: ()=>handleSuggestionTap(s),
-                                                    className: "w-full flex items-center gap-3 px-4 py-2.5 text-left",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[18px] flex-shrink-0",
-                                                            children: s.emoji
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 528,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex-1 min-w-0",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-[14px] font-medium text-gray-800 truncate",
-                                                                    children: s.label
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                    lineNumber: 530,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-[12px] text-gray-400 truncate",
-                                                                    children: s.subtitle
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                    lineNumber: 531,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 529,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                                            className: "w-4 h-4 text-gray-300 flex-shrink-0"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 533,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, s.id, true, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 522,
-                                                    columnNumber: 23
-                                                }, this))
-                                        ]
-                                    }, group.type, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 515,
-                                        columnNumber: 19
-                                    }, this));
-                            })()
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 495,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true)
-            }, void 0, false, {
-                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                lineNumber: 483,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                ref: scrollRef,
-                className: "flex-1 overflow-y-auto pt-[148px] pb-[calc(100px+env(safe-area-inset-bottom))] scrollbar-hide",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            scale: 0.98
-                        },
-                        animate: {
-                            opacity: 1,
-                            scale: 1
-                        },
-                        transition: {
-                            duration: 0.5
-                        },
-                        className: "px-4 pt-3",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative bg-gradient-to-br from-[#0056b3] via-[#004494] to-[#003060] rounded-[24px] p-5 overflow-hidden",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute top-[-20px] right-[-20px] w-32 h-32 rounded-full bg-white/5"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 554,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute bottom-[-30px] left-[-10px] w-40 h-40 rounded-full bg-white/5"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 555,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute top-4 right-4 w-20 h-20 rounded-2xl bg-white/5 rotate-12"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 556,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative z-10",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-1.5 mb-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
-                                                    className: "w-4 h-4 text-yellow-400"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 560,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-white/80 text-[11px] font-medium tracking-wide uppercase",
-                                                    children: "JustDial for Business"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 561,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 559,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "text-white text-[20px] font-bold leading-tight mb-1",
-                                            children: "List Your Business"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 563,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-white/70 text-[13px] mb-4",
-                                            children: "Reach 18 Cr+ customers. Free listing."
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 564,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.95
-                                            },
-                                            className: "bg-white text-[#0056b3] text-[13px] font-bold px-6 py-2.5 rounded-2xl shadow-lg shadow-black/10",
-                                            children: "List for FREE"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 565,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 558,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 553,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 547,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-[17px] font-bold text-gray-900",
-                                        children: "Popular Categories"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 581,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/categories",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 582,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 580,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-4 gap-1 px-1",
-                                children: categories.map((cat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 16
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.03,
-                                            duration: 0.3
-                                        },
-                                        whileTap: {
-                                            scale: 0.88
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: `/category/${cat.slug}`,
-                                            className: "flex flex-col items-center gap-1 py-2.5",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-[54px] h-[54px] rounded-[16px] flex items-center justify-center",
-                                                    style: {
-                                                        backgroundColor: cat.bg
-                                                    },
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(cat.icon, {
-                                                        className: "w-[26px] h-[26px]",
-                                                        style: {
-                                                            color: cat.color
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 596,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 595,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[11px] font-medium text-gray-700 text-center leading-tight",
-                                                    children: cat.label
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 598,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 594,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, cat.label, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 586,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 584,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 573,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"], {
-                                                className: "w-4 h-4 text-[#0056b3]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 615,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-[17px] font-bold text-gray-900",
-                                                children: "Featured Near You"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 616,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 614,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "#",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 618,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 613,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide",
-                                children: featuredStores.map((store, index)=>storeCard(store, index))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 620,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 606,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "px-4 pt-6",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            whileTap: {
-                                scale: 0.99
-                            },
-                            className: "relative rounded-[20px] overflow-hidden shadow-xl shadow-slate-900/40 h-[112px] flex",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 638,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute -left-4 -bottom-4 w-16 h-16 rounded-full bg-white/5"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 640,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute right-0 top-0 bottom-0 w-[124px] z-10 overflow-hidden",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/banners/human-illustration.png",
-                                            alt: "Home service professional",
-                                            fill: true,
-                                            priority: true,
-                                            sizes: "124px",
-                                            className: "object-cover object-right"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 644,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-slate-900 to-transparent"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 653,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 643,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative z-20 flex flex-col justify-between py-3 pl-4 pr-3 w-[68%]",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-1 mb-0.5",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
-                                                            className: "w-3 h-3 text-emerald-300",
-                                                            strokeWidth: 2.5
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 661,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-emerald-200 text-[9.5px] font-semibold tracking-wider uppercase",
-                                                            children: "Home Services"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 662,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 660,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-white font-bold text-[13px] leading-tight mb-0.5",
-                                                    children: "Trusted Pros at Your Doorstep"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 664,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-slate-300 text-[10px] leading-tight",
-                                                    children: "AC, Plumbing, Electrician & more"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 667,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 659,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/home-services",
-                                            className: "self-start inline-flex items-center gap-1 bg-emerald-500 hover:bg-emerald-400 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg shadow-md shadow-emerald-500/30 active:scale-95 transition-transform",
-                                            children: [
-                                                "Book Now",
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                    className: "w-2.5 h-2.5",
-                                                    strokeWidth: 3
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 678,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 673,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 657,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 633,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 626,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "mt-6 mx-3 rounded-3xl overflow-hidden relative",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 693,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute -top-10 -right-10 w-40 h-40 rounded-full bg-blue-100/40 blur-3xl"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 695,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute -bottom-12 -left-10 w-36 h-36 rounded-full bg-purple-100/40 blur-3xl"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 696,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative z-10 px-4 pt-4 pb-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between mb-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-7 h-7 rounded-lg bg-gradient-to-br from-[#0056b3] to-[#0077E6] flex items-center justify-center flex-shrink-0",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"], {
-                                                            className: "w-3.5 h-3.5 text-white"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 703,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 702,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-[16px] font-bold text-gray-900 tracking-tight leading-tight",
-                                                        children: "Home Services"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 705,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 701,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "/services",
-                                                className: "flex items-center gap-0.5 text-[11.5px] text-[#0056b3] font-semibold bg-white/70 backdrop-blur-sm px-2.5 py-1.5 rounded-full active:scale-95 transition-transform",
-                                                children: [
-                                                    "View All",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                        className: "w-3 h-3",
-                                                        strokeWidth: 2.5
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 712,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 707,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 700,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex gap-4 overflow-x-auto pb-1 scroll-smooth",
-                                        style: {
-                                            scrollbarWidth: 'none',
-                                            msOverflowStyle: 'none'
-                                        },
-                                        children: [
-                                            homeServices.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    initial: {
-                                                        opacity: 0,
-                                                        y: 8
-                                                    },
-                                                    whileInView: {
-                                                        opacity: 1,
-                                                        y: 0
-                                                    },
-                                                    viewport: {
-                                                        once: true
-                                                    },
-                                                    transition: {
-                                                        delay: index * 0.03,
-                                                        duration: 0.25
-                                                    },
-                                                    whileTap: {
-                                                        scale: 0.92
-                                                    },
-                                                    className: "flex-shrink-0",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: `/services?category=${service.slug}`,
-                                                        className: "flex flex-col items-center gap-1.5 w-[60px]",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "w-12 h-12 rounded-full flex items-center justify-center",
-                                                                style: {
-                                                                    backgroundColor: service.bg
-                                                                },
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(service.icon, {
-                                                                    className: "w-5 h-5",
-                                                                    style: {
-                                                                        color: service.color
-                                                                    },
-                                                                    strokeWidth: 2.2
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                    lineNumber: 740,
-                                                                    columnNumber: 23
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 736,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[10px] font-semibold text-gray-700 text-center leading-tight",
-                                                                children: service.label
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 747,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 731,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, service.label, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 722,
-                                                    columnNumber: 17
-                                                }, this)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                initial: {
-                                                    opacity: 0,
-                                                    y: 8
-                                                },
-                                                whileInView: {
-                                                    opacity: 1,
-                                                    y: 0
-                                                },
-                                                viewport: {
-                                                    once: true
-                                                },
-                                                transition: {
-                                                    delay: homeServices.length * 0.03,
-                                                    duration: 0.25
-                                                },
-                                                whileTap: {
-                                                    scale: 0.92
-                                                },
-                                                className: "flex-shrink-0",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "/services",
-                                                    className: "flex flex-col items-center gap-1.5 w-[60px]",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "w-12 h-12 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ring-1 ring-gray-200",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontal$3e$__["MoreHorizontal"], {
-                                                                className: "w-5 h-5 text-gray-600",
-                                                                strokeWidth: 2.5
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 768,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 767,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-[10px] font-semibold text-gray-700 text-center leading-tight",
-                                                            children: "More"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 770,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 763,
-                                                    columnNumber: 17
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 755,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 717,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 698,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 685,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "px-4 pt-6",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            whileTap: {
-                                scale: 0.98
-                            },
-                            className: "rounded-[20px] p-5 relative overflow-hidden",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 bg-gradient-to-br from-emerald-500 via-green-600 to-emerald-700"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 788,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute -right-4 -top-4 w-28 h-28 rounded-full bg-white/10"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 789,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute -left-6 -bottom-6 w-20 h-20 rounded-full bg-white/5"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 790,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute right-12 top-6 w-12 h-12 rounded-xl bg-white/5 rotate-45"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 791,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative z-10 flex items-center justify-between",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex-1",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-1.5 mb-1",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__["CreditCard"], {
-                                                            className: "w-4 h-4 text-green-200"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 795,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-green-100 text-[11px] font-medium",
-                                                            children: "Instant Approval"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 796,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 794,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-white font-bold text-[17px] leading-tight mb-1",
-                                                    children: "Get Loan Against Property"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 798,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-green-100/80 text-[13px]",
-                                                    children: "Starting from 9.00% interest rate"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 799,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 793,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            whileTap: {
-                                                scale: 0.95
-                                            },
-                                            className: "bg-white text-green-700 text-[13px] font-bold px-5 py-2.5 rounded-2xl shadow-lg shadow-black/10 whitespace-nowrap ml-3",
-                                            children: "Apply Now"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 801,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 792,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 787,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 780,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
-                                                className: "w-4 h-4 text-orange-500"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 818,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-[17px] font-bold text-gray-900",
-                                                children: "Trending Near You"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 819,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 817,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "#",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 821,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 816,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide",
-                                children: trendingStores.map((store, index)=>storeCard(store, index))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 823,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 809,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-1.5",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[16px]",
-                                                        children: "🔥"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 839,
-                                                        columnNumber: 17
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "text-[17px] font-bold text-gray-900",
-                                                        children: "Trending Products"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 840,
-                                                        columnNumber: 17
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 838,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[12px] text-gray-500 mt-0.5",
-                                                children: "Popular products from verified businesses"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 842,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 837,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/services",
-                                        className: "text-[13px] text-[#0056b3] font-semibold flex items-center gap-0.5",
-                                        children: [
-                                            "View All ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                                className: "w-3.5 h-3.5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 845,
-                                                columnNumber: 24
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 844,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 836,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-1",
-                                children: trendingProducts.map((product, index)=>{
-                                    const origNum = product.originalPrice ? parseInt(product.originalPrice.replace(/[^\d]/g, ""), 10) : 0;
-                                    const currNum = parseInt(product.price.replace(/[^\d]/g, ""), 10);
-                                    const discount = origNum > 0 ? Math.round((origNum - currNum) / origNum * 100) : 0;
-                                    const catGradients = {
-                                        Ayurvedic: "from-green-50 to-emerald-100",
-                                        "Pain Relief": "from-blue-50 to-sky-100",
-                                        Nutrition: "from-orange-50 to-amber-100",
-                                        Grocery: "from-yellow-50 to-lime-100",
-                                        "Cooking Oil": "from-amber-50 to-yellow-100",
-                                        Flour: "from-orange-50 to-yellow-100",
-                                        Dairy: "from-sky-50 to-blue-100",
-                                        Rice: "from-green-50 to-lime-100",
-                                        "Instant Food": "from-red-50 to-orange-100",
-                                        "Mobile Accessories": "from-slate-50 to-gray-100",
-                                        Cables: "from-gray-50 to-slate-100",
-                                        Audio: "from-violet-50 to-purple-100",
-                                        "Power Banks": "from-green-50 to-teal-100",
-                                        Snacks: "from-orange-50 to-red-50",
-                                        Supplements: "from-red-50 to-pink-100",
-                                        Equipment: "from-blue-50 to-indigo-100",
-                                        Accessories: "from-pink-50 to-rose-100",
-                                        Makeup: "from-pink-50 to-fuchsia-100",
-                                        Skincare: "from-teal-50 to-cyan-100",
-                                        Wearables: "from-indigo-50 to-violet-100",
-                                        Speakers: "from-purple-50 to-indigo-100",
-                                        Chargers: "from-yellow-50 to-orange-100",
-                                        "Computer Peripherals": "from-slate-50 to-zinc-100",
-                                        Spices: "from-red-50 to-orange-100",
-                                        "Frozen Food": "from-cyan-50 to-sky-100",
-                                        "Hair Care": "from-pink-50 to-purple-100",
-                                        "Hair Color": "from-purple-50 to-fuchsia-100",
-                                        Pickles: "from-green-50 to-emerald-100"
-                                    };
-                                    const gradient = catGradients[product.category] || "from-gray-50 to-slate-100";
-                                    const emojiMap = {
-                                        Ayurvedic: "🌿",
-                                        "Pain Relief": "💉",
-                                        Nutrition: "💊",
-                                        Grocery: "🛒",
-                                        "Cooking Oil": "🫒",
-                                        Flour: "🌾",
-                                        Dairy: "🥛",
-                                        Rice: "🍚",
-                                        "Instant Food": "🍜",
-                                        "Mobile Accessories": "📱",
-                                        Cables: "🔌",
-                                        Audio: "🎧",
-                                        "Power Banks": "🔋",
-                                        Snacks: "🍪",
-                                        Supplements: "💪",
-                                        Equipment: "🏋️",
-                                        Accessories: "🧤",
-                                        Makeup: "💄",
-                                        Skincare: "🧴",
-                                        Wearables: "⌚",
-                                        Speakers: "🔊",
-                                        Chargers: "⚡",
-                                        "Computer Peripherals": "⌨️",
-                                        Spices: "🌶️",
-                                        "Frozen Food": "🧊",
-                                        "Hair Care": "💇",
-                                        "Hair Color": "🎨",
-                                        Pickles: "🥒"
-                                    };
-                                    const emoji = emojiMap[product.category] || "📦";
-                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 20
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.05,
-                                            duration: 0.35
-                                        },
-                                        className: "snap-start flex-shrink-0 w-[175px]",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: `/store/${product.storeId}?product=${product.id}`,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                whileTap: {
-                                                    scale: 0.96
-                                                },
-                                                className: "bg-white rounded-[18px] overflow-hidden shadow-sm shadow-black/[0.06] active:shadow-md transition-shadow",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: `relative h-[155px] bg-gradient-to-br ${gradient} flex items-center justify-center overflow-hidden`,
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[60px] select-none drop-shadow-sm",
-                                                                children: emoji
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 911,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            discount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "absolute top-2 left-2 bg-[#e42529] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-md leading-tight",
-                                                                children: [
-                                                                    discount,
-                                                                    "% OFF"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 913,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            product.badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "absolute top-2 right-2 bg-amber-500 text-white text-[8px] font-bold px-1.5 py-0.5 rounded-full leading-tight",
-                                                                children: product.badge
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 918,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                                whileTap: {
-                                                                    scale: 0.8
-                                                                },
-                                                                onClick: (e)=>{
-                                                                    e.preventDefault();
-                                                                    e.stopPropagation();
-                                                                    toggleWishlist(product.id);
-                                                                },
-                                                                className: "absolute bottom-2 right-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm z-10",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                                                    className: `w-3.5 h-3.5 ${wishlisted.has(product.id) ? "text-red-500 fill-red-500" : "text-gray-400"}`
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                    lineNumber: 927,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 922,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 910,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "p-2.5",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "text-[12px] font-semibold text-gray-900 leading-tight line-clamp-2 min-h-[32px]",
-                                                                children: product.name
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 932,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-0.5 mt-1.5",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[10px] text-gray-500 truncate",
-                                                                        children: product.storeName
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 934,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$badge$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BadgeCheck$3e$__["BadgeCheck"], {
-                                                                        className: "w-3 h-3 text-[#0056b3] flex-shrink-0"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 935,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 933,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-0.5 mt-0.5",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                                        className: "w-2.5 h-2.5 fill-orange-500 text-orange-500"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 938,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[10px] font-semibold text-gray-700",
-                                                                        children: product.rating
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 939,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[9px] text-gray-400",
-                                                                        children: [
-                                                                            "(",
-                                                                            product.reviews,
-                                                                            ")"
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 940,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 937,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-baseline gap-1.5 mt-1.5",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[14px] font-bold text-gray-900",
-                                                                        children: product.price
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 943,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    product.originalPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[10px] text-gray-400 line-through",
-                                                                        children: product.originalPrice
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 945,
-                                                                        columnNumber: 29
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 942,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 931,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 905,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 904,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, product.id, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 896,
-                                        columnNumber: 17
-                                    }, this);
-                                })
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 848,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 829,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-[17px] font-bold text-gray-900",
-                                                children: "Explore Places"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 967,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[12px] text-gray-500 mt-0.5",
-                                                children: "Discover amazing destinations"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 968,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 966,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/places",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 970,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 965,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory",
-                                children: touristPlaces.map((place, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            scale: 0.92
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            scale: 1
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.06,
-                                            duration: 0.4
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: `/place/${place.slug}`,
-                                            className: "snap-start",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                whileTap: {
-                                                    scale: 0.96
-                                                },
-                                                className: "flex-shrink-0 w-[240px] relative rounded-[24px] overflow-hidden shadow-md shadow-black/10",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "relative h-[160px]",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: place.img,
-                                                                alt: place.name,
-                                                                fill: true,
-                                                                className: "object-cover",
-                                                                sizes: "240px"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 984,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 via-transparent to-transparent"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 985,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 983,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                        whileTap: {
-                                                            scale: 0.85
-                                                        },
-                                                        onClick: (e)=>{
-                                                            e.preventDefault();
-                                                            toggleSave(place.slug);
-                                                        },
-                                                        className: "absolute top-3 right-3 w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center z-10",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                                            className: `w-4 h-4 ${savedPlaces.has(place.slug) ? "text-red-400 fill-red-400" : "text-white"}`
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 992,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 987,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "absolute bottom-0 left-0 right-0 p-4",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "text-[16px] font-bold text-white mb-0.5",
-                                                                children: place.name
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 995,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-1 mb-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                                        className: "w-3 h-3 text-white/70"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 997,
-                                                                        columnNumber: 25
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-[12px] text-white/80",
-                                                                        children: place.city
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                        lineNumber: 998,
-                                                                        columnNumber: 25
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 996,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                                whileTap: {
-                                                                    scale: 0.95
-                                                                },
-                                                                className: "bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-1.5 rounded-full border border-white/20",
-                                                                children: "Explore →"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 1000,
-                                                                columnNumber: 23
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 994,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 982,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 981,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, place.slug, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 974,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 972,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 958,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-[17px] font-bold text-gray-900",
-                                        children: "Rent & Hire"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1020,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/services",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1021,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1019,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-4 gap-2 px-4",
-                                children: rentServices.map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            scale: 0.9
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            scale: 1
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.06,
-                                            duration: 0.3
-                                        },
-                                        whileTap: {
-                                            scale: 0.88
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/services",
-                                            className: "flex flex-col items-center gap-2 bg-white rounded-[16px] py-3.5 shadow-sm shadow-black/[0.03]",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-[48px] h-[48px] rounded-[14px] flex items-center justify-center",
-                                                    style: {
-                                                        backgroundColor: service.bg
-                                                    },
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(service.icon, {
-                                                        className: "w-[24px] h-[24px]",
-                                                        style: {
-                                                            color: service.color
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1035,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 1034,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-[11px] font-semibold text-gray-800 text-center",
-                                                    children: service.label
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 1037,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 1033,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, service.label, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1025,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1023,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1012,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-1.5",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$film$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Film$3e$__["Film"], {
-                                                className: "w-4 h-4 text-red-500"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1054,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "text-[17px] font-bold text-gray-900",
-                                                children: "Latest Movies"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1055,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1053,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "#",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1057,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1052,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide",
-                                children: movies.map((movie, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 20
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.08,
-                                            duration: 0.4
-                                        },
-                                        whileTap: {
-                                            scale: 0.96
-                                        },
-                                        className: "flex-shrink-0 w-[140px] bg-white rounded-[20px] overflow-hidden shadow-sm shadow-black/[0.04]",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative h-[190px] overflow-hidden",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        src: movie.img,
-                                                        alt: movie.title,
-                                                        fill: true,
-                                                        className: "object-cover",
-                                                        sizes: "140px"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1071,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "absolute top-2 right-2 flex items-center gap-0.5 bg-black/60 backdrop-blur-sm rounded-full px-2 py-0.5",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                                className: "w-3 h-3 text-yellow-400 fill-yellow-400"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 1073,
-                                                                columnNumber: 21
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[10px] font-bold text-white",
-                                                                children: movie.rating
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 1074,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1072,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1070,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "p-3",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-bold text-[14px] text-gray-900 truncate",
-                                                        children: movie.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1078,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-[12px] text-gray-500 mt-0.5",
-                                                        children: movie.genre
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1079,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1077,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, movie.title, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1061,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1059,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1045,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "px-4 pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-[17px] font-bold text-gray-900 mb-3",
-                                children: "Popular Searches"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1094,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-wrap gap-2",
-                                children: trendingSearches.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                        initial: {
-                                            opacity: 0,
-                                            scale: 0.9
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            scale: 1
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.04,
-                                            duration: 0.3
-                                        },
-                                        whileTap: {
-                                            scale: 0.95
-                                        },
-                                        className: "bg-white rounded-full px-4 py-2.5 shadow-sm shadow-black/[0.04] flex items-center gap-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[14px]",
-                                                children: item.emoji
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1106,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[13px] font-medium text-gray-700",
-                                                children: item.label
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1107,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, item.label, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1097,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1095,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1087,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-[17px] font-bold text-gray-900",
-                                        children: "JD Guides"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1122,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "#",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1123,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1121,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide",
-                                children: [
-                                    {
-                                        title: "Best Restaurants in Mumbai",
-                                        desc: "Top rated places to eat",
-                                        img: "/images/guides/restaurants-mumbai.png"
-                                    },
-                                    {
-                                        title: "Top Schools in Delhi",
-                                        desc: "Education guide 2024",
-                                        img: "/images/guides/schools-delhi.png"
-                                    }
-                                ].map((guide, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 16
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.08,
-                                            duration: 0.4
-                                        },
-                                        whileTap: {
-                                            scale: 0.96
-                                        },
-                                        className: "flex-shrink-0 w-[260px] h-[140px] rounded-[24px] relative overflow-hidden shadow-sm shadow-black/[0.06]",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                src: guide.img,
-                                                alt: guide.title,
-                                                fill: true,
-                                                className: "object-cover",
-                                                sizes: "260px"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1139,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1140,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute bottom-4 left-4 right-4",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-bold text-[15px] text-white mb-0.5 leading-tight",
-                                                        children: guide.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1142,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-[12px] text-white/70 mb-2.5",
-                                                        children: guide.desc
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1143,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                        whileTap: {
-                                                            scale: 0.95
-                                                        },
-                                                        className: "bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-1.5 rounded-full border border-white/20",
-                                                        children: "Explore →"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1144,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1141,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, guide.title, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1130,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1125,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1114,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-between px-4 mb-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-[17px] font-bold text-gray-900",
-                                        children: "JD Collections"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1162,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "#",
-                                        className: "text-[13px] text-[#0056b3] font-semibold",
-                                        children: "See All"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1163,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1161,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex gap-3 px-4 overflow-x-auto scrollbar-hide",
-                                children: [
-                                    {
-                                        title: "Best Wedding Planners",
-                                        desc: "Make your day special",
-                                        img: "/images/collections/wedding-planners.png"
-                                    },
-                                    {
-                                        title: "Home Interior Ideas",
-                                        desc: "Transform your space",
-                                        img: "/images/collections/home-interior.png"
-                                    }
-                                ].map((col, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            opacity: 0,
-                                            y: 16
-                                        },
-                                        whileInView: {
-                                            opacity: 1,
-                                            y: 0
-                                        },
-                                        viewport: {
-                                            once: true
-                                        },
-                                        transition: {
-                                            delay: index * 0.08,
-                                            duration: 0.4
-                                        },
-                                        whileTap: {
-                                            scale: 0.96
-                                        },
-                                        className: "flex-shrink-0 w-[260px] h-[140px] rounded-[24px] relative overflow-hidden shadow-sm shadow-black/[0.06]",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                src: col.img,
-                                                alt: col.title,
-                                                fill: true,
-                                                className: "object-cover",
-                                                sizes: "260px"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1179,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1180,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute bottom-4 left-4 right-4",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "font-bold text-[15px] text-white mb-0.5 leading-tight",
-                                                        children: col.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1182,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-[12px] text-white/70 mb-2.5",
-                                                        children: col.desc
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1183,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                        whileTap: {
-                                                            scale: 0.95
-                                                        },
-                                                        className: "bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold px-4 py-1.5 rounded-full border border-white/20",
-                                                        children: "Explore →"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1184,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1181,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, col.title, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1170,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1165,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1154,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                        initial: {
-                            opacity: 0,
-                            y: 24
-                        },
-                        whileInView: {
-                            opacity: 1,
-                            y: 0
-                        },
-                        viewport: {
-                            once: true,
-                            margin: "-40px"
-                        },
-                        transition: {
-                            duration: 0.4
-                        },
-                        className: "pt-6 pb-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mx-4 mb-2 bg-white rounded-[20px] overflow-hidden shadow-sm shadow-black/[0.04]",
-                                children: footerSections.map((section, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        children: [
-                                            index > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "mx-4 border-t border-black/[0.04]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1204,
-                                                columnNumber: 31
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                whileTap: {
-                                                    scale: 0.99
-                                                },
-                                                onClick: ()=>toggleSection(section.title),
-                                                className: "w-full flex items-center justify-between px-4 py-3.5",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[14px] font-bold text-gray-900",
-                                                        children: section.title
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1210,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                        animate: {
-                                                            rotate: expandedSections[section.title] ? 180 : 0
-                                                        },
-                                                        transition: {
-                                                            duration: 0.25,
-                                                            ease: "easeInOut"
-                                                        },
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                            className: "w-4 h-4 text-gray-400"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                            lineNumber: 1215,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1211,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1205,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                                initial: false,
-                                                children: expandedSections[section.title] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    initial: {
-                                                        opacity: 0,
-                                                        height: 0
-                                                    },
-                                                    animate: {
-                                                        opacity: 1,
-                                                        height: "auto"
-                                                    },
-                                                    exit: {
-                                                        opacity: 0,
-                                                        height: 0
-                                                    },
-                                                    transition: {
-                                                        duration: 0.25,
-                                                        ease: "easeInOut"
-                                                    },
-                                                    className: "overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "px-4 pb-3.5 flex flex-wrap gap-2",
-                                                        children: section.items.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                                whileTap: {
-                                                                    scale: 0.95
-                                                                },
-                                                                className: "bg-[#F2F2F7] rounded-full px-3.5 py-2",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                    href: "#",
-                                                                    className: "text-[12px] font-medium text-gray-600",
-                                                                    children: item
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                    lineNumber: 1234,
-                                                                    columnNumber: 29
-                                                                }, this)
-                                                            }, item, false, {
-                                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                                lineNumber: 1229,
-                                                                columnNumber: 27
-                                                            }, this))
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                        lineNumber: 1227,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                    lineNumber: 1220,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                                lineNumber: 1218,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, section.title, true, {
-                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                        lineNumber: 1203,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1201,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-center pt-2 pb-4",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[11px] text-gray-400",
-                                    children: "JustDial v14.2.0"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 1249,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                lineNumber: 1248,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1194,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                lineNumber: 545,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-50",
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 132,
+            columnNumber: 5
+        }, this);
+    /* ── 2. HERO BANNER ───────────────────────────────────────── */ const renderHeroBanner = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "px-4 pt-4",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative rounded-2xl overflow-hidden h-[200px] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white/90 backdrop-blur-xl border-t border-black/[0.04] px-2 pt-2 pb-1",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex gap-1 overflow-x-auto scrollbar-hide",
-                            children: bottomNavTabs.map((tab)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                    whileTap: {
-                                        scale: 0.92
-                                    },
-                                    onClick: ()=>setActiveTab(tab),
-                                    className: `flex-shrink-0 px-3.5 py-1.5 rounded-full text-[11px] font-semibold transition-colors ${activeTab === tab ? "bg-[#0056b3] text-white" : "bg-[#F2F2F7] text-gray-600"}`,
-                                    children: tab
-                                }, tab, false, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 1260,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 1258,
-                            columnNumber: 11
-                        }, this)
+                        className: "absolute -top-8 -right-8 w-40 h-40 bg-blue-500/30 rounded-full blur-2xl"
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1257,
+                        lineNumber: 203,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                        className: "bg-white/95 backdrop-blur-xl border-t border-black/[0.04] pb-[env(safe-area-inset-bottom)]",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center justify-around py-1.5",
-                            children: navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                    whileTap: {
-                                        scale: 0.85
-                                    },
-                                    onClick: ()=>setActiveNav(item.id),
-                                    className: "flex flex-col items-center gap-0.5 min-w-[56px] min-h-[48px] justify-center relative",
-                                    children: [
-                                        activeNav === item.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            layoutId: "navIndicator",
-                                            className: "absolute -top-1.5 w-5 h-0.5 rounded-full bg-[#0056b3]"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 1285,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
-                                            className: `w-[22px] h-[22px] ${activeNav === item.id ? "text-[#0056b3]" : "text-gray-400"}`,
-                                            fill: activeNav === item.id ? "#0056b3" : "none",
-                                            strokeWidth: activeNav === item.id ? 2.5 : 1.5
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 1287,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: `text-[10px] ${activeNav === item.id ? "font-semibold text-[#0056b3]" : "font-medium text-gray-400"}`,
-                                            children: item.label
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                            lineNumber: 1292,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, item.id, true, {
-                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                                    lineNumber: 1278,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                            lineNumber: 1276,
-                            columnNumber: 11
-                        }, this)
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute -bottom-12 -left-6 w-32 h-32 bg-blue-400/20 rounded-full blur-xl"
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                        lineNumber: 1275,
+                        lineNumber: 204,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative z-10 h-full flex flex-col justify-between p-5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center gap-1.5 self-start",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white/20 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1.5",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 210,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-[11px] font-semibold text-white",
+                                            children: "Live Tracking Available"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 211,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 209,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                lineNumber: 208,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-white text-[19px] font-bold leading-tight mb-1.5",
+                                        children: "Professional Home Services"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 217,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-blue-100 text-[13px] leading-snug mb-3",
+                                        children: "Book trusted experts for all your home service needs"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 220,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "bg-white rounded-full px-3.5 py-2 flex items-center gap-2 shadow-md active:scale-95 transition-transform",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+                                                className: "w-4 h-4 text-blue-600"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                                lineNumber: 224,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-[13px] font-bold text-blue-600",
+                                                children: "1,680+ Professionals Available"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                                lineNumber: 225,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 223,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                lineNumber: 216,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute right-3 bottom-3 w-[100px] h-[120px] bg-gradient-to-t from-white/10 to-transparent rounded-t-full flex items-end justify-center overflow-hidden",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-16 h-16 bg-white/15 rounded-full mb-2 backdrop-blur-sm flex items-center justify-center",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wrench$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Wrench$3e$__["Wrench"], {
+                                        className: "w-8 h-8 text-white/70"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 232,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 231,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                lineNumber: 230,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 206,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-                lineNumber: 1255,
+                lineNumber: 201,
                 columnNumber: 7
             }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 200,
+            columnNumber: 5
+        }, this);
+    /* ── 3. QUICK SERVICES ────────────────────────────────────── */ const renderQuickServices = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6 px-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeading, {
+                    title: "Quick Services",
+                    action: "See All",
+                    onAction: ()=>router.push("/services")
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 243,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-0 overflow-x-auto scrollbar-hide -mx-4 px-4 pb-1",
+                    children: quickServices.map((svc)=>{
+                        const Icon = svc.icon;
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: `/service/${svc.slug}`,
+                            className: "flex flex-col items-center gap-2 flex-shrink-0 w-[68px] active:scale-95 transition-transform",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-[48px] h-[48px] rounded-full flex items-center justify-center",
+                                    style: {
+                                        backgroundColor: svc.bg
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                        className: "w-5 h-5",
+                                        style: {
+                                            color: svc.color
+                                        },
+                                        strokeWidth: 2
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 257,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 253,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[12px] font-medium text-gray-600 text-center leading-tight w-full",
+                                    children: svc.label
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 259,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, svc.slug, true, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 248,
+                            columnNumber: 13
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 244,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 242,
+            columnNumber: 5
+        }, this);
+    /* ── 4. BROWSE BY CATEGORY (CHIPS) ────────────────────────── */ const renderCategoryChips = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6 px-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeading, {
+                    title: "Browse by Category",
+                    action: "See All",
+                    onAction: ()=>router.push("/categories")
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 272,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-2 overflow-x-auto scrollbar-hide -mx-4 px-4 pb-1",
+                    children: categoryChips.map((chip)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>setActiveChip(chip),
+                            className: `flex-shrink-0 px-4 py-2 rounded-full text-[13px] font-semibold transition-all active:scale-95 ${activeChip === chip ? "bg-blue-500 text-white shadow-md shadow-blue-500/25" : "bg-gray-100 text-gray-500 active:bg-gray-200"}`,
+                            children: chip
+                        }, chip, false, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 275,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 273,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 271,
+            columnNumber: 5
+        }, this);
+    /* ── 5. POPULAR SERVICES NEAR YOU ─────────────────────────── */ const renderPopularServices = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "px-4",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeading, {
+                        title: "Popular Services Near You",
+                        action: "View All",
+                        onAction: ()=>router.push("/services")
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 295,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 294,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-3 overflow-x-auto scrollbar-hide -mx-4 px-4 pb-2",
+                    children: popularServices.map((svc, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$justdial$2f$StoreCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            variant: "mobile",
+                            index: i,
+                            name: svc.name,
+                            category: svc.category,
+                            rating: svc.rating,
+                            reviews: svc.reviews,
+                            distance: svc.distance,
+                            address: svc.address,
+                            logoIcon: svc.logoIcon,
+                            coverGradient: svc.coverGradient,
+                            storeId: svc.storeId,
+                            href: svc.href
+                        }, svc.name, false, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 299,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 297,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 293,
+            columnNumber: 5
+        }, this);
+    /* ── 6. ALL CATEGORIES ────────────────────────────────────── */ const renderAllCategories = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6 px-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeading, {
+                    title: "All Categories"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 322,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-4 gap-2.5",
+                    children: allCategories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: `/service/${cat.slug}`,
+                            className: "bg-white rounded-xl p-2.5 flex flex-col items-center gap-1.5 shadow-sm shadow-black/[0.04] ring-1 ring-black/[0.04] active:scale-95 transition-transform",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[26px]",
+                                    children: cat.emoji
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 330,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[12px] font-bold text-gray-900 text-center leading-tight",
+                                    children: cat.label
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 331,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[10px] font-medium text-gray-400",
+                                    children: [
+                                        cat.pros,
+                                        " Pros"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 332,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, cat.slug, true, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 325,
+                            columnNumber: 11
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 323,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 321,
+            columnNumber: 5
+        }, this);
+    /* ── 7. RECENTLY VIEWED ───────────────────────────────────── */ const renderRecentlyViewed = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "px-4",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SectionHeading, {
+                        title: "Recently Viewed",
+                        action: "View All"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 343,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 342,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-2.5 overflow-x-auto scrollbar-hide -mx-4 px-4 pb-1",
+                    children: recentlyViewed.map((item)=>{
+                        const Icon = item.icon;
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: item.href,
+                            className: "flex items-center gap-2.5 flex-shrink-0 bg-white rounded-xl px-3 py-2.5 shadow-sm shadow-black/[0.04] ring-1 ring-black/[0.04] active:scale-95 transition-transform min-w-[180px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0",
+                                    style: {
+                                        backgroundColor: item.bg
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                        className: "w-[18px] h-[18px]",
+                                        style: {
+                                            color: item.color
+                                        },
+                                        strokeWidth: 2
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 358,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 354,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "min-w-0 flex-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-[13px] font-semibold text-gray-900 truncate leading-tight",
+                                            children: item.name
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 361,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-1 mt-0.5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                                    className: "w-3 h-3 text-amber-400 fill-amber-400"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                                    lineNumber: 363,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-[11px] font-semibold text-gray-500",
+                                                    children: item.rating
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                                    lineNumber: 364,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                            lineNumber: 362,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                    lineNumber: 360,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, item.name, true, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 349,
+                            columnNumber: 13
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 345,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 341,
+            columnNumber: 5
+        }, this);
+    /* ── 8. TRUST BANNER / VERIFIED PROFESSIONALS ─────────────── */ const renderTrustBanner = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-6 px-4",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "bg-emerald-50 rounded-2xl p-4 flex items-center gap-3.5 border border-emerald-100/60",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-11 h-11 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 shadow-md shadow-emerald-500/25",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                            className: "w-6 h-6 text-white",
+                            strokeWidth: 2.5
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                            lineNumber: 379,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 378,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex-1 min-w-0",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[14px] font-bold text-gray-900 leading-tight",
+                                children: "Verified Professionals"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                lineNumber: 382,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[12px] text-gray-500 leading-snug mt-0.5",
+                                children: "All professionals are background verified for your safety and peace of mind."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                lineNumber: 383,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 381,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/services",
+                        className: "flex-shrink-0 bg-emerald-500 text-white text-[13px] font-bold rounded-full px-4 py-2.5 shadow-md shadow-emerald-500/25 active:scale-95 transition-transform",
+                        children: "Book Now"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 387,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                lineNumber: 377,
+                columnNumber: 7
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 376,
+            columnNumber: 5
+        }, this);
+    /* ── 9. BOTTOM NAVIGATION ─────────────────────────────────── */ const renderBottomNav = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "fixed bottom-0 inset-x-0 z-50",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "h-3 bg-gradient-to-t from-white to-transparent"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 401,
+                    columnNumber: 7
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "bg-white/95 backdrop-blur-xl border-t border-gray-200/60 shadow-[0_-2px_20px_rgba(0,0,0,0.06)]",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-around h-[60px] mx-3 mb-2 bg-white rounded-2xl shadow-lg shadow-black/[0.06] border border-gray-100/80",
+                        children: bottomNavItems.map((item)=>{
+                            const Icon = item.icon;
+                            const isActive = activeNav === item.id;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setActiveNav(item.id),
+                                className: `flex flex-col items-center justify-center gap-0.5 flex-1 py-1.5 rounded-xl transition-colors ${isActive ? "text-blue-500" : "text-gray-400 active:text-gray-600"}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                        className: `w-[22px] h-[22px] ${isActive ? "stroke-[2.2]" : "stroke-[1.8]"}`
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 415,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: `text-[10px] leading-none ${isActive ? "font-bold" : "font-medium"}`,
+                                        children: item.label
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                        lineNumber: 416,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, item.id, true, {
+                                fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                                lineNumber: 408,
+                                columnNumber: 15
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                        lineNumber: 403,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+                    lineNumber: 402,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/justdial/MobileLayout.tsx",
+            lineNumber: 399,
+            columnNumber: 5
+        }, this);
+    /* ═══════════════════════════════════════════════════════════════
+     RENDER
+     ═══════════════════════════════════════════════════════════════ */ return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-white pb-24",
+        children: [
+            renderHeader(),
+            renderHeroBanner(),
+            renderQuickServices(),
+            renderCategoryChips(),
+            renderPopularServices(),
+            renderAllCategories(),
+            renderRecentlyViewed(),
+            renderTrustBanner(),
+            renderBottomNav()
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/justdial/MobileLayout.tsx",
-        lineNumber: 285,
+        lineNumber: 431,
         columnNumber: 5
     }, this);
 }
-_s(MobileLayout, "7mPdkv62ZyJw5nSs/4lyZlTeuFM=", false, function() {
+_s(MobileLayout, "r1c5Ai+j8FA9HeZsWfEXLMGIGYA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
-_c = MobileLayout;
-var _c;
-__turbopack_context__.k.register(_c, "MobileLayout");
+_c1 = MobileLayout;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "SectionHeading");
+__turbopack_context__.k.register(_c1, "MobileLayout");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
