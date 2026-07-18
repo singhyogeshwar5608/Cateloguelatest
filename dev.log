@@ -4,9 +4,12 @@
 - Environments: .env
 
 ✓ Starting...
-✓ Ready in 935ms
-○ Compiling /category/[slug] ...
- GET / 200 in 4.5s (compile: 3.6s, render: 871ms)
- GET /category/jobs 200 in 7.4s (compile: 7.2s, render: 179ms)
- GET /category/packers 200 in 9.4s (compile: 9.2s, render: 180ms)
- GET / 200 in 123ms (compile: 5ms, render: 118ms)
+✓ Ready in 940ms
+○ Compiling / ...
+ GET / 200 in 8.3s (compile: 7.9s, render: 441ms)
+ GET / 200 in 118ms (compile: 6ms, render: 112ms)
+ GET / 200 in 91ms (compile: 3ms, render: 88ms)
+ GET / 200 in 98ms (compile: 3ms, render: 95ms)
+ GET / 200 in 85ms (compile: 3ms, render: 83ms)
+ GET / 200 in 79ms (compile: 3ms, render: 76ms)
+ GET / 200 in 87ms (compile: 3ms, render: 84ms)
