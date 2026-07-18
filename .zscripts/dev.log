@@ -59,3 +59,8 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
  GET /services 200 in 90ms (compile: 63ms, render: 27ms)
 ✓ Compiled in 603ms
 ✓ Compiled in 416ms
+ GET / 200 in 232ms (compile: 3ms, render: 228ms)
+ GET / 200 in 112ms (compile: 3ms, render: 110ms)
+ GET /services 200 in 212ms (compile: 64ms, render: 148ms)
+ GET /service/ac-repair 200 in 1339ms (compile: 1305ms, render: 34ms)
+ GET /services 200 in 28ms (compile: 6ms, render: 23ms)
