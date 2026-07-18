@@ -321,10 +321,10 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
           "View All" link to /service/{slug}, followed by a 4-col grid of
           up to 4 provider cards. */}
       {!selectedCategory && (
-        <section className="max-w-7xl mx-auto px-6 pb-4">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-4">
           <div className="mb-8">
-            <h2 className="text-xl font-bold text-gray-900">Browse Providers by Category</h2>
-            <p className="text-sm text-gray-400 mt-0.5">
+            <h2 className="text-xl sm:text-2xl font-extrabold text-gray-900">Browse Providers by Category</h2>
+            <p className="text-sm text-gray-500 mt-1">
               Top-rated professionals grouped by service category
             </p>
           </div>
@@ -332,7 +332,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
           <div className="space-y-10">
             {getCategorizedProviders().map(({ category: cat, providers }, sectionIdx) => {
               if (providers.length === 0) return null;
-              const visible = providers.slice(0, 4);
+              const visible = providers.slice(0, 3);
               const totalCount = providers.length;
               const professionalCount = Math.max(50, totalCount * 35);
 
@@ -344,37 +344,46 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ delay: sectionIdx * 0.03, duration: 0.4 }}
                 >
-                  {/* Section header */}
-                  <div className="flex items-center justify-between mb-4 pb-3 border-b border-gray-100">
+                  {/* Section header — highlighted with color accent */}
+                  <div
+                    className="flex items-center justify-between mb-5 pb-4 rounded-2xl px-4 py-3"
+                    style={{ background: `linear-gradient(135deg, ${cat.color}0D, ${cat.color}06)`, borderLeft: `4px solid ${cat.color}` }}
+                  >
                     <div className="flex items-center gap-3 min-w-0">
                       <span
-                        className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
-                        style={{ background: `${cat.color}1A` }}
+                        className="w-11 h-11 rounded-xl flex items-center justify-center text-[22px] shrink-0 shadow-sm"
+                        style={{ background: `${cat.color}22` }}
                         aria-hidden
                       >
                         {cat.icon}
                       </span>
                       <div className="min-w-0">
-                        <h3 className="text-lg font-bold text-gray-900 leading-tight">
+                        <h3 className="text-base sm:text-lg font-extrabold text-gray-900 leading-tight">
                           {cat.label}
                         </h3>
-                        <p className="text-xs text-gray-500 leading-tight mt-0.5">
-                          {professionalCount.toLocaleString()}+ professionals · {totalCount} listed near you
-                        </p>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span
+                            className="text-[11px] font-bold px-2 py-0.5 rounded-full"
+                            style={{ background: `${cat.color}18`, color: cat.color }}
+                          >
+                            {professionalCount.toLocaleString()}+ Professionals
+                          </span>
+                          <span className="text-xs text-gray-500">{totalCount} listed near you</span>
+                        </div>
                       </div>
                     </div>
                     <Link
                       href={`/service/${cat.slug}`}
-                      className="inline-flex items-center gap-1 text-sm font-semibold shrink-0 hover:underline"
-                      style={{ color: cat.color }}
+                      className="inline-flex items-center gap-1 text-sm font-bold shrink-0 px-3.5 py-2 rounded-xl hover:opacity-90 transition-opacity"
+                      style={{ background: `${cat.color}15`, color: cat.color }}
                     >
                       View All
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
 
-                  {/* 4-col grid of provider cards */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  {/* Responsive grid: 1 col mobile, 2 sm, 3 md/lg */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
                     {visible.map((p, idx) => (
                       <Link
                         key={p.id}
@@ -439,7 +448,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
 
       {/* ── Top Rated Providers ── */}
       <section className="bg-white border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-xl font-bold text-gray-900">{selectedCategory ? `${selectedCat?.label || ''} Providers` : "Top Rated Providers"}</h2>
@@ -496,7 +505,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
       </section>
 
       {/* ── Popular Services Grid ── */}
-      <section className="max-w-7xl mx-auto px-6 py-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-xl font-bold text-gray-900">Popular Services</h2>
@@ -506,7 +515,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
             See All <ArrowRight className="w-4 h-4" />
           </button>
         </div>
-        <div className="flex flex-wrap gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
           {filteredPopular.length === 0 ? (
             <div className="w-full py-12 text-center">
               <p className="text-sm text-gray-400">No popular services found for this category</p>
@@ -533,7 +542,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
 
       {/* ── How It Works ── */}
       <section className="bg-white border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-gray-900">How It Works</h2>
             <p className="text-sm text-gray-400 mt-2">Get your home service done in 3 simple steps</p>
@@ -559,9 +568,9 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
       </section>
 
       {/* ── Why Choose Us ── */}
-      <section className="max-w-7xl mx-auto px-6 py-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">Why Choose JustDial Home Services</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {[
             { icon: Shield, label: "Verified Professionals", desc: "All providers are background verified and trained for quality service delivery.", color: "#2563EB", bg: "#EFF6FF", slug: "ac-repair" },
             { icon: Award, label: "Best Price Guarantee", desc: "We match the lowest price in the market. No hidden charges, no surprises.", color: "#059669", bg: "#ECFDF5", slug: "deep-cleaning" },
@@ -588,7 +597,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
 
       {/* ── Customer Reviews ── */}
       <section className="bg-white border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-xl font-bold text-gray-900">Customer Reviews</h2>
@@ -600,7 +609,7 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
               <span className="text-xs text-gray-400">avg rating</span>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {reviews.map((review, idx) => (
               <motion.div
                 key={review.name}
@@ -632,9 +641,9 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="max-w-7xl mx-auto px-6 py-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
         <div
-          className="rounded-3xl overflow-hidden relative p-10 flex items-center justify-between gap-10"
+          className="rounded-2xl sm:rounded-3xl overflow-hidden relative p-6 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-10"
           style={{ background: "linear-gradient(135deg, #059669, #10B981)" }}
         >
           <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-white/10" />
@@ -665,8 +674,8 @@ export default function DesktopServiceCategoryPage({ selectedCategory }: { selec
 
       {/* ── Footer ── */}
       <footer className="bg-gray-900 text-gray-300">
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
             <div>
               <h3 className="text-lg font-bold text-white mb-2">JustDial</h3>
               <p className="text-sm text-gray-400 leading-relaxed">

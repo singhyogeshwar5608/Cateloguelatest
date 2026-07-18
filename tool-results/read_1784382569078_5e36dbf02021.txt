@@ -1,0 +1,707 @@
+     1→     1→"use client";
+     2→     2→
+     3→     3→import { useState, useRef, useEffect } from "react";
+     4→     4→import Link from "next/link";
+     5→     5→import { motion } from "framer-motion";
+     6→     6→import {
+     7→     7→  Star, ChevronRight, Share2, Bookmark, Search, Phone, Mail,
+     8→     8→  MapPin, Facebook, Twitter, Instagram, Youtube, ArrowRight,
+     9→     9→  ArrowLeft, Wrench, Zap, Droplets, Paintbrush, Bug, Scissors,
+    10→    10→  Sofa, Sparkles, Fan, Lightbulb, CheckCircle2, BadgeCheck,
+    11→    11→  Users, TrendingUp, CalendarDays, MessageSquare, Shield,
+    12→    12→  Award, Clock, ThumbsUp, Home, SlidersHorizontal, X, MoreHorizontal,
+    13→    13→} from "lucide-react";
+    14→    14→import StoreCard from "@/components/justdial/StoreCard";
+    15→    15→import { getCategorizedProviders } from "@/lib/service-category-data";
+    16→    16→
+    17→    17→/* ═══════════════════════════════════════════════════
+    18→    18→   DATA
+    19→    19→   ═══════════════════════════════════════════════════ */
+    20→    20→
+    21→    21→const serviceCategories = [
+    22→    22→  { icon: Fan, label: "AC Repair", slug: "ac-repair", providers: 1200, bg: "#DBEAFE", color: "#1D4ED8" },
+    23→    23→  { icon: Zap, label: "Electrician", slug: "electrician", providers: 980, bg: "#FEF3C7", color: "#B45309" },
+    24→    24→  { icon: Droplets, label: "Plumber", slug: "plumber", providers: 850, bg: "#D1FAE5", color: "#047857" },
+    25→    25→  { icon: Paintbrush, label: "Painter", slug: "painter", providers: 670, bg: "#FCE7F3", color: "#BE185D" },
+    26→    26→  { icon: Sofa, label: "Carpenter", slug: "carpenter", providers: 540, bg: "#FED7AA", color: "#C2410C" },
+    27→    27→  { icon: Bug, label: "Pest Control", slug: "pest-control", providers: 430, bg: "#E0E7FF", color: "#4338CA" },
+    28→    28→  { icon: Sparkles, label: "Cleaning", slug: "deep-cleaning", providers: 760, bg: "#CCFBF1", color: "#0F766E" },
+    29→    29→  { icon: Scissors, label: "Salon at Home", slug: "salon-at-home", providers: 620, bg: "#FDF2F8", color: "#BE185D" },
+    30→    30→  { icon: Lightbulb, label: "Appliance Repair", slug: "appliance-repair", providers: 890, bg: "#FEE2E2", color: "#DC2626" },
+    31→    31→  { icon: Wrench, label: "AC Installation", slug: "ac-installation", providers: 340, bg: "#EDE9FE", color: "#7C3AED" },
+    32→    32→];
+    33→    33→
+    34→    34→const topProviders = [
+    35→    35→  { name: "Rajesh AC Services", service: "AC Repair & Service", rating: 4.8, reviews: 2340, jobs: 5600, price: "\u20b9299", verified: true, gradient: "from-blue-500 to-blue-600", icon: Fan, experience: "8 yrs", slug: "ac-repair" },
+    36→    36→  { name: "Sharma Electric Works", service: "Electrician & Wiring", rating: 4.7, reviews: 1890, jobs: 4200, price: "\u20b9199", verified: true, gradient: "from-amber-500 to-orange-500", icon: Zap, experience: "12 yrs", slug: "electrician" },
+    37→    37→  { name: "DeepClean Pro", service: "Deep Home Cleaning", rating: 4.9, reviews: 3120, jobs: 7800, price: "\u20b9499", verified: true, gradient: "from-emerald-500 to-teal-500", icon: Sparkles, experience: "5 yrs", slug: "deep-cleaning" },
+    38→    38→  { name: "Gupta Plumbing", service: "Plumber & Fitting", rating: 4.6, reviews: 980, jobs: 2100, price: "\u20b9249", verified: true, gradient: "from-green-500 to-emerald-500", icon: Droplets, experience: "10 yrs", slug: "plumber" },
+    39→    39→  { name: "ColorCraft Painters", service: "Painting & Wall Work", rating: 4.5, reviews: 870, jobs: 1500, price: "\u20b91,499", verified: false, gradient: "from-purple-500 to-indigo-500", icon: Paintbrush, experience: "6 yrs", slug: "painter" },
+    40→    40→  { name: "StyleAtHome Salon", service: "Salon at Home", rating: 4.8, reviews: 1560, jobs: 3400, price: "\u20b9399", verified: true, gradient: "from-pink-500 to-rose-500", icon: Scissors, experience: "4 yrs", slug: "salon-at-home" },
+    41→    41→  { name: "PestShield Control", service: "Pest Control Services", rating: 4.7, reviews: 720, jobs: 1800, price: "\u20b9599", verified: true, gradient: "from-indigo-500 to-violet-500", icon: Bug, experience: "7 yrs", slug: "pest-control" },
+    42→    42→  { name: "QuickFix Appliances", service: "Appliance Repair", rating: 4.6, reviews: 1340, jobs: 2900, price: "\u20b9349", verified: true, gradient: "from-red-500 to-rose-600", icon: Lightbulb, experience: "9 yrs", slug: "appliance-repair" },
+    43→    43→];
+    44→    44→
+    45→    45→const popularServices = [
+    46→    46→  { name: "AC Gas Refill", price: "\u20b9999", rating: 4.5, reviews: 1450, gradient: "from-sky-400 to-blue-500", icon: Fan, tag: "Bestseller", slug: "ac-repair" },
+    47→    47→  { name: "Full Home Cleaning", price: "\u20b9749", rating: 4.7, reviews: 2890, gradient: "from-teal-400 to-emerald-500", icon: Sparkles, tag: "Popular", slug: "deep-cleaning" },
+    48→    48→  { name: "Wiring & Rewiring", price: "\u20b9399", rating: 4.6, reviews: 1120, gradient: "from-amber-400 to-orange-500", icon: Zap, tag: "", slug: "electrician" },
+    49→    49→  { name: "Bathroom Cleaning", price: "\u20b9349", rating: 4.4, reviews: 980, gradient: "from-cyan-400 to-teal-500", icon: Droplets, tag: "", slug: "plumber" },
+    50→    50→  { name: "Kitchen Deep Clean", price: "\u20b9599", rating: 4.8, reviews: 1670, gradient: "from-lime-400 to-green-500", icon: Sparkles, tag: "Trending", slug: "deep-cleaning" },
+    51→    51→  { name: "AC Installation", price: "\u20b91,299", rating: 4.6, reviews: 890, gradient: "from-blue-400 to-indigo-500", icon: Fan, tag: "", slug: "ac-installation" },
+    52→    52→  { name: "Pest Control Treatment", price: "\u20b9599", rating: 4.7, reviews: 650, gradient: "from-violet-400 to-purple-500", icon: Bug, tag: "", slug: "pest-control" },
+    53→    53→  { name: "Salon at Home", price: "\u20b9399", rating: 4.4, reviews: 1560, gradient: "from-pink-400 to-rose-500", icon: Scissors, tag: "New", slug: "salon-at-home" },
+    54→    54→];
+    55→    55→
+    56→    56→const howItWorks = [
+    57→    57→  { step: 1, title: "Choose Service", desc: "Browse our extensive catalogue and select the home service that fits your needs.", icon: Search, color: "#2563EB" },
+    58→    58→  { step: 2, title: "Book Appointment", desc: "Pick a convenient time slot, confirm your booking, and get instant confirmation.", icon: CalendarDays, color: "#059669" },
+    59→    59→  { step: 3, title: "Get it Done", desc: "A verified professional arrives at your doorstep and completes the job to perfection.", icon: CheckCircle2, color: "#D97706" },
+    60→    60→];
+    61→    61→
+    62→    62→const reviews = [
+    63→    63→  { name: "Priya Sharma", location: "Mumbai", rating: 5, text: "Amazing AC repair service! The technician was professional and fixed the issue in 20 minutes. Will definitely book again.", service: "AC Repair", avatar: "PS", slug: "ac-repair" },
+    64→    64→  { name: "Amit Kumar", location: "Delhi", rating: 5, text: "Booked a deep cleaning session for my 3BHK. The team was punctual, thorough, and extremely professional. Highly recommended!", service: "Deep Cleaning", avatar: "AK", slug: "deep-cleaning" },
+    65→    65→  { name: "Sneha Reddy", location: "Bangalore", rating: 4, text: "Electrician came on time and solved the complex wiring issue. Fair pricing and quality work. Very satisfied with the service.", service: "Electrician", avatar: "SR", slug: "electrician" },
+    66→    66→  { name: "Rahul Verma", location: "Pune", rating: 5, text: "Used their painting service for my entire flat. The finish is excellent and they completed it within the promised timeline.", service: "Painter", avatar: "RV", slug: "painter" },
+    67→    67→];
+    68→    68→
+    69→    69→const footerLinks = {
+    70→    70→  "About Us": ["About JustDial", "Careers", "Blog", "Advertise"],
+    71→    71→  "Support": ["Help Center", "Safety Tips", "Contact Us", "Report Fraud"],
+    72→    72→  "Legal": ["Terms of Use", "Privacy Policy", "Cookie Policy", "Grievance"],
+    73→    73→};
+    74→    74→
+    75→    75→/* ═══════════════════════════════════════════════════
+    76→    76→   COMPONENT
+    77→    77→   ═══════════════════════════════════════════════════ */
+    78→    78→
+    79→    79→export default function DesktopServiceCategoryPage({ selectedCategory }: { selectedCategory?: string }) {
+    80→    80→  const [saved, setSaved] = useState(false);
+    81→    81→  const [searchQuery, setSearchQuery] = useState("");
+    82→    82→  const providersRef = useRef<HTMLDivElement>(null);
+    83→    83→  const catSectionRef = useRef<HTMLDivElement>(null);
+    84→    84→  const [providersScrollPos, setProvidersScrollPos] = useState(0);
+    85→    85→
+    86→    86→  const selectedCat = serviceCategories.find(c => c.slug === selectedCategory);
+    87→    87→  const _filteredProviders = selectedCategory
+    88→    88→    ? topProviders.filter(p => p.slug === selectedCategory)
+    89→    89→    : topProviders;
+    90→    90→  const filteredProviders = _filteredProviders.length > 0 ? _filteredProviders : topProviders;
+    91→    91→  const _filteredPopular = selectedCategory
+    92→    92→    ? popularServices.filter(s => s.slug === selectedCategory)
+    93→    93→    : popularServices;
+    94→    94→  const filteredPopular = _filteredPopular.length > 0 ? _filteredPopular : popularServices;
+    95→    95→
+    96→    96→  useEffect(() => {
+    97→    97→    if (selectedCategory && catSectionRef.current) {
+    98→    98→      setTimeout(() => catSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 300);
+    99→    99→    }
+   100→   100→  }, [selectedCategory]);
+   101→   101→
+   102→   102→  const scrollProviders = (dir: "left" | "right") => {
+   103→   103→    if (!providersRef.current) return;
+   104→   104→    providersRef.current.scrollBy({ left: dir === "right" ? 300 : -300, behavior: "smooth" });
+   105→   105→  };
+   106→   106→
+   107→   107→  const handleProvidersScroll = () => {
+   108→   108→    if (providersRef.current) {
+   109→   109→      setProvidersScrollPos(providersRef.current.scrollLeft);
+   110→   110→    }
+   111→   111→  };
+   112→   112→
+   113→   113→  const stats = [
+   114→   114→    { label: "Service Providers", value: "50,000+", icon: Users },
+   115→   115→    { label: "Services Completed", value: "2M+", icon: CheckCircle2 },
+   116→   116→    { label: "Cities Covered", value: "500+", icon: MapPin },
+   117→   117→    { label: "Avg Rating", value: "4.6", icon: Star },
+   118→   118→  ];
+   119→   119→
+   120→   120→  const getIconColor = (gradient: string) => {
+   121→   121→    if (gradient.includes("blue")) return "#1D4ED8";
+   122→   122→    if (gradient.includes("amber") || gradient.includes("orange")) return "#B45309";
+   123→   123→    if (gradient.includes("emerald") || gradient.includes("green") || gradient.includes("teal") || gradient.includes("lime")) return "#047857";
+   124→   124→    if (gradient.includes("pink") || gradient.includes("rose")) return "#BE185D";
+   125→   125→    if (gradient.includes("purple") || gradient.includes("violet") || gradient.includes("indigo")) return "#7C3AED";
+   126→   126→    if (gradient.includes("red")) return "#DC2626";
+   127→   127→    if (gradient.includes("cyan") || gradient.includes("sky")) return "#0284C7";
+   128→   128→    return "#374151";
+   129→   129→  };
+   130→   130→
+   131→   131→  return (
+   132→   132→    <motion.div
+   133→   133→      className="min-h-screen bg-gray-50"
+   134→   134→      initial={{ opacity: 0 }}
+   135→   135→      animate={{ opacity: 1 }}
+   136→   136→      transition={{ duration: 0.3 }}
+   137→   137→    >
+   138→   138→      {/* ── Top Nav Bar ── */}
+   139→   139→      <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+   140→   140→        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-14">
+   141→   141→          <nav className="flex items-center gap-2 text-sm">
+   142→   142→            <Link href="/" className="text-gray-400 hover:text-[#0056b3] transition-colors flex items-center gap-1">
+   143→   143→              <Home className="w-4 h-4" /> Home
+   144→   144→            </Link>
+   145→   145→            <ChevronRight className="w-3.5 h-3.5 text-gray-300" />
+   146→   146→            <span className="text-gray-900 font-medium">Home Services</span>
+   147→   147→          </nav>
+   148→   148→          <div className="flex items-center gap-2">
+   149→   149→            <button className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-600 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+   150→   150→              <Share2 className="w-4 h-4" /> Share
+   151→   151→            </button>
+   152→   152→            <button
+   153→   153→              onClick={() => setSaved(!saved)}
+   154→   154→              className={`flex items-center gap-1.5 px-3 py-1.5 text-sm border rounded-lg transition-colors ${
+   155→   155→                saved ? "border-amber-300 bg-amber-50 text-amber-700" : "border-gray-200 text-gray-600 hover:bg-gray-50"
+   156→   156→              }`}
+   157→   157→            >
+   158→   158→              <Bookmark className={`w-4 h-4 ${saved ? "fill-amber-500 text-amber-500" : ""}`} />
+   159→   159→              {saved ? "Saved" : "Save"}
+   160→   160→            </button>
+   161→   161→          </div>
+   162→   162→        </div>
+   163→   163→      </nav>
+   164→   164→
+   165→   165→      {/* ── Hero Banner ── */}
+   166→   166→      <section className="bg-gradient-to-br from-[#0056b3] to-[#003d80]">
+   167→   167→        <div className="max-w-7xl mx-auto px-6 py-14">
+   168→   168→          <div className="relative rounded-3xl overflow-hidden" style={{ background: "linear-gradient(135deg, #E0F2FE 0%, #F0F9FF 100%)" }}>
+   169→   169→            {/* Decorative */}
+   170→   170→            <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-white/30" />
+   171→   171→            <div className="absolute -bottom-8 right-32 w-28 h-28 rounded-full bg-white/20" />
+   172→   172→            <div className="absolute top-16 right-48 w-4 h-4 rounded-full bg-blue-300/40" />
+   173→   173→            <div className="absolute top-24 right-24 w-3 h-3 rounded-full bg-blue-400/30" />
+   174→   174→            <div className="absolute bottom-12 right-12 w-2 h-2 rounded-full bg-blue-300/50" />
+   175→   175→            <div className="absolute top-8 left-[35%] w-3 h-3 rounded-full bg-blue-200/50" />
+   176→   176→
+   177→   177→            <div className="relative flex items-center justify-between gap-12 px-10 py-10">
+   178→   178→              {/* Left */}
+   179→   179→              <div className="flex-1 max-w-xl">
+   180→   180→                <div className="flex items-center gap-2 mb-3">
+   181→   181→                  <span className="bg-[#0056b3]/10 text-[#0056b3] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+   182→   182→                    India&apos;s #1 Home Services Platform
+   183→   183→                  </span>
+   184→   184→                </div>
+   185→   185→                <h2 className="text-3xl font-extrabold text-gray-900 leading-tight">
+   186→   186→                  Trusted Home Services at Your Doorstep
+   187→   187→                </h2>
+   188→   188→                <p className="text-base text-gray-500 mt-3 leading-relaxed">
+   189→   189→                  From AC repair to deep cleaning, get verified professionals delivered to your home with guaranteed satisfaction and best prices.
+   190→   190→                </p>
+   191→   191→
+   192→   192→                {/* Search Bar */}
+   193→   193→                <div className="mt-6 flex items-center gap-3">
+   194→   194→                  <div className="flex-1 flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-lg shadow-black/5 border border-gray-100">
+   195→   195→                    <Search className="w-5 h-5 text-gray-400" />
+   196→   196→                    <input
+   197→   197→                      type="text"
+   198→   198→                      value={searchQuery}
+   199→   199→                      onChange={(e) => setSearchQuery(e.target.value)}
+   200→   200→                      placeholder="Search for home services..."
+   201→   201→                      className="flex-1 bg-transparent text-sm text-gray-800 placeholder-gray-400 outline-none"
+   202→   202→                    />
+   203→   203→                    {searchQuery && (
+   204→   204→                      <button onClick={() => setSearchQuery("")} className="text-gray-400 hover:text-gray-600">
+   205→   205→                        <X className="w-4 h-4" />
+   206→   206→                      </button>
+   207→   207→                    )}
+   208→   208→                  </div>
+   209→   209→                  <button className="bg-[#2563EB] text-white rounded-xl px-7 py-3.5 text-sm font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20">
+   210→   210→                    Search
+   211→   211→                  </button>
+   212→   212→                </div>
+   213→   213→
+   214→   214→                {/* Stats */}
+   215→   215→                <div className="flex items-center gap-6 mt-8">
+   216→   216→                  {stats.map((stat) => (
+   217→   217→                    <div key={stat.label} className="flex items-center gap-2.5">
+   218→   218→                      <div className="w-10 h-10 rounded-xl bg-white/80 shadow-sm flex items-center justify-center">
+   219→   219→                        <stat.icon className="w-5 h-5 text-[#0056b3]" />
+   220→   220→                      </div>
+   221→   221→                      <div>
+   222→   222→                        <p className="text-lg font-bold text-gray-900">{stat.value}</p>
+   223→   223→                        <p className="text-xs text-gray-400">{stat.label}</p>
+   224→   224→                      </div>
+   225→   225→                    </div>
+   226→   226→                  ))}
+   227→   227→                </div>
+   228→   228→              </div>
+   229→   229→
+   230→   230→              {/* Right — Illustration */}
+   231→   231→              <div className="flex-shrink-0 hidden lg:block">
+   232→   232→                <div className="w-48 h-48 rounded-3xl bg-white/60 backdrop-blur-sm shadow-xl flex items-center justify-center text-8xl">
+   233→   233→                  🏗️
+   234→   234→                </div>
+   235→   235→              </div>
+   236→   236→            </div>
+   237→   237→          </div>
+   238→   238→        </div>
+   239→   239→      </section>
+   240→   240→
+   241→   241→      {/* ── Service Categories ── */}
+   242→   242→      <section ref={catSectionRef} className="max-w-7xl mx-auto px-6 py-10">
+   243→   243→        <div className="flex items-center justify-between mb-6">
+   244→   244→          <div>
+   245→   245→            <h2 className="text-xl font-bold text-gray-900">All Service Categories</h2>
+   246→   246→            <p className="text-sm text-gray-400 mt-0.5">Browse all available home services</p>
+   247→   247→          </div>
+   248→   248→          {selectedCat && (
+   249→   249→            <Link href="/services" className="inline-flex items-center gap-1.5 bg-[#0056b3] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-[#004494] transition-colors">
+   250→   250→              {selectedCat.label}
+   251→   251→              <X className="w-3.5 h-3.5" />
+   252→   252→            </Link>
+   253→   253→          )}
+   254→   254→        </div>
+   255→   255→        {/* Horizontal scroll — circular SVG-style icons + More tile */}
+   256→   256→        <div
+   257→   257→          className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth pb-2"
+   258→   258→          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+   259→   259→        >
+   260→   260→          {serviceCategories.map((cat, idx) => {
+   261→   261→            const isActive = selectedCategory === cat.slug;
+   262→   262→            return (
+   263→   263→              <motion.div
+   264→   264→                key={cat.slug}
+   265→   265→                initial={{ opacity: 0, y: 12 }}
+   266→   266→                animate={{ opacity: 1, y: 0 }}
+   267→   267→                transition={{ delay: 0.03 * idx }}
+   268→   268→                whileTap={{ scale: 0.95 }}
+   269→   269→                className="flex-shrink-0"
+   270→   270→              >
+   271→   271→                <Link
+   272→   272→                  href={isActive ? "/services" : `/services?category=${cat.slug}`}
+   273→   273→                  className="flex flex-col items-center gap-2 w-[96px] p-2 rounded-2xl hover:bg-white hover:shadow-md transition-all group"
+   274→   274→                >
+   275→   275→                  <div
+   276→   276→                    className={`w-16 h-16 rounded-full flex items-center justify-center transition-transform group-hover:scale-110 ${isActive ? "scale-105" : ""}`}
+   277→   277→                    style={{
+   278→   278→                      backgroundColor: isActive ? cat.color + "20" : cat.bg,
+   279→   279→                      boxShadow: isActive ? `0 0 0 2px ${cat.color}` : undefined,
+   280→   280→                    }}
+   281→   281→                  >
+   282→   282→                    <cat.icon className="w-7 h-7" style={{ color: cat.color }} strokeWidth={2.2} />
+   283→   283→                  </div>
+   284→   284→                  <div className="text-center">
+   285→   285→                    <p className={`text-xs font-semibold leading-tight ${isActive ? "text-[#0056b3]" : "text-gray-800"}`}>{cat.label}</p>
+   286→   286→                    <p className="text-[10px] text-gray-400 mt-0.5">{cat.providers.toLocaleString()}+ Pros</p>
+   287→   287→                  </div>
+   288→   288→                </Link>
+   289→   289→              </motion.div>
+   290→   290→            );
+   291→   291→          })}
+   292→   292→
+   293→   293→          {/* More tile */}
+   294→   294→          <motion.div
+   295→   295→            initial={{ opacity: 0, y: 12 }}
+   296→   296→            animate={{ opacity: 1, y: 0 }}
+   297→   297→            transition={{ delay: 0.03 * serviceCategories.length }}
+   298→   298→            whileTap={{ scale: 0.95 }}
+   299→   299→            className="flex-shrink-0"
+   300→   300→          >
+   301→   301→            <Link
+   302→   302→              href="/categories"
+   303→   303→              className="flex flex-col items-center gap-2 w-[96px] p-2 rounded-2xl hover:bg-white hover:shadow-md transition-all group"
+   304→   304→            >
+   305→   305→              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ring-1 ring-gray-200 group-hover:scale-110 transition-transform">
+   306→   306→                <MoreHorizontal className="w-7 h-7 text-gray-600" strokeWidth={2.5} />
+   307→   307→              </div>
+   308→   308→              <div className="text-center">
+   309→   309→                <p className="text-xs font-semibold text-gray-700 leading-tight">More</p>
+   310→   310→                <p className="text-[10px] text-gray-400 mt-0.5">View All</p>
+   311→   311→              </div>
+   312→   312→            </Link>
+   313→   313→          </motion.div>
+   314→   314→        </div>
+   315→   315→      </section>
+   316→   316→
+   317→   317→      {/* ── Per-Category Provider Sections (only on landing / "All" view) ──
+   318→   318→          When no `?category=` is selected, render one section per category
+   319→   319→          from the canonical `service-category-data.ts` list. Each section
+   320→   320→          shows a category header (icon + label + provider count) with a
+   321→   321→          "View All" link to /service/{slug}, followed by a 4-col grid of
+   322→   322→          up to 4 provider cards. */}
+   323→   323→      {!selectedCategory && (
+   324→   324→        <section className="max-w-7xl mx-auto px-6 pb-4">
+   325→   325→          <div className="mb-8">
+   326→   326→            <h2 className="text-xl font-bold text-gray-900">Browse Providers by Category</h2>
+   327→   327→            <p className="text-sm text-gray-400 mt-0.5">
+   328→   328→              Top-rated professionals grouped by service category
+   329→   329→            </p>
+   330→   330→          </div>
+   331→   331→
+   332→   332→          <div className="space-y-10">
+   333→   333→            {getCategorizedProviders().map(({ category: cat, providers }, sectionIdx) => {
+   334→   334→              if (providers.length === 0) return null;
+   335→   335→              const visible = providers.slice(0, 4);
+   336→   336→              const totalCount = providers.length;
+   337→   337→              const professionalCount = Math.max(50, totalCount * 35);
+   338→   338→
+   339→   339→              return (
+   340→   340→                <motion.div
+   341→   341→                  key={cat.slug}
+   342→   342→                  initial={{ opacity: 0, y: 16 }}
+   343→   343→                  whileInView={{ opacity: 1, y: 0 }}
+   344→   344→                  viewport={{ once: true, margin: "-80px" }}
+   345→   345→                  transition={{ delay: sectionIdx * 0.03, duration: 0.4 }}
+   346→   346→                >
+   347→   347→                  {/* Section header */}
+   348→   348→                  <div className="flex items-center justify-between mb-4 pb-3 border-b border-gray-100">
+   349→   349→                    <div className="flex items-center gap-3 min-w-0">
+   350→   350→                      <span
+   351→   351→                        className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
+   352→   352→                        style={{ background: `${cat.color}1A` }}
+   353→   353→                        aria-hidden
+   354→   354→                      >
+   355→   355→                        {cat.icon}
+   356→   356→                      </span>
+   357→   357→                      <div className="min-w-0">
+   358→   358→                        <h3 className="text-lg font-bold text-gray-900 leading-tight">
+   359→   359→                          {cat.label}
+   360→   360→                        </h3>
+   361→   361→                        <p className="text-xs text-gray-500 leading-tight mt-0.5">
+   362→   362→                          {professionalCount.toLocaleString()}+ professionals · {totalCount} listed near you
+   363→   363→                        </p>
+   364→   364→                      </div>
+   365→   365→                    </div>
+   366→   366→                    <Link
+   367→   367→                      href={`/service/${cat.slug}`}
+   368→   368→                      className="inline-flex items-center gap-1 text-sm font-semibold shrink-0 hover:underline"
+   369→   369→                      style={{ color: cat.color }}
+   370→   370→                    >
+   371→   371→                      View All
+   372→   372→                      <ArrowRight className="w-4 h-4" />
+   373→   373→                    </Link>
+   374→   374→                  </div>
+   375→   375→
+   376→   376→                  {/* 4-col grid of provider cards */}
+   377→   377→                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+   378→   378→                    {visible.map((p, idx) => (
+   379→   379→                      <Link
+   380→   380→                        key={p.id}
+   381→   381→                        href={`/store/${p.id}`}
+   382→   382→                        className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col"
+   383→   383→                      >
+   384→   384→                        {/* Cover */}
+   385→   385→                        <div className="relative h-32 overflow-hidden">
+   386→   386→                          <div className={`absolute inset-0 bg-gradient-to-br ${p.coverColor}`} />
+   387→   387→                          <div className="absolute inset-0 flex items-center justify-center">
+   388→   388→                            <span className="text-5xl opacity-95 drop-shadow-sm group-hover:scale-110 transition-transform" aria-hidden>
+   389→   389→                              {p.logoEmoji}
+   390→   390→                            </span>
+   391→   391→                          </div>
+   392→   392→                          <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+   393→   393→                          {p.verified && (
+   394→   394→                            <span className="absolute top-2 left-2 inline-flex items-center gap-1 bg-white/95 backdrop-blur-sm text-[10px] font-bold text-[#0056b3] px-2 py-1 rounded-md shadow-sm uppercase tracking-wide">
+   395→   395→                              <BadgeCheck className="w-3 h-3" /> Verified
+   396→   396→                            </span>
+   397→   397→                          )}
+   398→   398→                          <span className="absolute top-2 right-2 bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded-md shadow-sm uppercase tracking-wide flex items-center gap-1">
+   399→   399→                            <span className="w-1 h-1 bg-white rounded-full" /> Open
+   400→   400→                          </span>
+   401→   401→                        </div>
+   402→   402→                        {/* Body */}
+   403→   403→                        <div className="p-4 flex flex-col flex-1">
+   404→   404→                          <h4 className="text-sm font-bold text-gray-900 leading-tight line-clamp-1">
+   405→   405→                            {p.name}
+   406→   406→                          </h4>
+   407→   407→                          <p className="text-[11px] text-gray-500 mt-1 line-clamp-1">
+   408→   408→                            {p.subCategory}
+   409→   409→                          </p>
+   410→   410→                          <div className="flex items-center gap-1.5 mt-2 text-[11px]">
+   411→   411→                            <span className="inline-flex items-center gap-0.5 bg-emerald-50 text-emerald-700 px-1.5 py-0.5 rounded font-bold">
+   412→   412→                              <Star className="w-3 h-3 fill-emerald-700 text-emerald-700" />
+   413→   413→                              {p.rating}
+   414→   414→                            </span>
+   415→   415→                            <span className="text-gray-400">{p.totalReviews}</span>
+   416→   416→                            <span className="text-gray-300">·</span>
+   417→   417→                            <span className="text-gray-500 whitespace-nowrap">{p.yearsInBusiness}</span>
+   418→   418→                          </div>
+   419→   419→                          <div className="flex items-center gap-1 mt-2 text-[11px] text-gray-500">
+   420→   420→                            <MapPin className="w-3 h-3 shrink-0" />
+   421→   421→                            <span className="truncate">{p.area}, Mumbai</span>
+   422→   422→                          </div>
+   423→   423→                          <div className="flex items-center justify-between pt-3 mt-auto border-t border-gray-100">
+   424→   424→                            <span className="text-[10px] text-gray-400">Starts from</span>
+   425→   425→                            <span className="text-sm font-bold text-emerald-700">
+   426→   426→                              {p.services[0]?.price || p.priceRange?.split(" - ")[0] || "₹499"}
+   427→   427→                            </span>
+   428→   428→                          </div>
+   429→   429→                        </div>
+   430→   430→                      </Link>
+   431→   431→                    ))}
+   432→   432→                  </div>
+   433→   433→                </motion.div>
+   434→   434→              );
+   435→   435→            })}
+   436→   436→          </div>
+   437→   437→        </section>
+   438→   438→      )}
+   439→   439→
+   440→   440→      {/* ── Top Rated Providers ── */}
+   441→   441→      <section className="bg-white border-y border-gray-100">
+   442→   442→        <div className="max-w-7xl mx-auto px-6 py-10">
+   443→   443→          <div className="flex items-center justify-between mb-6">
+   444→   444→            <div>
+   445→   445→              <h2 className="text-xl font-bold text-gray-900">{selectedCategory ? `${selectedCat?.label || ''} Providers` : "Top Rated Providers"}</h2>
+   446→   446→              <p className="text-sm text-gray-400 mt-0.5">Most trusted professionals near you</p>
+   447→   447→            </div>
+   448→   448→            <button className="text-sm text-[#0056b3] font-semibold flex items-center gap-1 hover:underline">
+   449→   449→              View All <ArrowRight className="w-4 h-4" />
+   450→   450→            </button>
+   451→   451→          </div>
+   452→   452→          <div className="relative group/providers">
+   453→   453→            <div
+   454→   454→              ref={providersRef}
+   455→   455→              onScroll={handleProvidersScroll}
+   456→   456→              className="flex gap-5 overflow-x-auto scrollbar-hide scroll-smooth"
+   457→   457→              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+   458→   458→            >
+   459→   459→              {filteredProviders.length === 0 ? (
+   460→   460→                <div className="w-full py-12 text-center">
+   461→   461→                  <p className="text-sm text-gray-400">No providers found for this category</p>
+   462→   462→                </div>
+   463→   463→              ) : filteredProviders.map((provider, idx) => (
+   464→   464→                <StoreCard
+   465→   465→                  key={provider.name}
+   466→   466→                  name={provider.name}
+   467→   467→                  category={provider.service}
+   468→   468→                  rating={provider.rating}
+   469→   469→                  reviews={provider.reviews}
+   470→   470→                  logoIcon={provider.icon}
+   471→   471→                  coverGradient={provider.gradient}
+   472→   472→                  href={`/explore?category=${provider.slug}`}
+   473→   473→                  isVerified={provider.verified}
+   474→   474→                  variant="desktop"
+   475→   475→                  index={idx}
+   476→   476→                />
+   477→   477→              ))}
+   478→   478→            </div>
+   479→   479→            {/* Scroll Arrows */}
+   480→   480→            {providersScrollPos > 0 && (
+   481→   481→              <button
+   482→   482→                onClick={() => scrollProviders("left")}
+   483→   483→                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-10 h-10 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 opacity-0 group-hover/providers:opacity-100 transition-opacity z-10"
+   484→   484→              >
+   485→   485→                <ArrowLeft className="w-5 h-5 text-gray-700" />
+   486→   486→              </button>
+   487→   487→            )}
+   488→   488→            <button
+   489→   489→              onClick={() => scrollProviders("right")}
+   490→   490→              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-10 h-10 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 opacity-0 group-hover/providers:opacity-100 transition-opacity z-10"
+   491→   491→            >
+   492→   492→              <ArrowRight className="w-5 h-5 text-gray-700" />
+   493→   493→            </button>
+   494→   494→          </div>
+   495→   495→        </div>
+   496→   496→      </section>
+   497→   497→
+   498→   498→      {/* ── Popular Services Grid ── */}
+   499→   499→      <section className="max-w-7xl mx-auto px-6 py-10">
+   500→   500→        <div className="flex items-center justify-between mb-6">
+   501→   501→          <div>
+   502→   502→            <h2 className="text-xl font-bold text-gray-900">Popular Services</h2>
+   503→   503→            <p className="text-sm text-gray-400 mt-0.5">Most booked services near you</p>
+   504→   504→          </div>
+   505→   505→          <button className="text-sm text-[#0056b3] font-semibold flex items-center gap-1 hover:underline">
+   506→   506→            See All <ArrowRight className="w-4 h-4" />
+   507→   507→          </button>
+   508→   508→        </div>
+   509→   509→        <div className="flex flex-wrap gap-5">
+   510→   510→          {filteredPopular.length === 0 ? (
+   511→   511→            <div className="w-full py-12 text-center">
+   512→   512→              <p className="text-sm text-gray-400">No popular services found for this category</p>
+   513→   513→            </div>
+   514→   514→          ) : filteredPopular.map((service, idx) => (
+   515→   515→            <StoreCard
+   516→   516→              key={service.name}
+   517→   517→              name={service.name}
+   518→   518→              category={service.tag || "Service"}
+   519→   519→              rating={service.rating}
+   520→   520→              reviews={service.reviews}
+   521→   521→              price={service.price}
+   522→   522→              logoIcon={service.icon}
+   523→   523→              coverGradient={service.gradient}
+   524→   524→              href={`/explore?category=${service.slug}`}
+   525→   525→              variant="desktop"
+   526→   526→              index={idx}
+   527→   527→              isFeatured={false}
+   528→   528→              isVerified={false}
+   529→   529→            />
+   530→   530→          ))}
+   531→   531→        </div>
+   532→   532→      </section>
+   533→   533→
+   534→   534→      {/* ── How It Works ── */}
+   535→   535→      <section className="bg-white border-y border-gray-100">
+   536→   536→        <div className="max-w-7xl mx-auto px-6 py-14">
+   537→   537→          <div className="text-center mb-10">
+   538→   538→            <h2 className="text-2xl font-bold text-gray-900">How It Works</h2>
+   539→   539→            <p className="text-sm text-gray-400 mt-2">Get your home service done in 3 simple steps</p>
+   540→   540→          </div>
+   541→   541→          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+   542→   542→            {/* Connector lines */}
+   543→   543→            <div className="hidden md:block absolute top-10 left-[calc(16.67%+40px)] w-[calc(33.33%-80px)] border-t-2 border-dashed border-blue-200" />
+   544→   544→            <div className="hidden md:block absolute top-10 left-[calc(50%+40px)] w-[calc(33.33%-80px)] border-t-2 border-dashed border-blue-200" />
+   545→   545→            {howItWorks.map((item) => (
+   546→   546→              <div key={item.step} className="flex flex-col items-center text-center">
+   547→   547→                <div
+   548→   548→                  className="w-20 h-20 rounded-2xl flex items-center justify-center text-white mb-5 relative z-10 shadow-xl"
+   549→   549→                  style={{ backgroundColor: item.color }}
+   550→   550→                >
+   551→   551→                  <item.icon className="w-8 h-8" />
+   552→   552→                </div>
+   553→   553→                <h3 className="text-lg font-bold text-gray-800">{item.title}</h3>
+   554→   554→                <p className="text-sm text-gray-400 mt-2 max-w-[280px] leading-relaxed">{item.desc}</p>
+   555→   555→              </div>
+   556→   556→            ))}
+   557→   557→          </div>
+   558→   558→        </div>
+   559→   559→      </section>
+   560→   560→
+   561→   561→      {/* ── Why Choose Us ── */}
+   562→   562→      <section className="max-w-7xl mx-auto px-6 py-10">
+   563→   563→        <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">Why Choose JustDial Home Services</h2>
+   564→   564→        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+   565→   565→          {[
+   566→   566→            { icon: Shield, label: "Verified Professionals", desc: "All providers are background verified and trained for quality service delivery.", color: "#2563EB", bg: "#EFF6FF", slug: "ac-repair" },
+   567→   567→            { icon: Award, label: "Best Price Guarantee", desc: "We match the lowest price in the market. No hidden charges, no surprises.", color: "#059669", bg: "#ECFDF5", slug: "deep-cleaning" },
+   568→   568→            { icon: Clock, label: "On-Time Service", desc: "Punctual professionals who respect your time. Track them in real-time.", color: "#D97706", bg: "#FFFBEB", slug: "plumber" },
+   569→   569→            { icon: ThumbsUp, label: "100% Satisfaction", desc: "Not happy with the service? Get a full refund, no questions asked.", color: "#DC2626", bg: "#FEF2F2", slug: "electrician" },
+   570→   570→          ].map((item, idx) => (
+   571→   571→            <motion.div
+   572→   572→              key={item.label}
+   573→   573→              initial={{ opacity: 0, y: 20 }}
+   574→   574→              animate={{ opacity: 1, y: 0 }}
+   575→   575→              transition={{ delay: 0.05 * idx }}
+   576→   576→            >
+   577→   577→              <Link href={`/explore?category=${item.slug}`} className="block bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+   578→   578→                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: item.bg }}>
+   579→   579→                  <item.icon className="w-6 h-6" style={{ color: item.color }} />
+   580→   580→                </div>
+   581→   581→                <h3 className="text-sm font-bold text-gray-900">{item.label}</h3>
+   582→   582→                <p className="text-xs text-gray-400 mt-1.5 leading-relaxed">{item.desc}</p>
+   583→   583→              </Link>
+   584→   584→            </motion.div>
+   585→   585→          ))}
+   586→   586→        </div>
+   587→   587→      </section>
+   588→   588→
+   589→   589→      {/* ── Customer Reviews ── */}
+   590→   590→      <section className="bg-white border-y border-gray-100">
+   591→   591→        <div className="max-w-7xl mx-auto px-6 py-10">
+   592→   592→          <div className="flex items-center justify-between mb-6">
+   593→   593→            <div>
+   594→   594→              <h2 className="text-xl font-bold text-gray-900">Customer Reviews</h2>
+   595→   595→              <p className="text-sm text-gray-400 mt-0.5">What our customers say about us</p>
+   596→   596→            </div>
+   597→   597→            <div className="flex items-center gap-1.5 bg-amber-50 px-3 py-1.5 rounded-lg">
+   598→   598→              <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
+   599→   599→              <span className="text-sm font-bold text-gray-800">4.6</span>
+   600→   600→              <span className="text-xs text-gray-400">avg rating</span>
+   601→   601→            </div>
+   602→   602→          </div>
+   603→   603→          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+   604→   604→            {reviews.map((review, idx) => (
+   605→   605→              <motion.div
+   606→   606→                key={review.name}
+   607→   607→                initial={{ opacity: 0, y: 15 }}
+   608→   608→                animate={{ opacity: 1, y: 0 }}
+   609→   609→                transition={{ delay: 0.05 * idx }}
+   610→   610→              >
+   611→   611→                <Link href={`/explore?category=${review.slug}`} className="block bg-gray-50 rounded-2xl p-5 border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+   612→   612→                <div className="flex items-center gap-3 mb-3">
+   613→   613→                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0056b3] to-[#2563EB] flex items-center justify-center text-white text-sm font-bold">
+   614→   614→                    {review.avatar}
+   615→   615→                  </div>
+   616→   616→                  <div>
+   617→   617→                    <p className="text-sm font-bold text-gray-900">{review.name}</p>
+   618→   618→                    <p className="text-xs text-gray-400">{review.location} \u2022 {review.service}</p>
+   619→   619→                  </div>
+   620→   620→                </div>
+   621→   621→                <div className="flex items-center gap-0.5 mb-2.5">
+   622→   622→                  {Array.from({ length: 5 }).map((_, i) => (
+   623→   623→                    <Star key={i} className={`w-3.5 h-3.5 ${i < review.rating ? "text-amber-500 fill-amber-500" : "text-gray-200"}`} />
+   624→   624→                  ))}
+   625→   625→                </div>
+   626→   626→                <p className="text-sm text-gray-500 leading-relaxed">{review.text}</p>
+   627→   627→                </Link>
+   628→   628→              </motion.div>
+   629→   629→            ))}
+   630→   630→          </div>
+   631→   631→        </div>
+   632→   632→      </section>
+   633→   633→
+   634→   634→      {/* ── CTA Banner ── */}
+   635→   635→      <section className="max-w-7xl mx-auto px-6 py-10">
+   636→   636→        <div
+   637→   637→          className="rounded-3xl overflow-hidden relative p-10 flex items-center justify-between gap-10"
+   638→   638→          style={{ background: "linear-gradient(135deg, #059669, #10B981)" }}
+   639→   639→        >
+   640→   640→          <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-white/10" />
+   641→   641→          <div className="absolute bottom-4 right-40 w-16 h-16 rounded-full bg-white/8" />
+   642→   642→          <div className="absolute top-12 right-24 w-3 h-3 rounded-full bg-white/30" />
+   643→   643→          <div className="relative flex-1 max-w-xl">
+   644→   644→            <h2 className="text-3xl font-extrabold text-white">Become a Service Provider</h2>
+   645→   645→            <p className="text-white/80 mt-3 leading-relaxed">
+   646→   646→              Join 50,000+ professionals on JustDial. Grow your business, get more leads, and reach millions of customers across India.
+   647→   647→            </p>
+   648→   648→            <div className="flex items-center gap-4 mt-6">
+   649→   649→              <button className="bg-white text-emerald-700 rounded-xl px-8 py-3 text-sm font-bold hover:bg-emerald-50 transition-colors shadow-lg">
+   650→   650→                Register Free \u2192
+   651→   651→              </button>
+   652→   652→              <div className="flex items-center gap-2 text-white/80 text-sm">
+   653→   653→                <CheckCircle2 className="w-5 h-5" />
+   654→   654→                <span>100% Free. No commission.</span>
+   655→   655→              </div>
+   656→   656→            </div>
+   657→   657→          </div>
+   658→   658→          <div className="flex-shrink-0 hidden lg:block">
+   659→   659→            <div className="w-36 h-36 rounded-3xl bg-white/15 backdrop-blur-sm flex items-center justify-center text-7xl shadow-2xl">
+   660→   660→              💻
+   661→   661→            </div>
+   662→   662→          </div>
+   663→   663→        </div>
+   664→   664→      </section>
+   665→   665→
+   666→   666→      {/* ── Footer ── */}
+   667→   667→      <footer className="bg-gray-900 text-gray-300">
+   668→   668→        <div className="max-w-7xl mx-auto px-6 py-12">
+   669→   669→          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+   670→   670→            <div>
+   671→   671→              <h3 className="text-lg font-bold text-white mb-2">JustDial</h3>
+   672→   672→              <p className="text-sm text-gray-400 leading-relaxed">
+   673→   673→                India&apos;s #1 local search engine for home services, businesses, and more.
+   674→   674→              </p>
+   675→   675→              <div className="flex items-center gap-2 mt-4 text-sm text-gray-400">
+   676→   676→                <Phone className="w-4 h-4" /> <span>1800-123-4567</span>
+   677→   677→              </div>
+   678→   678→              <div className="flex items-center gap-2 mt-1.5 text-sm text-gray-400">
+   679→   679→                <Mail className="w-4 h-4" /> <span>support@justdial.com</span>
+   680→   680→              </div>
+   681→   681→            </div>
+   682→   682→            {Object.entries(footerLinks).map(([title, links]) => (
+   683→   683→              <div key={title}>
+   684→   684→                <h4 className="text-sm font-semibold text-white mb-4">{title}</h4>
+   685→   685→                <ul className="space-y-2.5">
+   686→   686→                  {links.map((link) => (
+   687→   687→                    <li key={link}>
+   688→   688→                      <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">{link}</a>
+   689→   689→                    </li>
+   690→   690→                  ))}
+   691→   691→                </ul>
+   692→   692→              </div>
+   693→   693→            ))}
+   694→   694→          </div>
+   695→   695→          <div className="mt-10 pt-6 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
+   696→   696→            <p className="text-xs text-gray-500">\u00a9 2025 JustDial Clone. All rights reserved.</p>
+   697→   697→            <div className="flex items-center gap-4">
+   698→   698→              {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
+   699→   699→                <a key={i} href="#" className="text-gray-500 hover:text-white transition-colors"><Icon className="w-5 h-5" /></a>
+   700→   700→              ))}
+   701→   701→            </div>
+   702→   702→          </div>
+   703→   703→        </div>
+   704→   704→      </footer>
+   705→   705→    </motion.div>
+   706→   706→  );
+   707→   707→}

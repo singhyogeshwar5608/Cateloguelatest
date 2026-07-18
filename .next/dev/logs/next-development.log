@@ -8,3 +8,26 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:05:28.804] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
 [00:06:30.951] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:08:52.697] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:32.080] Server  LOG     ✓ Compiled in 477ms
+[00:14:34.413] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:15:23.717] Server  LOG     ✓ Compiled in 368ms
+[00:15:25.287] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:15:25.287] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:15:25.287] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:15:25.287] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:15:53.819] Server  LOG     ✓ Compiled in 203ms
+[00:15:54.247] Server  LOG     ✓ Compiled in 249ms
+[00:15:55.202] Server  LOG     ✓ Compiled in 1011ms
+[00:15:55.450] Server  LOG     ✓ Compiled in 165ms
+[00:15:55.795] Server  LOG     ✓ Compiled in 183ms
+[00:15:56.052] Server  LOG     ✓ Compiled in 132ms
+[00:15:56.323] Server  LOG     ✓ Compiled in 107ms
+[00:15:56.343] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:15:56.343] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:16:32.953] Server  LOG     ✓ Compiled in 603ms
+[00:16:33.271] Server  LOG     ✓ Compiled in 416ms
+[00:16:34.279] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:16:34.279] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:16:34.279] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css
+[00:16:34.279] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__0f0ba101._.css

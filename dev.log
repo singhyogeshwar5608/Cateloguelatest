@@ -27,3 +27,34 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
  GET /explore?category=electrician 200 in 72ms (compile: 3ms, render: 69ms)
  GET / 200 in 19ms (compile: 3ms, render: 16ms)
  GET /services 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 507ms (compile: 4ms, render: 502ms)
+ GET / 200 in 508ms (compile: 226ms, render: 283ms)
+ GET /categories 200 in 963ms (compile: 950ms, render: 13ms)
+ GET /categories 200 in 19ms (compile: 5ms, render: 14ms)
+ GET /categories 200 in 20ms (compile: 4ms, render: 16ms)
+ GET /categories 200 in 14ms (compile: 3ms, render: 11ms)
+ GET /categories 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 3ms, render: 10ms)
+ GET /store/STR-130001 200 in 1416ms (compile: 1383ms, render: 33ms)
+ GET /explore 200 in 15ms (compile: 4ms, render: 11ms)
+ GET /explore?category=hotels 200 in 15ms (compile: 3ms, render: 12ms)
+ GET /explore?category=restaurants 200 in 20ms (compile: 4ms, render: 16ms)
+ GET /explore?category=hotels 200 in 14ms (compile: 3ms, render: 12ms)
+ GET /explore?category=cafes 200 in 13ms (compile: 3ms, render: 10ms)
+ GET / 200 in 12ms (compile: 3ms, render: 10ms)
+ GET / 200 in 97ms (compile: 2ms, render: 94ms)
+ GET / 200 in 102ms (compile: 3ms, render: 99ms)
+ GET /services 200 in 22ms (compile: 5ms, render: 17ms)
+ GET /services 200 in 46ms (compile: 3ms, render: 43ms)
+✓ Compiled in 477ms
+✓ Compiled in 368ms
+✓ Compiled in 203ms
+✓ Compiled in 249ms
+✓ Compiled in 1011ms
+✓ Compiled in 165ms
+✓ Compiled in 183ms
+✓ Compiled in 132ms
+✓ Compiled in 107ms
+ GET /services 200 in 90ms (compile: 63ms, render: 27ms)
+✓ Compiled in 603ms
+✓ Compiled in 416ms

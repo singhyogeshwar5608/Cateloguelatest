@@ -476,12 +476,12 @@ export default function MobileServiceCategoryPage({ selectedCategory }: { select
 
       {/* ── Body: either per-category sections ("All" view) or single grid ── */}
       {showCategorySections ? (
-        <div className="mt-4 space-y-6">
+        <div className="mt-4 space-y-8">
           {categorizedProviders.map(({ category: cat, providers }, sectionIdx) => {
             // Skip categories with zero providers
             if (providers.length === 0) return null;
-            // Show up to 4 cards per category; "View All" goes to /service/{slug}
-            const visibleProviders = providers.slice(0, 4);
+            // Show up to 3 cards per category; "View All" goes to /service/{slug}
+            const visibleProviders = providers.slice(0, 3);
             const totalProviders = providers.length;
             const professionalCountForCat = Math.max(50, totalProviders * 35);
 
@@ -493,29 +493,38 @@ export default function MobileServiceCategoryPage({ selectedCategory }: { select
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: sectionIdx * 0.05, duration: 0.35 }}
               >
-                {/* Section header */}
-                <div className="px-3 mb-3 flex items-center justify-between">
-                  <div className="flex items-center gap-2 min-w-0">
+                {/* Section header — highlighted */}
+                <div
+                  className="mx-3 mb-4 rounded-2xl p-3.5 flex items-center justify-between"
+                  style={{ background: `linear-gradient(135deg, ${cat.color}12, ${cat.color}08)`, borderLeft: `3px solid ${cat.color}` }}
+                >
+                  <div className="flex items-center gap-3 min-w-0">
                     <span
-                      className="w-8 h-8 rounded-xl flex items-center justify-center text-[16px] shrink-0"
-                      style={{ background: `${cat.color}1A` }}
+                      className="w-10 h-10 rounded-xl flex items-center justify-center text-[18px] shrink-0 shadow-sm"
+                      style={{ background: `${cat.color}22` }}
                       aria-hidden
                     >
                       {cat.icon}
                     </span>
                     <div className="min-w-0">
-                      <h3 className="text-[14px] font-bold text-gray-900 leading-tight truncate">
+                      <h3 className="text-[15px] font-extrabold text-gray-900 leading-tight truncate">
                         {cat.label}
                       </h3>
-                      <p className="text-[10.5px] text-gray-500 leading-tight truncate">
-                        {professionalCountForCat.toLocaleString()}+ professionals · {totalProviders} listed
-                      </p>
+                      <div className="flex items-center gap-1.5 mt-0.5">
+                        <span
+                          className="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
+                          style={{ background: `${cat.color}18`, color: cat.color }}
+                        >
+                          {professionalCountForCat.toLocaleString()}+ Pros
+                        </span>
+                        <span className="text-[10px] text-gray-400">{totalProviders} listed</span>
+                      </div>
                     </div>
                   </div>
                   <Link
                     href={`/service/${cat.slug}`}
-                    className="inline-flex items-center gap-0.5 text-[12px] font-semibold shrink-0"
-                    style={{ color: cat.color }}
+                    className="inline-flex items-center gap-0.5 text-[11px] font-bold shrink-0 px-2.5 py-1.5 rounded-lg"
+                    style={{ background: `${cat.color}15`, color: cat.color }}
                   >
                     View All
                     <ChevronRight className="w-3.5 h-3.5" />

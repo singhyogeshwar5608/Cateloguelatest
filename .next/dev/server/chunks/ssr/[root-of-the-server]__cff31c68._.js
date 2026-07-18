@@ -4113,12 +4113,12 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                 columnNumber: 9
             }, this),
             showCategorySections ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-4 space-y-6",
+                className: "mt-4 space-y-8",
                 children: categorizedProviders.map(({ category: cat, providers }, sectionIdx)=>{
                     // Skip categories with zero providers
                     if (providers.length === 0) return null;
-                    // Show up to 4 cards per category; "View All" goes to /service/{slug}
-                    const visibleProviders = providers.slice(0, 4);
+                    // Show up to 3 cards per category; "View All" goes to /service/{slug}
+                    const visibleProviders = providers.slice(0, 3);
                     const totalProviders = providers.length;
                     const professionalCountForCat = Math.max(50, totalProviders * 35);
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].section, {
@@ -4137,63 +4137,90 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "px-3 mb-3 flex items-center justify-between",
+                                className: "mx-3 mb-4 rounded-2xl p-3.5 flex items-center justify-between",
+                                style: {
+                                    background: `linear-gradient(135deg, ${cat.color}12, ${cat.color}08)`,
+                                    borderLeft: `3px solid ${cat.color}`
+                                },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-2 min-w-0",
+                                        className: "flex items-center gap-3 min-w-0",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "w-8 h-8 rounded-xl flex items-center justify-center text-[16px] shrink-0",
+                                                className: "w-10 h-10 rounded-xl flex items-center justify-center text-[18px] shrink-0 shadow-sm",
                                                 style: {
-                                                    background: `${cat.color}1A`
+                                                    background: `${cat.color}22`
                                                 },
                                                 "aria-hidden": true,
                                                 children: cat.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                                lineNumber: 499,
+                                                lineNumber: 502,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "min-w-0",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-[14px] font-bold text-gray-900 leading-tight truncate",
+                                                        className: "text-[15px] font-extrabold text-gray-900 leading-tight truncate",
                                                         children: cat.label
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                                        lineNumber: 507,
+                                                        lineNumber: 510,
                                                         columnNumber: 23
                                                     }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-[10.5px] text-gray-500 leading-tight truncate",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center gap-1.5 mt-0.5",
                                                         children: [
-                                                            professionalCountForCat.toLocaleString(),
-                                                            "+ professionals · ",
-                                                            totalProviders,
-                                                            " listed"
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[10px] font-bold px-1.5 py-0.5 rounded-full",
+                                                                style: {
+                                                                    background: `${cat.color}18`,
+                                                                    color: cat.color
+                                                                },
+                                                                children: [
+                                                                    professionalCountForCat.toLocaleString(),
+                                                                    "+ Pros"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
+                                                                lineNumber: 514,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[10px] text-gray-400",
+                                                                children: [
+                                                                    totalProviders,
+                                                                    " listed"
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
+                                                                lineNumber: 520,
+                                                                columnNumber: 25
+                                                            }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                                        lineNumber: 510,
+                                                        lineNumber: 513,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                                lineNumber: 506,
+                                                lineNumber: 509,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                        lineNumber: 498,
+                                        lineNumber: 501,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: `/service/${cat.slug}`,
-                                        className: "inline-flex items-center gap-0.5 text-[12px] font-semibold shrink-0",
+                                        className: "inline-flex items-center gap-0.5 text-[11px] font-bold shrink-0 px-2.5 py-1.5 rounded-lg",
                                         style: {
+                                            background: `${cat.color}15`,
                                             color: cat.color
                                         },
                                         children: [
@@ -4202,13 +4229,13 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                                                 className: "w-3.5 h-3.5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                                lineNumber: 521,
+                                                lineNumber: 530,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                        lineNumber: 515,
+                                        lineNumber: 524,
                                         columnNumber: 19
                                     }, this)
                                 ]
@@ -4222,7 +4249,7 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                                 children: visibleProviders.map((p, idx)=>renderProviderCard(p, idx, sectionIdx * 4))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                lineNumber: 526,
+                                lineNumber: 535,
                                 columnNumber: 17
                             }, this)
                         ]
@@ -4245,24 +4272,24 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                         children: "No providers available"
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                        lineNumber: 537,
+                        lineNumber: 546,
                         columnNumber: 15
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                    lineNumber: 536,
+                    lineNumber: 545,
                     columnNumber: 13
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-2 gap-3",
                     children: filteredProviders.map((p, idx)=>renderProviderCard(p, idx))
                 }, void 0, false, {
                     fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                    lineNumber: 540,
+                    lineNumber: 549,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                lineNumber: 534,
+                lineNumber: 543,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -4280,7 +4307,7 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                                         className: "w-5 h-5 text-gray-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                        lineNumber: 556,
+                                        lineNumber: 565,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4288,7 +4315,7 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                        lineNumber: 557,
+                                        lineNumber: 566,
                                         columnNumber: 17
                                     }, this)
                                 ]
@@ -4300,7 +4327,7 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                                     children: content
                                 }, item.label, false, {
                                     fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                    lineNumber: 564,
+                                    lineNumber: 573,
                                     columnNumber: 17
                                 }, this);
                             }
@@ -4310,26 +4337,26 @@ function MobileServiceCategoryPage({ selectedCategory }) {
                                 children: content
                             }, item.label, false, {
                                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                                lineNumber: 574,
+                                lineNumber: 583,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                        lineNumber: 552,
+                        lineNumber: 561,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "h-[env(safe-area-inset-bottom)]"
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                        lineNumber: 584,
+                        lineNumber: 593,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/justdial/MobileServiceCategoryPage.tsx",
-                lineNumber: 548,
+                lineNumber: 557,
                 columnNumber: 7
             }, this)
         ]
@@ -5828,13 +5855,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                 columnNumber: 7
             }, this),
             !selectedCategory && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "max-w-7xl mx-auto px-6 pb-4",
+                className: "max-w-7xl mx-auto px-4 sm:px-6 pb-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-xl font-bold text-gray-900",
+                                className: "text-xl sm:text-2xl font-extrabold text-gray-900",
                                 children: "Browse Providers by Category"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
@@ -5842,7 +5869,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-gray-400 mt-0.5",
+                                className: "text-sm text-gray-500 mt-1",
                                 children: "Top-rated professionals grouped by service category"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
@@ -5859,7 +5886,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                         className: "space-y-10",
                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$service$2d$category$2d$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getCategorizedProviders"])().map(({ category: cat, providers }, sectionIdx)=>{
                             if (providers.length === 0) return null;
-                            const visible = providers.slice(0, 4);
+                            const visible = providers.slice(0, 3);
                             const totalCount = providers.length;
                             const professionalCount = Math.max(50, totalCount * 35);
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5881,63 +5908,90 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between mb-4 pb-3 border-b border-gray-100",
+                                        className: "flex items-center justify-between mb-5 pb-4 rounded-2xl px-4 py-3",
+                                        style: {
+                                            background: `linear-gradient(135deg, ${cat.color}0D, ${cat.color}06)`,
+                                            borderLeft: `4px solid ${cat.color}`
+                                        },
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-3 min-w-0",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0",
+                                                        className: "w-11 h-11 rounded-xl flex items-center justify-center text-[22px] shrink-0 shadow-sm",
                                                         style: {
-                                                            background: `${cat.color}1A`
+                                                            background: `${cat.color}22`
                                                         },
                                                         "aria-hidden": true,
                                                         children: cat.icon
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 350,
+                                                        lineNumber: 353,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "min-w-0",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "text-lg font-bold text-gray-900 leading-tight",
+                                                                className: "text-base sm:text-lg font-extrabold text-gray-900 leading-tight",
                                                                 children: cat.label
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 358,
+                                                                lineNumber: 361,
                                                                 columnNumber: 25
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-xs text-gray-500 leading-tight mt-0.5",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-center gap-2 mt-1",
                                                                 children: [
-                                                                    professionalCount.toLocaleString(),
-                                                                    "+ professionals · ",
-                                                                    totalCount,
-                                                                    " listed near you"
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-[11px] font-bold px-2 py-0.5 rounded-full",
+                                                                        style: {
+                                                                            background: `${cat.color}18`,
+                                                                            color: cat.color
+                                                                        },
+                                                                        children: [
+                                                                            professionalCount.toLocaleString(),
+                                                                            "+ Professionals"
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
+                                                                        lineNumber: 365,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-xs text-gray-500",
+                                                                        children: [
+                                                                            totalCount,
+                                                                            " listed near you"
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
+                                                                        lineNumber: 371,
+                                                                        columnNumber: 27
+                                                                    }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 361,
+                                                                lineNumber: 364,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 357,
+                                                        lineNumber: 360,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 349,
+                                                lineNumber: 352,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 href: `/service/${cat.slug}`,
-                                                className: "inline-flex items-center gap-1 text-sm font-semibold shrink-0 hover:underline",
+                                                className: "inline-flex items-center gap-1 text-sm font-bold shrink-0 px-3.5 py-2 rounded-xl hover:opacity-90 transition-opacity",
                                                 style: {
+                                                    background: `${cat.color}15`,
                                                     color: cat.color
                                                 },
                                                 children: [
@@ -5946,13 +6000,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 372,
+                                                        lineNumber: 381,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 366,
+                                                lineNumber: 375,
                                                 columnNumber: 21
                                             }, this)
                                         ]
@@ -5962,7 +6016,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5",
+                                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5",
                                         children: visible.map((p, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 href: `/store/${p.id}`,
                                                 className: "group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-200 flex flex-col",
@@ -5974,7 +6028,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                 className: `absolute inset-0 bg-gradient-to-br ${p.coverColor}`
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 386,
+                                                                lineNumber: 395,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5985,19 +6039,19 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                     children: p.logoEmoji
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                    lineNumber: 388,
+                                                                    lineNumber: 397,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 387,
+                                                                lineNumber: 396,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 392,
+                                                                lineNumber: 401,
                                                                 columnNumber: 27
                                                             }, this),
                                                             p.verified && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6007,14 +6061,14 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         className: "w-3 h-3"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 395,
+                                                                        lineNumber: 404,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     " Verified"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 394,
+                                                                lineNumber: 403,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6024,20 +6078,20 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         className: "w-1 h-1 bg-white rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 399,
+                                                                        lineNumber: 408,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     " Open"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 398,
+                                                                lineNumber: 407,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 385,
+                                                        lineNumber: 394,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6048,7 +6102,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                 children: p.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 404,
+                                                                lineNumber: 413,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6056,7 +6110,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                 children: p.subCategory
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 407,
+                                                                lineNumber: 416,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6069,14 +6123,14 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                                 className: "w-3 h-3 fill-emerald-700 text-emerald-700"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                                lineNumber: 412,
+                                                                                lineNumber: 421,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             p.rating
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 411,
+                                                                        lineNumber: 420,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6084,7 +6138,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         children: p.totalReviews
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 415,
+                                                                        lineNumber: 424,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6092,7 +6146,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         children: "·"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 416,
+                                                                        lineNumber: 425,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6100,13 +6154,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         children: p.yearsInBusiness
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 417,
+                                                                        lineNumber: 426,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 410,
+                                                                lineNumber: 419,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6116,7 +6170,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         className: "w-3 h-3 shrink-0"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 420,
+                                                                        lineNumber: 429,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6127,13 +6181,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 421,
+                                                                        lineNumber: 430,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 419,
+                                                                lineNumber: 428,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6144,7 +6198,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         children: "Starts from"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 424,
+                                                                        lineNumber: 433,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6152,30 +6206,30 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                         children: p.services[0]?.price || p.priceRange?.split(" - ")[0] || "₹499"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                        lineNumber: 425,
+                                                                        lineNumber: 434,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 423,
+                                                                lineNumber: 432,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 403,
+                                                        lineNumber: 412,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, p.id, true, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 379,
+                                                lineNumber: 388,
                                                 columnNumber: 23
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 377,
+                                        lineNumber: 386,
                                         columnNumber: 19
                                     }, this)
                                 ]
@@ -6199,7 +6253,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "bg-white border-y border-gray-100",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto px-6 py-10",
+                    className: "max-w-7xl mx-auto px-4 sm:px-6 py-10",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center justify-between mb-6",
@@ -6211,7 +6265,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: selectedCategory ? `${selectedCat?.label || ''} Providers` : "Top Rated Providers"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 445,
+                                            lineNumber: 454,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6219,13 +6273,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "Most trusted professionals near you"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 446,
+                                            lineNumber: 455,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 444,
+                                    lineNumber: 453,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6236,19 +6290,19 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 449,
+                                            lineNumber: 458,
                                             columnNumber: 24
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 448,
+                                    lineNumber: 457,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 443,
+                            lineNumber: 452,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6269,12 +6323,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "No providers found for this category"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 461,
+                                            lineNumber: 470,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 460,
+                                        lineNumber: 469,
                                         columnNumber: 17
                                     }, this) : filteredProviders.map((provider, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$justdial$2f$StoreCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             name: provider.name,
@@ -6289,12 +6343,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             index: idx
                                         }, provider.name, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 464,
+                                            lineNumber: 473,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 453,
+                                    lineNumber: 462,
                                     columnNumber: 13
                                 }, this),
                                 providersScrollPos > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6304,12 +6358,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                         className: "w-5 h-5 text-gray-700"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 485,
+                                        lineNumber: 494,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 481,
+                                    lineNumber: 490,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6319,33 +6373,33 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                         className: "w-5 h-5 text-gray-700"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 492,
+                                        lineNumber: 501,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 488,
+                                    lineNumber: 497,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 452,
+                            lineNumber: 461,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                    lineNumber: 442,
+                    lineNumber: 451,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 441,
+                lineNumber: 450,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "max-w-7xl mx-auto px-6 py-10",
+                className: "max-w-7xl mx-auto px-4 sm:px-6 py-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center justify-between mb-6",
@@ -6357,7 +6411,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                         children: "Popular Services"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 502,
+                                        lineNumber: 511,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6365,13 +6419,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                         children: "Most booked services near you"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 503,
+                                        lineNumber: 512,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                lineNumber: 501,
+                                lineNumber: 510,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -6382,23 +6436,23 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 506,
+                                        lineNumber: 515,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                lineNumber: 505,
+                                lineNumber: 514,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                        lineNumber: 500,
+                        lineNumber: 509,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-wrap gap-5",
+                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5",
                         children: filteredPopular.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-full py-12 text-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6406,12 +6460,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                 children: "No popular services found for this category"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                lineNumber: 512,
+                                lineNumber: 521,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 511,
+                            lineNumber: 520,
                             columnNumber: 13
                         }, this) : filteredPopular.map((service, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$justdial$2f$StoreCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 name: service.name,
@@ -6428,24 +6482,24 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                 isVerified: false
                             }, service.name, false, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                lineNumber: 515,
+                                lineNumber: 524,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                        lineNumber: 509,
+                        lineNumber: 518,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 499,
+                lineNumber: 508,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "bg-white border-y border-gray-100",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto px-6 py-14",
+                    className: "max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-14",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-center mb-10",
@@ -6455,7 +6509,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                     children: "How It Works"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 538,
+                                    lineNumber: 547,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6463,13 +6517,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                     children: "Get your home service done in 3 simple steps"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 539,
+                                    lineNumber: 548,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 537,
+                            lineNumber: 546,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6479,14 +6533,14 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                     className: "hidden md:block absolute top-10 left-[calc(16.67%+40px)] w-[calc(33.33%-80px)] border-t-2 border-dashed border-blue-200"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 543,
+                                    lineNumber: 552,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "hidden md:block absolute top-10 left-[calc(50%+40px)] w-[calc(33.33%-80px)] border-t-2 border-dashed border-blue-200"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 544,
+                                    lineNumber: 553,
                                     columnNumber: 13
                                 }, this),
                                 howItWorks.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6501,12 +6555,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                     className: "w-8 h-8"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 551,
+                                                    lineNumber: 560,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 547,
+                                                lineNumber: 556,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6514,7 +6568,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 553,
+                                                lineNumber: 562,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6522,45 +6576,45 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                 children: item.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 554,
+                                                lineNumber: 563,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, item.step, true, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 546,
+                                        lineNumber: 555,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 541,
+                            lineNumber: 550,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                    lineNumber: 536,
+                    lineNumber: 545,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 535,
+                lineNumber: 544,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "max-w-7xl mx-auto px-6 py-10",
+                className: "max-w-7xl mx-auto px-4 sm:px-6 py-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-xl font-bold text-gray-900 mb-6 text-center",
                         children: "Why Choose JustDial Home Services"
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                        lineNumber: 563,
+                        lineNumber: 572,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-2 lg:grid-cols-4 gap-5",
+                        className: "grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5",
                         children: [
                             {
                                 icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"],
@@ -6622,12 +6676,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 579,
+                                                lineNumber: 588,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 578,
+                                            lineNumber: 587,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -6635,7 +6689,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 581,
+                                            lineNumber: 590,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6643,35 +6697,35 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: item.desc
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 582,
+                                            lineNumber: 591,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 577,
+                                    lineNumber: 586,
                                     columnNumber: 15
                                 }, this)
                             }, item.label, false, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                lineNumber: 571,
+                                lineNumber: 580,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                        lineNumber: 564,
+                        lineNumber: 573,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 562,
+                lineNumber: 571,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "bg-white border-y border-gray-100",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto px-6 py-10",
+                    className: "max-w-7xl mx-auto px-4 sm:px-6 py-10",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center justify-between mb-6",
@@ -6683,7 +6737,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "Customer Reviews"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 594,
+                                            lineNumber: 603,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6691,13 +6745,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "What our customers say about us"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 595,
+                                            lineNumber: 604,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 593,
+                                    lineNumber: 602,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6707,7 +6761,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             className: "w-4 h-4 text-amber-500 fill-amber-500"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 598,
+                                            lineNumber: 607,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6715,7 +6769,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "4.6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 599,
+                                            lineNumber: 608,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -6723,23 +6777,23 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "avg rating"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 600,
+                                            lineNumber: 609,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 597,
+                                    lineNumber: 606,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 592,
+                            lineNumber: 601,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5",
+                            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5",
                             children: reviews.map((review, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                     initial: {
                                         opacity: 0,
@@ -6764,7 +6818,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                         children: review.avatar
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 613,
+                                                        lineNumber: 622,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6774,7 +6828,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                 children: review.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 617,
+                                                                lineNumber: 626,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6786,19 +6840,19 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                                lineNumber: 618,
+                                                                lineNumber: 627,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 616,
+                                                        lineNumber: 625,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 612,
+                                                lineNumber: 621,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6809,12 +6863,12 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                         className: `w-3.5 h-3.5 ${i < review.rating ? "text-amber-500 fill-amber-500" : "text-gray-200"}`
                                                     }, i, false, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 623,
+                                                        lineNumber: 632,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 621,
+                                                lineNumber: 630,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6822,40 +6876,40 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                 children: review.text
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 626,
+                                                lineNumber: 635,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 611,
+                                        lineNumber: 620,
                                         columnNumber: 17
                                     }, this)
                                 }, review.name, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 605,
+                                    lineNumber: 614,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 603,
+                            lineNumber: 612,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                    lineNumber: 591,
+                    lineNumber: 600,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 590,
+                lineNumber: 599,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "max-w-7xl mx-auto px-6 py-10",
+                className: "max-w-7xl mx-auto px-4 sm:px-6 py-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "rounded-3xl overflow-hidden relative p-10 flex items-center justify-between gap-10",
+                    className: "rounded-2xl sm:rounded-3xl overflow-hidden relative p-6 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-10",
                     style: {
                         background: "linear-gradient(135deg, #059669, #10B981)"
                     },
@@ -6864,21 +6918,21 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                             className: "absolute -top-8 -right-8 w-32 h-32 rounded-full bg-white/10"
                         }, void 0, false, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 640,
+                            lineNumber: 649,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute bottom-4 right-40 w-16 h-16 rounded-full bg-white/8"
                         }, void 0, false, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 641,
+                            lineNumber: 650,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute top-12 right-24 w-3 h-3 rounded-full bg-white/30"
                         }, void 0, false, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 642,
+                            lineNumber: 651,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6889,7 +6943,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                     children: "Become a Service Provider"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 644,
+                                    lineNumber: 653,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6897,7 +6951,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                     children: "Join 50,000+ professionals on JustDial. Grow your business, get more leads, and reach millions of customers across India."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 645,
+                                    lineNumber: 654,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6908,7 +6962,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "Register Free \\u2192"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 649,
+                                            lineNumber: 658,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6918,32 +6972,32 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                     className: "w-5 h-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 653,
+                                                    lineNumber: 662,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "100% Free. No commission."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 654,
+                                                    lineNumber: 663,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 652,
+                                            lineNumber: 661,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 648,
+                                    lineNumber: 657,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 643,
+                            lineNumber: 652,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -6953,32 +7007,32 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                 children: "💻"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                lineNumber: 659,
+                                lineNumber: 668,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 658,
+                            lineNumber: 667,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                    lineNumber: 636,
+                    lineNumber: 645,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 635,
+                lineNumber: 644,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
                 className: "bg-gray-900 text-gray-300",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto px-6 py-12",
+                    className: "max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10",
+                            className: "grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -6987,7 +7041,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "JustDial"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 671,
+                                            lineNumber: 680,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -6995,7 +7049,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                             children: "India's #1 local search engine for home services, businesses, and more."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 672,
+                                            lineNumber: 681,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7005,7 +7059,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 676,
+                                                    lineNumber: 685,
                                                     columnNumber: 17
                                                 }, this),
                                                 " ",
@@ -7013,13 +7067,13 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                     children: "1800-123-4567"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 676,
+                                                    lineNumber: 685,
                                                     columnNumber: 47
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 675,
+                                            lineNumber: 684,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7029,7 +7083,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 679,
+                                                    lineNumber: 688,
                                                     columnNumber: 17
                                                 }, this),
                                                 " ",
@@ -7037,19 +7091,19 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                     children: "support@justdial.com"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                    lineNumber: 679,
+                                                    lineNumber: 688,
                                                     columnNumber: 46
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 678,
+                                            lineNumber: 687,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 670,
+                                    lineNumber: 679,
                                     columnNumber: 13
                                 }, this),
                                 Object.entries(footerLinks).map(([title, links])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7059,7 +7113,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                 children: title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 684,
+                                                lineNumber: 693,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -7071,29 +7125,29 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                             children: link
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                            lineNumber: 688,
+                                                            lineNumber: 697,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, link, false, {
                                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                        lineNumber: 687,
+                                                        lineNumber: 696,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 685,
+                                                lineNumber: 694,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, title, true, {
                                         fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                        lineNumber: 683,
+                                        lineNumber: 692,
                                         columnNumber: 15
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 669,
+                            lineNumber: 678,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7104,7 +7158,7 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                     children: "\\u00a9 2025 JustDial Clone. All rights reserved."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 696,
+                                    lineNumber: 705,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -7121,34 +7175,34 @@ function DesktopServiceCategoryPage({ selectedCategory }) {
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                                lineNumber: 699,
+                                                lineNumber: 708,
                                                 columnNumber: 98
                                             }, this)
                                         }, i, false, {
                                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                            lineNumber: 699,
+                                            lineNumber: 708,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                                    lineNumber: 697,
+                                    lineNumber: 706,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                            lineNumber: 695,
+                            lineNumber: 704,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                    lineNumber: 668,
+                    lineNumber: 677,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/justdial/DesktopServiceCategoryPage.tsx",
-                lineNumber: 667,
+                lineNumber: 676,
                 columnNumber: 7
             }, this)
         ]
