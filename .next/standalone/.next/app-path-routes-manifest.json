@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/route": "/api",
+  "/categories/page": "/categories",
+  "/category/[slug]/page": "/category/[slug]",
+  "/explore/page": "/explore",
+  "/icon.svg/route": "/icon.svg",
+  "/page": "/",
+  "/place/[slug]/page": "/place/[slug]",
+  "/product/[id]/page": "/product/[id]",
+  "/service/[category]/page": "/service/[category]",
+  "/services/page": "/services",
+  "/store/[id]/page": "/store/[id]",
+  "/tourist/[slug]/page": "/tourist/[slug]"
+}
