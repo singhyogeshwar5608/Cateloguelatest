@@ -13,3 +13,17 @@
  GET / 200 in 85ms (compile: 3ms, render: 83ms)
  GET / 200 in 79ms (compile: 3ms, render: 76ms)
  GET / 200 in 87ms (compile: 3ms, render: 84ms)
+ GET / 200 in 200ms (compile: 3ms, render: 197ms)
+ GET / 200 in 128ms (compile: 2ms, render: 125ms)
+ GET / 200 in 104ms (compile: 3ms, render: 101ms)
+⚠ Cross origin request detected from preview-chat-88ad86f2-ae5c-46f5-8c97-993ad58a006c.space-z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /category/b2b 200 in 1567ms (compile: 1511ms, render: 56ms)
+ GET / 200 in 16ms (compile: 4ms, render: 12ms)
+ GET / 200 in 96ms (compile: 3ms, render: 93ms)
+ GET /services?category=ac-repair 200 in 983ms (compile: 952ms, render: 31ms)
+ GET /services?category=electrician 200 in 13ms (compile: 3ms, render: 10ms)
+ GET /explore?category=electrician 200 in 864ms (compile: 850ms, render: 14ms)
+ GET /explore?category=electrician 200 in 72ms (compile: 3ms, render: 69ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET /services 200 in 18ms (compile: 3ms, render: 15ms)
